@@ -8,9 +8,9 @@ http://udabuddy.herokuapp.com/
 2. run npm install
 3. run npm start
 ```
-## Directory Strcuture:
+## Directory Structure:
 
-- `views` : This contains all the frontend files. Write your html code here.
+- `views`: This contains all the frontend files. Write your HTML code here.
 - `routes` - This defines various routes.
 - `public` - Contains various assets for the app.
   - `stylesheets` - contains CSS files.
