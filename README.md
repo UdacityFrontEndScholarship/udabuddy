@@ -24,7 +24,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `npm start`
+* `node index`
 * Visit your app at [http://localhost:3000](http://localhost:3000).
 
 
