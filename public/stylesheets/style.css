@@ -1,81 +1,38 @@
-html {
-	font-size: 1.1em;
-	margin:0;
-	color: black;
-	
-	height: 100%;
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ body {
+	 height: 100%;
+ }
+ 
+.icon-block {
+	padding: 0 15px;
 }
 
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-}
-
-a, a:link, a:hover, a:active, a:visited {
-	text-decoration: none;
-}
-
-nav.navbar {
-	box-shadow: 0px 2px 5px gray;
-}
-
-.navGlyphicon {
-	color: #ccccff
-}
-
-/* ------------------------   about-section     ---------------------------------------------------
--------------------------------------------------------------------------------------------------*/
-
-#about {
-	height: 88vh;
-	background: linear-gradient(#9bc0e5, #bddeff);
-	
-}
-
-#navbar-brand {	
-	margin-left: 30px;
-}
-
-.aboutContainer {
-  position: relative;
-  width: 100%;
-}
-
-div#content {
-	margin-top: 150px;
-}
-
-div#intro {
-	margin-top: 150px;
-	color: #000;
-	padding: 20px 25px;
-	border-radius: 90px 0px;
-	font-family: Lobster, Material;
-	text-align:justify-all;
+.mainContainer {
+	width: 90%;
+	margin: 0 auto;
 }
 
 #formStyle{
-	width: 360px;
-	margin-top: 100px;
-	padding: 20px;
+	height: 428px;
+	width: 85%;
+	line-height: 30px;
+	margin: 0 auto;
+	padding: 20px 5px;
 	background-color: #f4f4ff;
 	box-shadow: 1px 1px 5px #000;
 	border-radius:3px;
 }
 
-.userForm {
-	height: 100vh;
-	margin: 120px auto;
-}
-
 input[type=text], input[type=email], input[type=password], select {
-	width: 285px;
-	padding: 10px 20px;
-	margin: 5px auto;
+	width: 65% !important;
+	height: 
 	display: inline-block;
 	box-sizing: border-box;
 	border: 0;
@@ -86,23 +43,18 @@ input[type=text], input[type=email], input[type=password], select {
 }
 
 input[type=submit], input[type=reset] {
-	width: 135px;
-	height: 50px;
+	width: 120px;
+	height: 40px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin: 0 5px 0 5px;
 
 }
-
-input[type=reset] { 
-	font-weight: bold;
-	background-color: #ffd;
- }
-
+ 
 /* Shared */
 .loginBtn {
-	width: 200px;
+	width: 185px;
   box-sizing: border-box;
   position: relative;
   /* width: 13em;  - apply for fixed size */
@@ -165,22 +117,23 @@ input[type=reset] {
   background: #E74B37;
 }
 
-
-/* ------------------------   footer-section     ---------------------------------------------------
--------------------------------------------------------------------------------------------------*/
-.footer {
-	background-color: #222;
-	height: 15vh
+.nav2, .nav2 a {
 	color: #eee;
-	padding: 10px 0px 0px;
+	max-height: 5px !important;
+    text-shadow: 1px 1px #999;
 }
 
-div.copyright {
-	font-family:Comfortaa, Tahoma;
-	margin: 20px auto 26px;
-	color: #eee;
-}
 
-span#copy {
-	color: #fff;
+
+/************** Mobile Optimizations
+************************************************************************************************* */
+
+@media screen and (max-width: 768px) {
+#formStyle {
+	margin-top: 40px;
+	height: 100%;
+}
+.nav2 {
+	max-height: 100% !important;
+}
 }
