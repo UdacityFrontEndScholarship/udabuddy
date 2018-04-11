@@ -42,9 +42,9 @@ You will need the following things properly installed on your computer.
 ## Directory Strcuture:
 
 - `views` : This contains all the frontend files. Write your html code here and save it with *.hbs* extension. See home page for reference.
+   - `css` - contains CSS files.
 - `public` - Contains various assets for the app.
-  - `css` - contains CSS files.
-  - `js` - contains Javascript files.
+   - `js` - contains Javascript files.
 - `node_modules` - contains all the npm packages installed locally. Dont modify here.
 - `package.json` - general info about the project and node packages names.
 - `index.js` - the entry point into the app.
