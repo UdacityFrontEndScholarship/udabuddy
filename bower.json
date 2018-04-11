@@ -1,9 +1,9 @@
 {
-  "name": "udabuddy-1",
-  "homepage": "https://github.com/littlestar642/udabuddy-1",
+  "name": "udabuddy",
   "description": "",
-  "main": "",
-  "license": "MIT",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/littlestar642/udabuddy-1",
   "ignore": [
     "**/.*",
     "node_modules",
