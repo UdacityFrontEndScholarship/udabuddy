@@ -1,52 +1,56 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #02b3e4;
 
-<style>
-    body {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
+}
+main {
+  flex: 1 0 auto;
+}
 
-    main {
-      flex: 1 0 auto;
-    }
 
-    body {
-      background-color: #02b3e4;
-    }
 
-    .input-field input[type=date]:focus + label,
-    .input-field input[type=text]:focus + label,
-    .input-field input[type=email]:focus + label,
-    .input-field input[type=password]:focus + label {
-      color: #e91e63;
-    }
+.input-field input[type=date]:focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=password]:focus+label {
+  color: #e91e63;
+}
 
-    .input-field input[type=date]:focus,
-    .input-field input[type=text]:focus,
-    .input-field input[type=email]:focus,
-    .input-field input[type=password]:focus {
-      border-bottom: 2px solid #e91e63;
-      box-shadow: none;
-    }
-   .blue_nav {
-    background-color: #4682b4;
-    pading: 10px;
-   }
-   .brand-logo{
-	margin-left: 2%;
-    }
-   .quote {
-	pading: 10px;
-	margin: 8%;
-	font-family: arial;
-	text-align: center;
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #e91e63;
+  box-shadow: none;
+}
 
-   }
-.first_qoute{
-	margin-top: 15%;
-    }
-   .login{
-	margin-top: 8%;
-     }
+.blue_nav {
+  background-color: #4682b4;
+}
 
-  </style>
+.brand-logo {
+  margin-left: 2%;
+}
+
+.quote {
+  padding: 10px;
+  margin: 8%;
+  font-family: arial;
+  text-align: center;
+}
+
+.first_qoute {
+  margin-top: 15%;
+}
+
+.LoginDiv {
+  margin-top: 8%;
+}
+.Login{
+  padding: 2% 5%;
+}
+.SiteFooter{
+  text-align: center;
+}
