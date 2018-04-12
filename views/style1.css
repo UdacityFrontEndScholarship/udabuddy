@@ -1,0 +1,98 @@
+/*---------------------------------Dashboard CSS---------------------------------------*/
+/* 
+ToolBar Components */
+.toolbar-parent{ 
+	content: "\00a0"; /* No-break space character */
+	display: flex; 	
+	width: auto;
+	height: fit-content;
+	margin-left: 1%;
+	top: 1%;  
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35);
+  position:relative;
+}
+/* 
+Bodybackground and the shadow card effect*/
+.contentBox{ 
+	background-color:#f6fafd;
+	width: auto;
+	height: auto;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* Toolbars Elemensts like dashboard profile and so on  */
+.toolbar-elements{ 
+	padding: 0.5%; 
+  margin: 0.5%; 
+  flex-grow: 1; 
+	height: auto; 
+	
+}
+
+/* TODO fix the CSS here its not working to make the udacity image responsive as the logo */
+
+.UdaLogo{
+	display: flex;
+}
+
+/* this is the CSS begining for the left side tasks you can do
+did not know what to call it so called it task manager casue you do basic tasks from there */
+
+.taskManagerContainer{
+	padding-top: 5%; 
+	padding-bottom: 5%;
+	margin:5px; 
+	height: fit-content;
+}
+/* Task buttons padding and styleing i am sorry for the horrible nameing convention  */
+
+.buttonPadding{ 
+	background: white;
+	display: flex;
+	margin-left: 1%;
+	margin-top: 5%;
+	padding: 50px; 
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35);
+}
+/* This is where the Card setup begins for some reason the bootstrap was not giving me the output i
+wanted so i made my own card */
+
+/* This is the main card with the shadow */
+.CardContainer {
+  border-radius: 14px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35);
+	align-content: center;
+	margin: 1%;
+	padding: 5%;
+}
+
+/* Tile on the card */
+.CardTitle{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: large; 
+	text-align: left;  
+	padding: 1%; 
+	margin: 1%;
+}
+
+/* Iimage on the card  */
+
+.CardContentImage{
+	padding: 1%;
+	margin-bottom: 3px;
+}
+
+/* paragraph text on the card  */
+.CardContentText{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: medium; 
+	padding: 1%; 
+	margin: 1%; 
+	text-align: left; 
+}
+
+/* according to design there was too much space between the toolbar and the content body so 
+i defined a CSS that can be used to break the content better then the br */
+.contentBreak{
+	margin-top: 5%;
+}

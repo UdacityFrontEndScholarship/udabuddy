@@ -170,7 +170,7 @@ input[type=reset] {
 -------------------------------------------------------------------------------------------------*/
 .footer {
 	background-color: #222;
-	height: 15vh
+	height: 15vh;
 	color: #eee;
 	padding: 10px 0px 0px;
 }
