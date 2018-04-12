@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <!-- <link href="style1.css" rel="stylesheet" media="all" /> -->
+		<link rel = "stylesheet" href = "style1.css">              
+		<!-- bootstrap and jquery -->
+                
+        <!-- Latest compiled and minified CSS -->
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <!-- <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" /> -->
+            
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <!-- Google font  -->
+		<link href="https://fonts.googleapis.com/css?family=Jua|Slabo+27px" rel="stylesheet">
+		
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+		
+</head>
+<body class="container-fluid">
+    <div class="contentBox" style="">
+        <div id="toolbar" >
+            <!-- Row 1-->
+            <!-- For some reason the BGcolor was not working from CSS side i will need help here -->
+            <div class="row toolbar-parent" style="background-color: white">
+                <!-- udacity Logo i cannot make it responsive so TODO fix this-->
+                <div class="col-md-6 UdaLogo"><img src="https://i0.wp.com/makemeflow.org/advice/wp-content/uploads/2016/03/udacity.png?fit=600%2C300&ssl=1" alt=""align="left" height="50"></div>
+                <!-- TODO Later convert these into buttons-->
+                <div class="col-md-1 toolbar-elements">Dashboard</div>
+                <div class="col-md-1 toolbar-elements">News Feed</div>
+                <div class="col-md-1 toolbar-elements">Network</div>
+                <div class="col-md-1 toolbar-elements">Resouces</div>
+                <div class="col-md-1 toolbar-elements">Profile</div>
+                <!-- dropdown button dummy -->
+                <!-- add and arrow svg or png to show the dropdown properly-->
+                <div class="col-md-1 toolbar-elements dropdown show">
+                    <a class="btn btn-outline-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <br> 
+            <!-- TaskManager-->
+            <div id="taskManager">
+                <!-- Row 2 -->
+            <div class="row">
+                <!-- Task Manager container TODO give ids to these buttons -->
+                <div class="col-md-2 taskManagerContainer">
+                    <button type="button" class="buttonPadding btn btn-outline-light btn-lg btn-block">   Blog Post  </button>
+                    <button type="button" class="buttonPadding btn btn-outline-light btn-lg btn-block">   Add Projects</button>
+                    <button type="button" class="buttonPadding btn btn-outline-light btn-lg btn-block  dropdown-toggle " data-toggle="dropdown">Add Templates</button>
+                    <button type="button" class="buttonPadding btn btn-outline-light btn-lg btn-block  dropdown-toggle " data-toggle="dropdown">Statistics</button>
+                </div>
+                <!-- Content break -->
+                <div class="contentBreak"></div>
+                <!-- Card container begins here-->
+                <!-- Todo Add ids here so you can load more cards via Js and then add it as a template-->
+                <div class="col-md-7">
+                    <div class="CardContainer " style="background-color: rgb(253, 253, 253);">
+                        <div class="CardContentImage"> <img src="http://via.placeholder.com/200x200" alt="404Notfound" align="right"> </div>
+                        <div class="CardTitle">Project 1</div>
+                        <div class="CardContentText">
+                            <p>
+                                Lorem ipsum dolor sit amet, ius ornatus adolescens cu, te homero laudem cum. Sea accusata evertitur cu. Pro et admodum tractatos, mea id nisl error deserunt, mel meliore accusam id. Feugiat commune nam ei, ei quem quot munere duo. Eam ut mucius euismod volumus, eum in saepe pertinax, nam eu harum saepe oporteat.
+                            </p>
+                        </div> 
+                    </div> 
+                    <div class="CardContainer " style="background-color: rgb(253, 253, 253);">
+                        <div class="CardContentImage"> <img src="http://via.placeholder.com/200x200" alt="404Notfound" align="right"> </div>
+                        <div class="CardTitle">Project 1</div>
+                        <div class="CardContentText">
+                            <p>
+                                Lorem ipsum dolor sit amet, ius ornatus adolescens cu, te homero laudem cum. Sea accusata evertitur cu. Pro et admodum tractatos, mea id nisl error deserunt, mel meliore accusam id. Feugiat commune nam ei, ei quem quot munere duo. Eam ut mucius euismod volumus, eum in saepe pertinax, nam eu harum saepe oporteat.
+                            </p>
+                        </div> 
+                    </div>   
+                </div>
+                <!--filter-->
+                <div class="col-md-2 FilterContainer">
+                    <h1>Filter</h1>
+                    <input type="checkbox" class="CheckBox" > Recents<br>
+                    <input type="checkbox" class="CheckBox" > My Projects<br>
+                    <input type="checkbox" class="CheckBox" > My Templates<br>
+                    <input type="checkbox" class="CheckBox" > My Blog Posts<br>
+                        
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
