@@ -12,6 +12,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/',(req,res)=>{
     res.render('index');
 });
+app.get('/dashboard',(req,res)=>{
+    res.render('dashboard');
+});
 
 app.listen(port,()=>{
     console.log('Listening on port 3000');
