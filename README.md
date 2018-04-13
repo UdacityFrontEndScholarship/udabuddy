@@ -29,7 +29,7 @@ You will need the following things properly installed on your computer.
 
 
 ## Deployment from master:
->   http://udabuddy.herokuapp.com/
+>   https://udbuddy.herokuapp.com/
 
 ## Join the development:
 
