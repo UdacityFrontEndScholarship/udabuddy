@@ -21,7 +21,7 @@
 
 #formStyle{
 	height: 428px;
-	width: 85%;
+	width: 65%;
 	line-height: 30px;
 	margin: 0 auto;
 	padding: 20px 5px;
@@ -32,7 +32,7 @@
 
 input[type=text], input[type=email], input[type=password], select {
 	width: 65% !important;
-	height: 
+	height: 18px !important;
 	display: inline-block;
 	box-sizing: border-box;
 	border: 0;
@@ -55,18 +55,19 @@ input[type=submit], input[type=reset] {
 /* Shared */
 .loginBtn {
 	width: 185px;
-  box-sizing: border-box;
-  position: relative;
-  /* width: 13em;  - apply for fixed size */
-  margin: 0.2em;
-  padding: 0 15px 0 46px;
-  border: none;
-  text-align: left;
-  line-height: 34px;
-  white-space: nowrap;
-  border-radius: 0.2em;
-  font-size: 14px;
-  color: #FFF;
+	display: block;
+	margin: 5px auto !important;
+    box-sizing: border-box;
+	position: relative;
+	margin: 0.2em;
+	padding: 0 15px 0 46px;
+	border: none;
+	text-align: left;
+	line-height: 34px;
+	white-space: nowrap;
+	border-radius: 0.2em;
+	font-size: 12px;
+	color: #FFF;
 }
 .loginBtn:before {
   content: "";
@@ -84,7 +85,6 @@ input[type=submit], input[type=reset] {
   box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
 }
 
-
 /* Facebook */
 .loginBtn--facebook {
   background-color: #4C69BA;
@@ -94,7 +94,7 @@ input[type=submit], input[type=reset] {
 }
 .loginBtn--facebook:before {
   border-right: #364e92 1px solid;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 5px 5px no-repeat;
+  background: url('/media/icon_facebook.png') 5px 5px no-repeat;
 }
 .loginBtn--facebook:hover,
 .loginBtn--facebook:focus {
@@ -110,11 +110,29 @@ input[type=submit], input[type=reset] {
 }
 .loginBtn--google:before {
   border-right: #BB3F30 1px solid;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 5px 5px no-repeat;
+  background: url('/media/icon_google.png') 5px 5px no-repeat;
 }
 .loginBtn--google:hover,
 .loginBtn--google:focus {
   background: #E74B37;
+}
+
+/* Github */
+.loginBtn--github {
+	color: black;
+  background-color: #aaa;
+  background-image: linear-gradient(#bbb, #ccc);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--github:before {
+  border-right: #364e92 1px solid;
+  background: url('/media/gh_icon.png') 5px 5px no-repeat;
+}
+.loginBtn--github:hover,
+.loginBtn--github:focus {
+  background-color: #bbb;
+  background-image: linear-gradient(#bbb, #aab);
 }
 
 .nav2, .nav2 a {
@@ -122,18 +140,23 @@ input[type=submit], input[type=reset] {
 	max-height: 5px !important;
     text-shadow: 1px 1px #999;
 }
-
-
-
 /************** Mobile Optimizations
 ************************************************************************************************* */
 
 @media screen and (max-width: 768px) {
-#formStyle {
-	margin-top: 40px;
-	height: 100%;
+	#formStyle {
+		margin-top: 40px;
+		height: 100%;
+		width: 90%
+	}
+	.nav2 {
+		max-height: 100% !important;
+	}
 }
-.nav2 {
-	max-height: 100% !important;
-}
+
+@media screen and (max-width: 943px) {
+	input[type=submit], input[type=reset] {
+		width: 80px;
+	}
+
 }
