@@ -71,4 +71,7 @@ body {
     }
 .left{
 	background-image: url("../images/Ulogo1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position:center;
 }
