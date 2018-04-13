@@ -1,2 +1,5 @@
 node_modules
 bower_components
+views/dashboard\.hbs
+
+public/css/dashboard\.css
