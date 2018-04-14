@@ -1,4 +1,10 @@
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
+<<<<<<< HEAD
      html {
       font-size: 1.1em;
       margin:0;
@@ -185,3 +191,42 @@
     span#copy {
       color: #fff;
     }
+=======
+main {
+    flex: 1 0 auto;
+  }
+  
+.icon-block {
+	padding: 0 15px;
+}
+
+.mainContainer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#firebaseui-auth-container {
+	margin-top: 50px;
+}
+
+.nav2, .nav2 a {
+	color: #eee;
+    text-shadow: 1px 1px #999;
+}
+
+
+     
+/************** Mobile Optimizations
+************************************************************************************************* */
+
+@media screen and (max-width: 768px) {
+	/* #formStyle {
+		margin-top: 40px;
+		height: 100%;
+		width: 90%
+	}
+	.nav2 {
+		max-height: 100% !important;
+	} */
+}
+>>>>>>> upstream/master
