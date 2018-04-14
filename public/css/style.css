@@ -5,9 +5,20 @@ body {
 }
 
 main {
+	display: flex;
+	flex-wrap: wrap;
     flex: 1 0 auto;
 	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
-  }
+}
+
+.leftSide {
+	flex: 60%;
+}
+
+.rightSide {
+	flex: 40%;
+	background-color: #ffe;
+}
   
 .icon-block {
 	padding: 0 15px;
@@ -20,8 +31,14 @@ main {
     text-shadow: 1px 1px #999;
 }
 
+.mainContainer h4{
+	margin-top: 50px;
+	font-family: 'PT Sans', sans-serif;
+
+}
 .mainContainer h5 {
 	font-family: 'Ubuntu', sans-serif;
+	margin-top: 50px;
 }
 
 #firebaseui-auth-container {
@@ -39,12 +56,8 @@ main {
 ************************************************************************************************* */
 
 @media screen and (max-width: 768px) {
-	/* #formStyle {
-		margin-top: 40px;
-		height: 100%;
-		width: 90%
+	.main {
+		flex-direction: column;
 	}
-	.nav2 {
-		max-height: 100% !important;
-	} */
+	
 }

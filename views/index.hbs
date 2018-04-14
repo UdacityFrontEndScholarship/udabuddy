@@ -12,7 +12,7 @@
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|PT+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -42,20 +42,24 @@
 	</header>
 
 	<main>
-		<div class="section">
+		<div class="section leftSide">
 			<div class="mainContainer">
 				<div class="row ">
-					<div class="col m6 s12">
-						<h1 class="header left orange-text">UdaBuddy</h1>
-						<h4 class="header col s12 left">A Platform for Udacity Students and Alumni</h4>
-						<h5 class="header col s12 left" style="font-family: 'Ubuntu', sans-serif;">Create, Share & Learn. Together !</h5>
+					<div class="col m12 s12">
+						<h1 class="left">UdaBuddy</h1>
+						<h4 class="left">A Platform for Udacity Students and Alumni</h4><br/><br/><br/>
+						<h5 class="left">Create, Share & Learn. Together !</h5>
 					 </div>
-					<div class="col s12 m6 center">
-						<div id="firebaseui-auth-container"></div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
+		<div class="section rightSide">
+			<div class=" col s12 m6 center">
+				<div id="firebaseui-auth-container"></div>
+			</div>
+		</div>
+		
 	</main>	
         <footer class="page-footer blue lighten-2 center">
           <div class="container">
