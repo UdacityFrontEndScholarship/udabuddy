@@ -1,0 +1,19 @@
+{
+  "name": "udabuddy",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/littlestar642/udabuddy-1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3",
+    "jquery": "^3.3.1",
+    "firebaseui": "^2.7.0"
+  }
+}

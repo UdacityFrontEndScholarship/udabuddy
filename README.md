@@ -1,5 +1,6 @@
 # Udabuddy
 To make a web app for Udacity Alumni interaction. 
+
 http://udabuddy.herokuapp.com/
 
 ## To run locally:
@@ -12,17 +13,58 @@ http://udabuddy.herokuapp.com/
 
 - `views`: This contains all the frontend files. Write your HTML code here.
 - `routes` - This defines various routes.
-- `public` - Contains various assets for the app.
-  - `stylesheets` - contains CSS files.
-  - `javascripts` - contains Javascript files.
-- `node_modules` - contains all the npm packages installed locally. Dont modify here.
-- `bin` - contains script to start the app.
-- `package.json` - general info about the project and node packages names.
-- `app.js` - the entry point into the app.
 
-## About Contributing
-1. Fork this repo and run locally.
-2. Decide which issue you want to work and make changes specific only to that issue.
-3. commit your changes and write a clear commit message. Eg. `Fix #12 - Change color of signup button`
-4. Send a Pull Request. ([How to send a pull request](https://yangsu.github.io/pull-request-tutorial/))
-5. The moderators will review your PR and merge it.
+
+###### App to connect Udacity Alumni and present Scholars
+
+## Prerequisites
+
+You will need the following things properly installed on your computer.
+
+* **[Git](https://git-scm.com/)**
+* **[Node.js](https://nodejs.org/)** *(node v9.2.1)* *(with NPM v5.5.1)*
+* **[Bower](https://bower.io/)** - `npm install -g bower`
+
+
+## Installation
+
+* `fork this repository`
+* `git clone <repository-url>` this repository
+* `cd udabuddy `
+* `npm install`
+* `bower install`
+
+
+## Running / Development
+
+* `node index` / `npm start`
+* Visit your app at [http://localhost:3000](http://localhost:3000).
+
+
+## Deployment from master:
+>   https://udbuddy.herokuapp.com/
+
+## Join the development:
+
+* Read [CONTRIBUTING.md](https://github.com/UdacityFrontEndScholarship/udabuddy/blob/master/CONTRIBUTING.md).
+* Before you start contributing, run the app on your local machine, get familiar with it and then check for bugs 
+
+or more features.
+* For any bug or for adding a feature you may open an issue.
+* If you would like to work on an issue, drop in a comment on the issue.
+
+
+## Directory Structure:
+
+- `views`: This contains all the frontend files. Write your HTML code here and save it with *.hbs* extension. See 
+
+homepage for reference.
+
+- `public` - Contains various assets for the app.
+  - `css` - contains CSS files.
+  - `js` - contains Javascript files.
+- `node_modules` - contains all the npm packages installed locally. Dont modify here.
+- `package.json` - general info about the project and node packages names.
+- `index.js` - the entry point into the app.
+
+

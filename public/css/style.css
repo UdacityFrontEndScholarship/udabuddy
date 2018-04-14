@@ -1,0 +1,63 @@
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+    flex: 1 0 auto;
+	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
+}
+
+.leftSide {
+	flex: 60%;
+}
+
+.rightSide {
+	flex: 40%;
+	background-color: #ffe;
+}
+  
+.icon-block {
+	padding: 0 15px;
+}
+
+.mainContainer {
+	width: 90%;
+	margin: 0 auto;
+	color: white;
+    text-shadow: 1px 1px #999;
+}
+
+.mainContainer h4{
+	margin-top: 50px;
+	font-family: 'PT Sans', sans-serif;
+
+}
+.mainContainer h5 {
+	font-family: 'Ubuntu', sans-serif;
+	margin-top: 50px;
+}
+
+#firebaseui-auth-container {
+	margin-top: 50px;
+}
+
+.nav2, .nav2 a {
+	color: #eee;
+    text-shadow: 1px 1px #999;
+}
+
+
+     
+/************** Mobile Optimizations
+************************************************************************************************* */
+
+@media screen and (max-width: 768px) {
+	.main {
+		flex-direction: column;
+	}
+	
+}
