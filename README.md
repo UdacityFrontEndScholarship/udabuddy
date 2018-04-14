@@ -1,7 +1,7 @@
 # Udabuddy
 To make a web app for Udacity Alumni interaction. 
 
-###### App to connect Udacity Alumnis and present Scholars
+###### App to connect Udacity Alumni and present Scholars
 
 ## Prerequisites
 
@@ -21,27 +21,30 @@ You will need the following things properly installed on your computer.
 * `bower install`
 
 
-
 ## Running / Development
 
-* `node index`
+* `node index` / `npm start`
 * Visit your app at [http://localhost:3000](http://localhost:3000).
 
 
 ## Deployment from master:
->   http://udabuddy.herokuapp.com/
+>   https://udbuddy.herokuapp.com/
 
 ## Join the development:
 
 * Read [CONTRIBUTING.md](https://github.com/UdacityFrontEndScholarship/udabuddy/blob/master/CONTRIBUTING.md).
-* Before you start contributing, run the app in your local machine, get familiar with it and then check for bugs or more features.
-* For any bug or for adding an feature you may open an issue.
-* If you would like to work on an issue, drop in a comment at the issue.
+* Before you start contributing, run the app on your local machine, get familiar with it and then check for bugs 
+
+or more features.
+* For any bug or for adding a feature you may open an issue.
+* If you would like to work on an issue, drop in a comment on the issue.
 
 
-## Directory Strcuture:
+## Directory Structure:
 
-- `views` : This contains all the frontend files. Write your html code here and save it with *.hbs* extension. See home page for reference.
+- `views`: This contains all the frontend files. Write your HTML code here and save it with *.hbs* extension. See 
+
+homepage for reference.
 - `public` - Contains various assets for the app.
   - `css` - contains CSS files.
   - `js` - contains Javascript files.
