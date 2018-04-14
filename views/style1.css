@@ -47,10 +47,10 @@ did not know what to call it so called it task manager casue you do basic tasks 
 /* Task buttons padding and styleing i am sorry for the horrible nameing convention  */
 
 .buttonPadding{ 
+	align-content: center;
 	background: white;
 	display: flex;
-	margin-left: 1%;
-	margin-top: 5%;
+	margin: 1%; 
 	padding: 50px; 
 	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35);
 }
@@ -95,4 +95,8 @@ wanted so i made my own card */
 i defined a CSS that can be used to break the content better then the br */
 .contentBreak{
 	margin-top: 5%;
+}
+
+.FilterContainer{
+	font-size: 15px;
 }
