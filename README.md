@@ -35,10 +35,8 @@ There are two main section of the webApp
 	        Pradeep @psrajput showcase page
 
 	  These are responsibe mods and co-mods you can directly contact them in any issue regarding a page.
-    Your PR in any one of this page will be assesed by the responsibe mod and merged if it is woth it.
+    Your PR in any one of this page will be assesed by the responsibe mod and merged if it is worth it.
 	  
-
-	
  
 
 ###### App to connect Udacity Alumni and present Scholars
