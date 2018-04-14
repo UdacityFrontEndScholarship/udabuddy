@@ -6,15 +6,18 @@ body {
 
 main {
     flex: 1 0 auto;
+    background-color: #ffffff;
   }
   
 .icon-block {
 	padding: 0 15px;
+
 }
 
 .mainContainer {
 	width: 90%;
 	margin: 0 auto;
+
 }
 
 #firebaseui-auth-container {
@@ -25,7 +28,31 @@ main {
 	color: #eee;
     text-shadow: 1px 1px #999;
 }
-
+nav {
+	background-color: #26a69a;
+}
+.main-text {
+	color: #26A69A;
+	font-family: Arial;
+	font-weight: bold;
+}
+.footer-copyright{
+	background-color: #26a69a !important;
+}
+.page-footer {
+	background-color: #ffffff;
+}
+.tagline {
+	/*white-space: nowrap;*/
+	font-size: 32px;
+	color: #757575;
+}
+.motto {
+	color: #757575;
+}
+.card-title {
+	color: #ffffff;
+}
 
      
 /************** Mobile Optimizations

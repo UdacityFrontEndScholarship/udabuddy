@@ -5,23 +5,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>UdaBuddy</title>
-  {{!-- <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- {{!-- <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
   <script src="/bower_components/firebaseui/dist/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="/bower_components/firebaseui/dist/firebaseui.css" /> --}}
+  <link type="text/css" rel="stylesheet" href="/bower_components/firebaseui/dist/firebaseui.css" /> --}} -->
 <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../public/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body class="light-blue lighten-5">
 
 	<header>
-		<nav class="light-blue lighten-1 navStyle" role="navigation">
+		<!-- <nav class="light-blue lighten-1 navStyle" role="navigation">
 			<div class="nav-wrapper container">
 				<a id="logo-container" href="#" class="brand-logo">UdaBuddy</a>
 				<ul class="right hide-on-med-and-down">
@@ -38,21 +38,64 @@
 					<i class="material-icons">menu</i>
 				</a>
 			</div>
-		</nav>
+		</nav> -->
+		<nav>
+    		<div class="nav-wrapper">
+      			<a href="#" class="brand-logo">UdaBuddy</a>
+      			<ul id="nav-mobile" class="right hide-on-med-and-down">
+        		<li><a href="sass.html">About</a></li>
+        		<li><a href="badges.html">Developers</a></li>
+        		<li><a href="collapsible.html">Blogs</a></li>
+      			</ul>
+    		</div>
+ 		</nav>
 	</header>
 
 	<main>
 		<div class="section">
 			<div class="mainContainer">
 				<div class="row ">
-					<div class="col m6 s12">
-						<h1 class="header left orange-text">UdaBuddy</h1>
-						<h4 class="header col s12 left">A Platform for Udacity Students and Alumni</h4>
-						<h5 class="header col s12 left" style="font-family: 'Ubuntu', sans-serif;">Create, Share & Learn. Together !</h5>
+					<div class="col m4">
+						<h1 class="header left main-text">UdaBuddy</h1>
+						<h4 class="header col s12 left tagline">Connecting Udacity Students and Alumni</h4>
+						<h5 class="header col s12 left motto" style="font-family: 'Ubuntu', sans-serif;">Create, Share & Learn Together !</h5>
 					 </div>
-					<div class="col s12 m6 center">
+					<!-- <div class="col s12 m6 center"> -->
+						<div class = "col m8 card-panel teal">
+						<div class = "col m5">
+						<h5 class = "card-title">Login</h5>
 						<div id="firebaseui-auth-container"></div>
-					</div>
+						</div>
+    					<form class="col m3">
+      					<div class="row">
+      					<h5 class = "card-title">New member? SignUp here</h5>
+        				<div class="input-field col m6">
+          				<input id="first_name" type="text" class="validate">
+          				<label for="first_name">First Name</label>
+        				</div>
+        				<div class="input-field col m6">
+          					<input id="last_name" type="text" class="validate">
+          					<label for="last_name">Last Name</label>
+        				</div>
+      					</div>
+      					<div class="row">
+        				<div class="input-field col m12">
+          					<input id="password" type="password" class="validate">
+         					<label for="password">Password</label>
+        				</div>
+      					</div>
+      					<div class="row">
+        				<div class="input-field col m12">
+          					<input id="email" type="email" class="validate">
+          					<label for="email">Email</label>
+        				</div>
+        				</div>
+        				<div class="row">
+        				<a class="waves-effect waves-light btn-small">Submit</a>
+        				</div>
+    					</form>
+    					</div>
+    					</div>
 				</div>
 			</div>
 		</div>
@@ -93,9 +136,9 @@
 		</div>
 	</footer> -->
 	
-        <footer class="page-footer blue lighten-2 center">
+        <footer class="page-footer center">
           <div class="container">
-            <div class="row nav2">
+            <!-- <div class="row nav2">
 				  <div class="col m3 s12">
 					<a href="#">
 					<b>About</b>
@@ -116,11 +159,11 @@
 					<b>Developers</b>
 				  </a>
 				  </div>
-            </div></div>
-          <div class="footer-copyright blue lighten-1">
+            </div></div> -->
+          <div class="footer-copyright">
             <div class="container center">
             Created By
-					<a class="black-text text-lighten-3" href="#">
+					<a class="grey-text darken-1" href="#">
 						<b>UdaBuddy Team</b>
 					</a>
 					<span id="copy">&copy;2018</span>
@@ -130,8 +173,8 @@
             
   <!--  Scripts-->
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/indexPage.js"></script>
+  <script src="../public/js/materialize.min.js"></script>
+  <script src="../public/js/indexPage.js"></script>
 
 </body>
 
