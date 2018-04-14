@@ -6,6 +6,7 @@ body {
 
 main {
     flex: 1 0 auto;
+	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
   }
   
 .icon-block {
@@ -15,6 +16,12 @@ main {
 .mainContainer {
 	width: 90%;
 	margin: 0 auto;
+	color: white;
+    text-shadow: 1px 1px #999;
+}
+
+.mainContainer h5 {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 #firebaseui-auth-container {
