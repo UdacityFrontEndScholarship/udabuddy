@@ -1,6 +1,42 @@
 # Udabuddy
 To make a web app for Udacity Alumni interaction. 
 
+# Workflow 
+ There are two main section of the webApp 
+	Landing Page -- contain pages you can check without login
+ 	  Landing/Login page
+ 	  About section (Giving details about the webAPP Udabuddy for refrence see twitter about page)
+	  Wall of fame (A page giving details about good work by our alumni or people at udacity, Like Sebastian Thrun)
+   	  Blog Page (A blog page by udabuddy people doing amazing work in any field of technology)
+	  Forum Page (directly as questions here rather enter udacity forums)
+ 	  Developers Page ( Comming soon)
+
+	Dashboard -- you will have access to this once you login divided into four sections FEED NAV DISCOVER ANALYSE
+ 	  
+	  Feed will have articles from users you like and polular in community
+	  Nav is the link to various pages outside and inside like showcase
+	  Discover this will give you suggestions about new user to like
+	  Analyse The best part this will give statics about where you stand in the community and among your friends. 
+	  
+	    Inside dashboard is showcase where you can build your profile and showcase your projects. This would be visible to other user.
+	    There would be message and connect option under each profiles
+
+
+# How to contribute
+	These are designated people :-
+		Rahul @oreanroy Landing and About page
+		Vamsi @Vamsi Manohar Wall of fame
+		Avinash @littlestar642 Blog page
+		Parteek @Prateek Forum page
+	        Pradeep @psrajput showcase page
+
+	These are responsibe mods and co-mods you can directly contact them in any issue regarding a page. Your PR in any one of this page will be 
+	assesed by the responsibe mod and merged if it is woth it.
+	  
+
+	
+ 
+
 ###### App to connect Udacity Alumni and present Scholars
 
 ## Prerequisites
