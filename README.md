@@ -7,27 +7,19 @@ There are two main section of the webApp
  
 	Landing Page -- contain pages you can check without login
   
- 	  Landing/Login page
-    
- 	  About section (Giving details about the webAPP Udabuddy for refrence see twitter about page)
-	  
-    Wall of fame (A page giving details about good work by our alumni or people at udacity, Like Sebastian Thrun)
-   	
-    Blog Page (A blog page by udabuddy people doing amazing work in any field of technology)
-	  
-    Forum Page (directly as questions here rather enter udacity forums)
- 	  
-    Developers Page ( Comming soon)
+ 	  Landing/Login page    
+ 	  **About section** (Giving details about the webAPP Udabuddy for refrence see twitter about page)
+    **Wall of fame** (A page giving details about good work by our alumni or people at udacity, Like Sebastian Thrun)
+    **Blog Page** (A blog page by udabuddy people doing amazing work in any field of technology)
+    **Forum Page** (directly as questions here rather enter udacity forums)
+    **Developers Page** ( Comming soon)
 
 	Dashboard -- you will have access to this once you login divided into four sections FEED NAV DISCOVER ANALYSE
- 	  
-	  Feed will have articles from users you like and polular in community
-	  
-    Nav is the link to various pages outside and inside like showcase
-	  
-    Discover this will give you suggestions about new user to like
-	  
-    Analyse The best part this will give statics about where you stand in the community and among your friends. 
+ 	 
+	  **Feed** will have articles from users you like and polular in communit 
+    **Nav** is the link to various pages outside and inside like showcase
+    **Discover** this will give you suggestions about new user to like
+    **Analyse** The best part this will give statics about where you stand in the community and among your friends. 
 	  
 	    Inside dashboard is showcase where you can build your profile and showcase your projects.
       This would be visible to other user.
