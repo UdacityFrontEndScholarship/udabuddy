@@ -1,6 +1,20 @@
 # Udabuddy
 To make a web app for Udacity Alumni interaction. 
 
+http://udabuddy.herokuapp.com/
+
+## To run locally:
+```
+1. fork this repo locally
+2. run npm install
+3. run npm start
+```
+## Directory Structure:
+
+- `views`: This contains all the frontend files. Write your HTML code here.
+- `routes` - This defines various routes.
+
+
 ###### App to connect Udacity Alumni and present Scholars
 
 ## Prerequisites
@@ -45,6 +59,7 @@ or more features.
 - `views`: This contains all the frontend files. Write your HTML code here and save it with *.hbs* extension. See 
 
 homepage for reference.
+
 - `public` - Contains various assets for the app.
   - `css` - contains CSS files.
   - `js` - contains Javascript files.
