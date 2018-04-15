@@ -10,10 +10,13 @@ body {
   }
 
 /* Shared login button google orean.css */
+.btnContainer{
+  text-align: center;
+}
 .loginBtn {
   box-sizing: border-box;
   position: relative;
-  /* width: 13em;  - apply for fixed size */
+  width: 13em;
   margin: 0.2em;
   padding: 0 15px 0 46px;
   border: none;
@@ -42,7 +45,6 @@ body {
 
 
 /* Facebook */
-/* Facebook */
 .loginBtn--facebook {
   background-color: #4C69BA;
   background-image: linear-gradient(#4C69BA, #3B55A0);
@@ -57,6 +59,7 @@ body {
 .loginBtn--facebook:focus {
   background-color: #5B7BD5;
   background-image: linear-gradient(#5B7BD5, #4864B1);
+  cursor: pointer;
 }
 
 
@@ -72,6 +75,7 @@ body {
 .loginBtn--google:hover,
 .loginBtn--google:focus {
   background: #E74B37;
+  cursor: pointer;
 }
 
 
