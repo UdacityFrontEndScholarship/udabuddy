@@ -15,6 +15,9 @@ app.get('/',(req,res)=>{
 app.get('/dashboard',(req,res)=>{
     res.render('dashboard');
 });
+app.get('/contactus',(req,res)=>{
+    res.render('contactus');
+});
 
 app.listen(port,()=>{
     console.log('Listening on port 3000');
