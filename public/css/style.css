@@ -10,15 +10,6 @@ main {
     flex: 1 0 auto;
 	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
 }
-
-.leftSide {
-	flex: 60%;
-}
-
-.rightSide {
-	flex: 40%;
-	background-color: #ffe;
-}
   
 .icon-block {
 	padding: 0 15px;
@@ -41,15 +32,47 @@ main {
 	margin-top: 50px;
 }
 
+.leftSide {
+	flex: 60%;
+	background-image: url("../media/udabuddy-img1.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+.leftSide background-img{
+	opacity: 0.1;
+}
+
+.rightSide {
+	flex: 40%;
+	background-color: #ffe;
+}
+
+#rightText1{
+	font-size: 30px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+#rightText2{
+	font-size: 22px;
+	font-family: 'Varela Round', sans-serif;
+}
+
 #firebaseui-auth-container {
-	margin-top: 50px;
 }
 
 .nav2, .nav2 a {
 	color: #eee;
     text-shadow: 1px 1px #999;
 }
+.footer-copyright{
+	height: 50px !important;
+}
 
+.footer-copyright .container .row {
+	padding-top: 15px !important;
+	}
 
      
 /************** Mobile Optimizations
@@ -58,6 +81,13 @@ main {
 @media screen and (max-width: 768px) {
 	.main {
 		flex-direction: column;
+	}
+	.footer-copyright{
+	height: 100% !important;
+}
+	
+	.copyright {
+		margin: 10px 0px 20px 0px;
 	}
 	
 }

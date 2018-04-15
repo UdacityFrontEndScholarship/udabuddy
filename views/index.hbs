@@ -12,7 +12,7 @@
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu|PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|PT+Sans|Do+Hyeon|Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -23,7 +23,7 @@
 	<header>
 		<nav class="light-blue lighten-1 navStyle" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="#" class="brand-logo">UdaBuddy</a>
+				<a id="logo-container" href="#" class="brand-logo"></a>
 				<ul class="right hide-on-med-and-down">
 				  <li>
 					<a href="#">Sign Up | Login</a>
@@ -45,17 +45,19 @@
 		<div class="section leftSide">
 			<div class="mainContainer">
 				<div class="row ">
-					<div class="col m12 s12">
-						<h1 class="left">UdaBuddy</h1>
-						<h4 class="left">A Platform for Udacity Students and Alumni</h4><br/><br/><br/>
-						<h5 class="left">Create, Share & Learn. Together !</h5>
+					<div class="col m12 s12 center">
+						<h1>UdaBuddy</h1><br>
+						<h4>A Platform for Udacity Students and Alumni</h4><br>
+						<h5>Create, Share & Learn. Together !</h5>
 					 </div>
 					
 				</div>
 			</div>
 		</div>
 		<div class="section rightSide">
-			<div class=" col s12 m6 center">
+			<div class=" col s12 m6 center"><br><br>
+				<div id="rightText1">See what’s developing right now</div><br><br>
+				<div id="rightText2">Join Udabuddy</div>
 				<div id="firebaseui-auth-container"></div>
 			</div>
 		</div>
@@ -64,34 +66,48 @@
         <footer class="page-footer blue lighten-2 center">
           <div class="container">
             <div class="row nav2">
-				  <div class="col m3 s12">
-					<a href="#">
-					<b>About</b>
-				  </a>
-				</div>
-				<div class="col m3 s12">
+				<div class="col m4 s12">
 				  <a href="#">
 					<b>Blog</b>
 				  </a>
 				</div>
-				<div class="col m3 s12">
+				<div class="col m4 s12">
 				  <a href="#">
-					<b>Terms</b>
+					<b>Wall of Fame</b>
 				  </a>
 				</div>
-				<div class="col m3 s12">
+				<div class="col m4 s12">
 				  <a href="#">
-					<b>Developers</b>
+					<b>Showcase</b>
 				  </a>
 				  </div>
             </div></div>
           <div class="footer-copyright blue lighten-1">
-            <div class="container center">
-            Created By
+            <div class="container">
+			<div class="row">
+			    <div class="col m6 s12 copyright">
+					Created By
 					<a class="black-text text-lighten-3" href="#">
-						<b>UdaBuddy Team</b>
+						<b> UdaBuddy Team</b>
 					</a>
-					<span id="copy">&copy;2018</span>
+					<span id="copy"> &copy;2018</span>
+				</div>
+					<div class="col m2 s12">
+						<a class="black-text text-lighten-3" href="#">
+							<b>About</b>
+						</a>
+					</div>
+					<div class="col m2 s12">
+						<a class="black-text text-lighten-3" href="#">
+							<b>Developers</b>
+						</a>
+					</div>
+					<div class="col m2 s12 ">
+						<a class="black-text text-lighten-3" href="#">
+							<b>Terms</b>
+						</a>
+					</div>
+				</div>
             </div>
           </div>
         </footer>
