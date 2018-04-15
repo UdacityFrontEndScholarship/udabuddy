@@ -3,7 +3,7 @@ To make a web app for Udacity Alumni interaction.
 
 # Workflow 
 
-There are two main section of the webApp 
+There are two main section of the webApp.
  
 ## Landing Page -- contain pages you can check without login
   
@@ -16,9 +16,9 @@ There are two main section of the webApp
 
 ## Dashboard -- you will have access to this once you login divided into four sections FEED NAV DISCOVER ANALYSE
  	 
-    Feed: Feed will have articles from users you like and popular in community
-    Nav: This is the link to various pages outside and inside like showcase
-    Discover: This will give you suggestions about new user to like
+    Feed: Feed will have articles from users you like and popular in community.
+    Nav: This is the link to various pages outside and inside like showcase.
+    Discover: This will give you suggestions about new user to like.
     Analyse The best part this will give statics about where you stand in the community and among your friends. 
 	  
 	    Inside dashboard is showcase where you can build your profile and showcase your projects.
