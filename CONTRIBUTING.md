@@ -11,7 +11,6 @@
   - NodeJS
   - ExpressJS
   - Socket.io
-  - Bootstrap
   - Materialize css
   - HTML5
   - CSS3
