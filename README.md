@@ -3,7 +3,7 @@ To make a web app for Udacity Alumni interaction.
 
 # Workflow 
 
-There are two main section of the webApp 
+There are two main section of the webApp.
  
 ## Landing Page -- contain pages you can check without login
   
@@ -16,14 +16,14 @@ There are two main section of the webApp
 
 ## Dashboard -- you will have access to this once you login divided into four sections FEED NAV DISCOVER ANALYSE
  	 
-    Feed will have articles from users you like and polular in communit 
-    Nav is the link to various pages outside and inside like showcase
-    Discover this will give you suggestions about new user to like
+    Feed: Feed will have articles from users you like and popular in community.
+    Nav: This is the link to various pages outside and inside like showcase.
+    Discover: This will give you suggestions about new user to like.
     Analyse The best part this will give statics about where you stand in the community and among your friends. 
 	  
 	    Inside dashboard is showcase where you can build your profile and showcase your projects.
-      This would be visible to other user.
-	    There would be message and connect option under each profiles
+      This would be visible to other users.
+	    There would be message and connect option under each profile.
 
 
 # How to contribute
@@ -35,10 +35,8 @@ There are two main section of the webApp
 	        Pradeep @psrajput showcase page
 
 	  These are responsibe mods and co-mods you can directly contact them in any issue regarding a page.
-    Your PR in any one of this page will be assesed by the responsibe mod and merged if it is woth it.
+    Your PR in any one of this page will be assesed by the responsibe mod and merged if it is worth it.
 	  
-
-	
  
 
 ###### App to connect Udacity Alumni and present Scholars

@@ -1,106 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>UdaBuddy</title>
-  {{!-- <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script src="/bower_components/firebaseui/dist/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="/bower_components/firebaseui/dist/firebaseui.css" /> --}}
-<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu|PT+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-</head>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Udacity Alumni network">
+      <meta name="robots" content="index, follow">
+       <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+      <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+      <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
 
-<body class="light-blue lighten-5">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-	<header>
-		<nav class="light-blue lighten-1 navStyle" role="navigation">
-			<div class="nav-wrapper container">
-				<a id="logo-container" href="#" class="brand-logo">UdaBuddy</a>
-				<ul class="right hide-on-med-and-down">
-				  <li>
-					<a href="#">Sign Up | Login</a>
-				  </li>
-				</ul>
-				<ul id="nav-mobile" class="sidenav">
-				  <li>
-					<a href="#">Sign Up | Login</a>
-				  </li>
-				</ul>
-				<a href="#" data-target="nav-mobile" class="sidenav-trigger">
-					<i class="material-icons">menu</i>
-				</a>
-			</div>
-		</nav>
-	</header>
-
-	<main>
-		<div class="section leftSide">
-			<div class="mainContainer">
-				<div class="row ">
-					<div class="col m12 s12">
-						<h1 class="left">UdaBuddy</h1>
-						<h4 class="left">A Platform for Udacity Students and Alumni</h4><br/><br/><br/>
-						<h5 class="left">Create, Share & Learn. Together !</h5>
-					 </div>
-					
-				</div>
-			</div>
-		</div>
-		<div class="section rightSide">
-			<div class=" col s12 m6 center">
-				<div id="firebaseui-auth-container"></div>
-			</div>
-		</div>
-		
-	</main>	
-        <footer class="page-footer blue lighten-2 center">
-          <div class="container">
-            <div class="row nav2">
-				  <div class="col m3 s12">
-					<a href="#">
-					<b>About</b>
-				  </a>
-				</div>
-				<div class="col m3 s12">
-				  <a href="#">
-					<b>Blog</b>
-				  </a>
-				</div>
-				<div class="col m3 s12">
-				  <a href="#">
-					<b>Terms</b>
-				  </a>
-				</div>
-				<div class="col m3 s12">
-				  <a href="#">
-					<b>Developers</b>
-				  </a>
-				  </div>
-            </div></div>
-          <div class="footer-copyright blue lighten-1">
-            <div class="container center">
-            Created By
-					<a class="black-text text-lighten-3" href="#">
-						<b>UdaBuddy Team</b>
-					</a>
-					<span id="copy">&copy;2018</span>
+    <body style="height: 100%; background-iag: url('/images/Ulogo1.png');">
+      <header></header>
+      <main class="" style="height: 100%; padding-bottom: 0px;">
+	     <div class="row" style="margin: 0px; height: 100%;">
+          <div class="col s12 m6 l6 left" style="background-color: #4682b4; min-height: 84vh; background-iag: url('/images/Ulogo1.png'); overflow: hidden; back">
+            <!-- Promo Content 1 goes here -->
+            
+            <span><div class="first_qoute quote " ><h4 style="color: white;"><i class="medium material-icons prefix" style="float: left;">group</i>Discover Udabuddy</h4></div></span>
+            <div class="second_quote quote"><h4 style="color: white;"><i class="medium material-icons prefix" style="float: left;">build</i>Build the next big thing</h4></div>
+            <div class="third_quote quote"><h4 style="color: white;"><i class="medium material-icons prefix" style="float: left;">mood</i>Meet awesome people at Udacity</h4></div>
+          </div>
+        <div class="col s12 m6 l6 valign-wrapper" style="background-color: ; min-height: 84vh; display: ; height: ; position: relative; overflow: hidden; width: ;">
+          <!-- Promo Content 2 goes here -->
+	       <div class="col s12 m12 l6 " style="margin: 0 auto; background-color: white; display: block; position: relative; float: none ; ">
+            
+              <form class="col s12 l12 m12">
+                <h5>Join Udabuddy</h5>
+                <div class="row">
+                  <div class="input-field col s12 l12 m12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Email / Login_id</label>
+                  </div>
+	             </div>
+	             <div class="row">
+                  <div class="input-field col s12 l12 m12">
+                    <i class="material-icons prefix">lock</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Password</label>
+                  </div>
+                </div>
+                <div class="rol col s6" style="float: right">
+                  <label style=''>
+                  <a class='pink-text' href='#!' style=""><b>Forgot Password?</b></a>
+				      </label>
+				    </div>
+                <br/>
+	             <div class="row " style="">
+	             <span style="disaply: inline;">
+                  <button class="loginBtn loginBtn--google">
+                   Login  with  Google 
+                  </button>
+                
+                 <!-- <button class="loginBtn loginBtn--facebook">
+                  Login with Facebook
+                  </button> -->
+               </span> 
+	             </div>
+              </form>
             </div>
           </div>
-        </footer>
-            
-  <!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="js/indexPage.js"></script>
-
-</body>
-
-</html>
+        </div>
+      </main>
+      <footer class="page-footer" style="margin-top:;">
+        <div class="container">
+          <div class="row" style="padding: 0px;">
+            <div class="col l2 m2 s12" style="padding: 0px">
+              <h8 class="white-text">About</h8>
+            </div>
+            <div class="col l2 m2 s12" style="padding: 0px">
+		        <h8 class="white-text">Blog</h8>
+            </div>
+	         <div class="col l2 m2 s12" style="padding: 0px">
+		       <h8 class="white-text">Terms</h8>
+            </div>
+	         <div class="col l2 m2 s12" style="padding: 0px">
+		        <h8 class="white-text">Developres</h8>
+            </div>
+            <div class="col l2 m2 s12" style="padding: 0px">
+		       <h8 class="white-text">Developres</h8>
+            </div>
+            <div class="col l2 m2 s12" style="padding: 0px">
+		       <h8 class="white-text">Developres</h8>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright" style="height: 15px;">
+          <div class="container" style="text-align: center;">
+	         <ul>
+              <li>Made with &hearts; by team!</li>
+	         </ul>
+          </div>
+        </div>
+      </footer>
+      <!--JavaScript at end of body for optimized loading-->
+       <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+       <script src="js/materialize.min.js"></script>
+    </body>
+  </html>
