@@ -10,7 +10,7 @@ main {
     flex: 1 0 auto;
 	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
 }
-  
+
 .icon-block {
 	padding: 0 15px;
 }
@@ -62,19 +62,11 @@ main {
 #firebaseui-auth-container {
 }
 
-.nav2, .nav2 a {
-	color: #eee;
-    text-shadow: 1px 1px #999;
-}
-.footer-copyright{
-	height: 50px !important;
+.teamStyle {
+	font-family: 'Gugi', cursive;
 }
 
-.footer-copyright .container .row {
-	padding-top: 15px !important;
-	}
 
-     
 /************** Mobile Optimizations
 ************************************************************************************************* */
 
@@ -82,12 +74,5 @@ main {
 	.main {
 		flex-direction: column;
 	}
-	.footer-copyright{
-	height: 100% !important;
-}
-	
-	.copyright {
-		margin: 10px 0px 20px 0px;
-	}
-	
+
 }
