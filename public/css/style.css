@@ -4,6 +4,8 @@ body {
     flex-direction: column;
 }
 
+/* ----- Main Section -----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */
 main {
 	display: flex;
 	flex-wrap: wrap;
@@ -15,38 +17,26 @@ main {
 	padding: 0 15px;
 }
 
-.mainContainer {
-	width: 90%;
-	margin: 0 auto;
-	color: white;
+#leftContainer {
+	flex: 60%;
+	background: url("/media/udabuddy-img.png") no-repeat center;
+	background-size: contain;
+	color: #f9f9f9;
     text-shadow: 1px 1px #999;
 }
 
-.mainContainer h4{
+#leftContainer h4{
 	margin-top: 50px;
-	font-family: 'PT Sans', sans-serif;
-
+	font-family: 'PT Sans', sans-serif;	
 }
-.mainContainer h5 {
+
+#leftContainer h4{
 	font-family: 'Ubuntu', sans-serif;
-	margin-top: 50px;
 }
 
-.leftSide {
-	flex: 60%;
-	background-image: url("../media/udabuddy-img1.png");
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:center;
-}
-
-.leftSide background-img{
-	opacity: 0.1;
-}
-
-.rightSide {
+#rightContainer {
 	flex: 40%;
-	background-color: #ffe;
+	background-color: #fdfdfd;
 }
 
 #rightText1{
@@ -59,20 +49,26 @@ main {
 	font-family: 'Varela Round', sans-serif;
 }
 
-#firebaseui-auth-container {
-}
-
-.teamStyle {
+/* ----- footer Section ----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------- */
+#teamStyle {
 	font-family: 'Gugi', cursive;
 }
 
 
-/************** Mobile Optimizations
-************************************************************************************************* */
+/* ----- Mobile Optimizations ---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
 	.main {
 		flex-direction: column;
 	}
-
+	
+	#copyright {
+		margin-bottom: 20px;
+	}
+	
+	.miniContainer {
+		width: 90% !important;
+	}
 }
