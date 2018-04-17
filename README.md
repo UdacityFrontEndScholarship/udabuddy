@@ -1,4 +1,5 @@
-# Udabuddy
+![](https://user-images.githubusercontent.com/27431066/38867057-815c3ee8-4260-11e8-995f-77e7d9035947.png)
+
 To make a web app for Udacity Alumni interaction. 
 
 # Workflow 
