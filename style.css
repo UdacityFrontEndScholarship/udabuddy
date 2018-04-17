@@ -1,0 +1,123 @@
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+    flex: 1 0 auto;
+   background:linear-gradient(145deg, #ef886f ,#9575b1, #437b84);
+  padding:30px;
+}
+
+.icon-block {
+	padding: 0 15px;
+}
+
+.mainContainer {
+	width: 90%;
+	margin: 0 auto;
+	color: white;
+    text-shadow: 1px 1px #999;
+}
+
+.mainContainer h1{
+
+	text-shadow: 3px 2px 0px #f2b0d8;
+	/*color: #ece3ed;*/
+	color:#901c96;
+	margin-top:40px;
+	font-size: 90px;
+}
+
+.mainContainer h4{
+	margin-top: 50px;
+	color: #ecb2f3;
+	font-size: 25px;
+	font-weight: 100;
+	font-style:italic;
+	/*font-family: 'Hi Melody', cursive;*/
+	font-family: 'Kaushan Script', cursive;
+
+
+}
+.mainContainer h5 {
+	margin-top: 50px;
+	color:  #ecb2f3 ; 
+	font-style: italic;
+	margin:0px;
+
+}
+
+.leftSide {
+	flex: 60%;
+	padding-left:0px;
+	background-image: url("../media/udabuddy-img1.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+	font-family: 'Josefin Slab', serif;
+	font-color: red;
+
+}
+
+
+.leftSide background-img{
+	opacity: 0.1;
+}
+
+.rightSide {
+	flex: 40%;
+}
+
+#rightText1{
+	font-size: 30px;
+	font-family: 'Do Hyeon', sans-serif;
+	color:#f1c9e1;  
+	font-style: italic;
+	opacity:0.5;
+}
+
+#rightText2{
+	font-size: 22px;
+	font-family: 'Varela Round', sans-serif;
+	background-color:#d0a7c6;
+	border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+}
+
+
+.firebaseui-idp-list > .firebaseui-list-item {
+
+	margin-bottom: 0px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.firebaseui-idp-button{
+
+	border-radius: 10px 10px 10px 10px;
+}
+
+.teamStyle {
+	font-family: 'Gugi', cursive;
+}
+
+.blue.lighten-2{
+
+background-color: #849dab !important;} 
+
+.black-text{
+
+	color:#fff !important;
+}
+
+/************** Mobile Optimizations
+************************************************************************************************* */
+
+@media screen and (max-width: 768px) {
+	.main {
+		flex-direction: column;
+	}
+
+}
