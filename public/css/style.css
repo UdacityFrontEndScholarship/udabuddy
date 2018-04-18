@@ -4,8 +4,6 @@ body {
     flex-direction: column;
 }
 
-/* ----- Main Section -----------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------- */
 main {
 	display: flex;
 	flex-wrap: wrap;
@@ -13,62 +11,53 @@ main {
 	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
 }
 
+.leftSide {
+	flex: 60%;
+}
+
+.rightSide {
+	flex: 40%;
+	background-color: #ffe;
+}
+  
 .icon-block {
 	padding: 0 15px;
 }
 
-#leftContainer {
-	flex: 60%;
-	background: url("/media/udabuddy-img.png") no-repeat center;
-	background-size: contain;
-	color: #f9f9f9;
+.mainContainer {
+	width: 90%;
+	margin: 0 auto;
+	color: white;
     text-shadow: 1px 1px #999;
 }
 
-#leftContainer h4{
+.mainContainer h4{
 	margin-top: 50px;
-	font-family: 'PT Sans', sans-serif;	
-}
+	font-family: 'PT Sans', sans-serif;
 
-#leftContainer h4{
+}
+.mainContainer h5 {
 	font-family: 'Ubuntu', sans-serif;
+	margin-top: 50px;
 }
 
-#rightContainer {
-	flex: 40%;
-	background-color: #fdfdfd;
+#firebaseui-auth-container {
+	margin-top: 50px;
 }
 
-#rightText1{
-	font-size: 30px;
-	font-family: 'Do Hyeon', sans-serif;
-}
-
-#rightText2{
-	font-size: 22px;
-	font-family: 'Varela Round', sans-serif;
-}
-
-/* ----- footer Section ----------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------- */
-#teamStyle {
-	font-family: 'Gugi', cursive;
+.nav2, .nav2 a {
+	color: #eee;
+    text-shadow: 1px 1px #999;
 }
 
 
-/* ----- Mobile Optimizations ---------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------- */
+     
+/************** Mobile Optimizations
+************************************************************************************************* */
 
 @media screen and (max-width: 768px) {
 	.main {
 		flex-direction: column;
 	}
 	
-	#copyright {
-		margin-bottom: 20px;
-	}
-	
-	.miniContainer {
-		width: 90% !important;
-	}
 }
