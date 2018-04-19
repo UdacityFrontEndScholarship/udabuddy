@@ -4,104 +4,73 @@ body {
     flex-direction: column;
 }
 
+/* ----- Main Section -----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */
 main {
+	display: flex;
+	flex-wrap: wrap;
     flex: 1 0 auto;
-    background-color: #ffffff;
-  }
-  
+	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
+}
+
 .icon-block {
 	padding: 0 15px;
-
 }
 
-.mainContainer {
-	width: 90%;
-	margin: 0 auto;
-
-}
-
-#firebaseui-auth-container {
-	margin-top: 50px;
-}
-
-.nav2, .nav2 a {
-	color: #eee;
+#leftContainer {
+	flex: 60%;
+	background: url("/media/udabuddy-img.png") no-repeat center;
+	background-size: contain;
+	color: #f9f9f9;
     text-shadow: 1px 1px #999;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  }
-
-  main {
-    flex: 1 0 0;
-  }
-
-/* Shared login button google orean.css */
-.loginBtn {
-  box-sizing: border-box;
-  position: relative;
-  /* width: 13em;  - apply for fixed size */
-  margin: 0.2em;
-  padding: 0 15px 0 46px;
-  border: none;
-  text-align: left;
-  line-height: 34px;
-  white-space: nowrap;
-  border-radius: 0.2em;
-  font-size: 16px;
-  color: #FFF;
-}
-.loginBtn:before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 34px;
-  height: 100%;
-}
-.loginBtn:focus {
-  outline: none;
-}
-.loginBtn:active {
-  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
 }
 
+#leftContainer h4{
+	margin-top: 50px;
+	font-family: 'PT Sans', sans-serif;
+}
 
-/* Facebook */
-/* Facebook */
-.loginBtn--facebook {
-  background-color: #4C69BA;
-  background-image: linear-gradient(#4C69BA, #3B55A0);
-  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
-  text-shadow: 0 -1px 0 #354C8C;
+#leftContainer h4{
+	font-family: 'Ubuntu', sans-serif;
 }
-.loginBtn--facebook:before {
-  border-right: #364e92 1px solid;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+
+#rightContainer {
+	flex: 40%;
+	background-color: #fdfdfd;
 }
-nav {
-	background-color: #26a69a;
+
+#rightText1{
+	font-size: 30px;
+	font-family: 'Do Hyeon', sans-serif;
 }
-.main-text {
-	color: #26A69A;
-	font-family: Arial;
-	font-weight: bold;
+
+#rightText2{
+	font-size: 22px;
+	font-family: 'Varela Round', sans-serif;
 }
-/*<<<<<<< HEAD
-.footer-copyright{
-	background-color: #26a69a !important;
-=======*/
-.loginBtn--google:before {
-  border-right: #BB3F30 1px solid;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
-/*>>>>>>> b4794d0609e9708a8d0b6da465098e81e8c4069b
+
+/* Adding box and style to the sign in container */
+.sign-in-container{
+	    height: 400px;
+      width: 300px;
+      box-shadow: 5px 5px 0px 0px rgba(216,216,216,0.5);
+      border: 1px solid #d8d8d8;
+      padding: 15px 15px 15px 15px ;
+      margin:auto ;
 }
-.page-footer {
-	background-color: #ffffff;
+
+/* Adding style to the heading of the sign in container */
+blockquote{
+	margin:20px 0;
+	border-left:6px solid  #64b5f6;
+	text-align:left;
 }
-<<<<<<< HEAD*/
+
+/* ----- footer Section ----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------- */
+#teamStyle {
+	font-family: 'Gugi', cursive;
+}
 .tagline {
 	/*white-space: nowrap;*/
 	font-size: 32px;
@@ -129,19 +98,19 @@ nav {
 	} */
 
 
-  .quote {
-	pading: 10px;
-	margin: 8%;
-	font-family: arial;
-	text-align: center;
+/* ----- Mobile Optimizations ---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------- */
 
-   }
-.first_qoute{
-	margin-top: 20vh;
-    }
-.left{
-	background-image: url("../media/Ulogo1.png");
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:center;
+@media screen and (max-width: 768px) {
+	.main {
+		flex-direction: column;
+	}
+
+	#copyright {
+		margin-bottom: 20px;
+	}
+
+	.miniContainer {
+		width: 90% !important;
+	}
 }

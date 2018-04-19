@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>UdaBuddy</title>
+    {{!--
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="/bower_components/firebaseui/dist/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="/bower_components/firebaseui/dist/firebaseui.css" /> --}}
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body class="light-blue lighten-5">
+
+    <header>
+        <nav class="light-blue lighten-1 navStyle" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo">UdaBuddy</a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">Sign Up | Login</a>
+                    </li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li>
+                        <a href="#">Sign Up | Login</a>
+                    </li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="grey lighten-5">
+        <div class="profile">
+            <h3 class="profile-heading center-align">PROFILE</h3>
+
+            <div class="profile-content-wrapper">
+                <ul class="tabs">
+                    <li class="tab">
+                        <a class="active" href="#basic-form">Basic</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#work">Work &amp; Education</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#account">Account</a>
+                    </li>
+                </ul>
+
+                <form action="#" id="basic-form">
+                    <img src="media/dummy-profile-pic.png" class="circle profile-photo" alt="">
+
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file" accept="image/*">
+                        </div>
+
+                        <div class="file-path-wrapper">
+                            <input class="file-path" type="text" placeholder="Upload Profile Photo">
+                        </div>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Name</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="role-container">
+                        <p class="grey-text">Role</p>
+
+                        <label class="role-option">
+                            <input class="with-gap" name="role" type="radio" checked>
+                            <span>Alumni</span>
+                        </label>
+
+                        <label class="role-option">
+                            <input class="with-gap" name="role" type="radio">
+                            <span>Student</span>
+                        </label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="organisation" type="text" class="validate">
+                        <label for="organisation">Organisation</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="location" type="text" class="validate">
+                        <label for="location">Location</label>
+                    </div>
+
+                    <div class="input-field">
+                        <textarea id="about" class="materialize-textarea validate" rows="3"></textarea>
+                        <label for="about">About Yourself</label>
+                    </div>
+
+                    <div class="center-align">
+                        <button type="button" class="btn btn-large waves-effect">Save Information</button>
+                    </div>
+                </form>
+
+                <div id="work">
+                    <div class="row">
+                    	<h5 class="left">Education</h5>
+                    	<a href="#modal-form" class="modal-trigger"><i class="material-icons right teal-text add-button">add</i></a>
+                    	<div id="modal-form" class="modal">
+						    <div class="modal-content">
+						      <i class="material-icons right teal-text modal-close">close</i>
+						      <h4>Add Education Details</h4>
+						      <div class="container-fluid">
+						      	<form>
+						      		<div class="row">
+						      			<div class="input-field col s12 m12 l12 xl12">
+								          <input id="institute" type="text" class="validate">
+								          <label for="institute">Institute Name</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="degree" type="text" class="validate">
+								          <label for="degree">Degree</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="specialization" type="text" class="validate">
+								          <label for="specialization">Specialization</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="start_date" placeholder="mm/yyyy" type="date">
+                                            <label class="active" for="start_date">Start Date</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="end_date" type="date"  placeholder="mm/yyyy">
+                                          <label class="active" for="end_date">End Date</label>
+								        </div>
+						      		</div>
+						      		<div class="row center-align">
+						      			<button class="btn modal-close teal">Add<i class="material-icons right modal-close">send</i></button>
+						      		</div>
+						      	</form>
+						      </div>
+						    </div>
+						  </div>
+                    	<div class="col s12">
+                    		<div class="card-panel hoverable cards">
+                    			<a href="#"><i class="material-icons right teal-text">create</i></a>
+                    			<h6>Kalyani Govevrnment engineering college</h6>
+                    			<ul class="details">
+                    				<li><span>Degree: </span>B.tech</li>
+                    				<li><span>Year of passing: </span>2015</li>
+                    			</ul>
+                    		</div>
+                    		<div class="card-panel hoverable cards">
+                    			<a href="#"><i class="material-icons right teal-text">create</i></a>
+                    			<h6>XYZ</h6>
+                    			<ul class="details">
+                    				<li><span>Degree: </span>PhD</li>
+                    				<li><span>Year of passing: </span>2018</li>
+                    			</ul>
+                    		</div>
+                    	</div>
+                    </div>
+                    <div class="row">
+                        <h5 class="left">Work Experience</h5>
+                        <a href="#modal1" class="modal-trigger"><i class="material-icons right teal-text add-button">add</i></a>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                              <i class="material-icons right modal-close">close</i>
+                              <h4>Add Experience Details</h4>
+                              <div class="container-fluid">
+                                <form>
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <input id="institute" type="text" class="validate">
+                                          <label for="institute">Company Name</label>
+                                        </div>
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <input id="degree" type="text" class="validate">
+                                          <label for="degree">Role</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s12 m6 l6 xl6">
+                                          <input id="from" type="date" class="validate">
+                                          <label for="from">Start Date</label>
+                                        </div>
+                                        <div class="input-field col s12 m6 l6 xl6">
+                                          <input id="end" type="date" class="validate">
+                                          <label for="end">End Date</label>
+                                        </div>
+                                    </div>
+                                    <div class="row center-align">
+                                        <button class="btn modal-close teal">Add<i class="material-icons right modal-close">send</i></button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col s12">
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6>ABC company</h6>
+                                <ul class="details">
+                                    <li><span>Role: </span>Manager</li>
+                                    <li><span>Since: </span>2015</li>
+                                </ul>
+                            </div>
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6> PQR Private ltd</h6>
+                                <ul class="details">
+                                    <li><span>Role: </span>dummy</li>
+                                    <li><span>Since: </span>2018</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h5 class="left">Achievements</h5>
+                        <a href="#modal2" class="modal-trigger"><i class="material-icons right teal-text add-button">add</i></a>
+                        <div id="modal2" class="modal">
+                            <div class="modal-content">
+                              <i class="material-icons right teal-text modal-close">close</i>
+                              <h4>Add Achievements</h4>
+                              <div class="container-fluid">
+                                <form>
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <input id="institute" type="text" class="validate">
+                                          <label for="institute">Title</label>
+                                        </div>
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <textarea id="description" class="materialize-textarea"></textarea>
+                                          <label for="description">Description</label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row center-align">
+                                        <button class="btn modal-close teal">Add<i class="material-icons right modal-close">send</i></button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col s12">
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6>Dummy title1</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nunc sagittis, rutrum metus in, tempus felis. Suspendisse mollis ac augue vel imperdiet.</p>
+                            </div>
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6>Dummy title 2</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nunc sagittis, rutrum metus in, tempus felis. Suspendisse mollis ac augue vel imperdiet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="account">
+                    <h5 class="center-align">Account Info Here</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer blue lighten-2 center">
+        <div class="container">
+            <div class="row nav2">
+                <div class="col m3 s12">
+                    <a href="#">
+                        <b>About</b>
+                    </a>
+                </div>
+                <div class="col m3 s12">
+                    <a href="#">
+                        <b>Blog</b>
+                    </a>
+                </div>
+                <div class="col m3 s12">
+                    <a href="#">
+                        <b>Terms</b>
+                    </a>
+                </div>
+                <div class="col m3 s12">
+                    <a href="#">
+                        <b>Developers</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue lighten-1">
+            <div class="container center">
+                Created By
+                <a class="black-text text-lighten-3" href="#">
+                    <b>UdaBuddy Team</b>
+                </a>
+                <span id="copy">&copy;2018</span>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/indexPage.js"></script>
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

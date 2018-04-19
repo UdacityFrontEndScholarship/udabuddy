@@ -1,0 +1,83 @@
+.profile {
+  margin: 0 auto;
+}
+
+.profile-heading {
+  font-size: 1.6rem;
+  margin-top: 35px;
+  color: white;
+}
+
+.profile-content-wrapper {
+  width: 600px;
+  max-width: 94vw;
+  margin: 25px auto 40px;
+  background: white;
+  padding: 30px 18px 35px;
+  border-top: 4px solid #26a69a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 601px) {
+  .profile-content-wrapper {
+    padding: 40px 35px 45px;
+  }
+}
+
+.tabs {
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.tabs .tab a {
+  font-size: 3.5vmin;
+  font-weight: 500;
+}
+
+@media (min-width: 480px) {
+  .tabs .tab a {
+    font-size: 16px;
+  }
+}
+
+.tabs .tab a {
+  color: rgba(38, 166, 154, 0.7);
+}
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: transparent;
+  color: #26a69a;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: rgba(38, 166, 154, 0.08);
+}
+.tabs .indicator {
+  background-color: #26a69a;
+}
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 25px;
+}
+
+.role-container {
+  margin-bottom: 18px;
+}
+
+.role-option {
+  margin-right: 20px;
+}
+/*work and education styles*/
+.add-button {
+  margin: 15px;
+}
+.cards{
+  padding: 15px;
+}
+.details{
+  margin: 0px;
+}
+/*worl education ends here*/
