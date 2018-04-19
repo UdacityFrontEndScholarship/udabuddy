@@ -119,8 +119,159 @@
                 </form>
 
                 <div id="work">
-                    <h5 class="center-align">Work And Education Info Here</h5>
+                    <div class="row">
+                    	<h5 class="left">Education</h5>
+                    	<a href="#modal-form" class="modal-trigger"><i class="material-icons right teal-text add-button">add</i></a>
+                    	<div id="modal-form" class="modal">
+						    <div class="modal-content">
+						      <i class="material-icons right teal-text modal-close">close</i>
+						      <h4>Add Education Details</h4>
+						      <div class="container-fluid">
+						      	<form>
+						      		<div class="row">
+						      			<div class="input-field col s12 m12 l12 xl12">
+								          <input id="institute" type="text" class="validate">
+								          <label for="institute">Institute Name</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="degree" type="text" class="validate">
+								          <label for="degree">Degree</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="specialization" type="text" class="validate">
+								          <label for="specialization">Specialization</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="start_date" placeholder="mm/yyyy" type="date">
+                                            <label class="active" for="start_date">Start Date</label>
+								        </div>
+								        <div class="input-field col s12 m6 l6 xl6">
+								          <input id="end_date" type="date"  placeholder="mm/yyyy">
+                                          <label class="active" for="end_date">End Date</label>
+								        </div>
+						      		</div>
+						      		<div class="row center-align">
+						      			<button class="btn modal-close teal">Add<i class="material-icons right modal-close">send</i></button>
+						      		</div>
+						      	</form>
+						      </div>
+						    </div>
+						  </div>
+                    	<div class="col s12">
+                    		<div class="card-panel hoverable cards">
+                    			<a href="#"><i class="material-icons right teal-text">create</i></a>
+                    			<h6>Kalyani Govevrnment engineering college</h6>
+                    			<ul class="details">
+                    				<li><span>Degree: </span>B.tech</li>
+                    				<li><span>Year of passing: </span>2015</li>
+                    			</ul>
+                    		</div>
+                    		<div class="card-panel hoverable cards">
+                    			<a href="#"><i class="material-icons right teal-text">create</i></a>
+                    			<h6>XYZ</h6>
+                    			<ul class="details">
+                    				<li><span>Degree: </span>PhD</li>
+                    				<li><span>Year of passing: </span>2018</li>
+                    			</ul>
+                    		</div>
+                    	</div>
+                    </div>
+                    <div class="row">
+                        <h5 class="left">Work Experience</h5>
+                        <a href="#modal1" class="modal-trigger"><i class="material-icons right teal-text add-button">add</i></a>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                              <i class="material-icons right modal-close">close</i>
+                              <h4>Add Experience Details</h4>
+                              <div class="container-fluid">
+                                <form>
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <input id="institute" type="text" class="validate">
+                                          <label for="institute">Company Name</label>
+                                        </div>
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <input id="degree" type="text" class="validate">
+                                          <label for="degree">Role</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s12 m6 l6 xl6">
+                                          <input id="from" type="date" class="validate">
+                                          <label for="from">Start Date</label>
+                                        </div>
+                                        <div class="input-field col s12 m6 l6 xl6">
+                                          <input id="end" type="date" class="validate">
+                                          <label for="end">End Date</label>
+                                        </div>
+                                    </div>
+                                    <div class="row center-align">
+                                        <button class="btn modal-close teal">Add<i class="material-icons right modal-close">send</i></button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col s12">
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6>ABC company</h6>
+                                <ul class="details">
+                                    <li><span>Role: </span>Manager</li>
+                                    <li><span>Since: </span>2015</li>
+                                </ul>
+                            </div>
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6> PQR Private ltd</h6>
+                                <ul class="details">
+                                    <li><span>Role: </span>dummy</li>
+                                    <li><span>Since: </span>2018</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h5 class="left">Achievements</h5>
+                        <a href="#modal2" class="modal-trigger"><i class="material-icons right teal-text add-button">add</i></a>
+                        <div id="modal2" class="modal">
+                            <div class="modal-content">
+                              <i class="material-icons right teal-text modal-close">close</i>
+                              <h4>Add Achievements</h4>
+                              <div class="container-fluid">
+                                <form>
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <input id="institute" type="text" class="validate">
+                                          <label for="institute">Title</label>
+                                        </div>
+                                        <div class="input-field col s12 m12 l12 xl12">
+                                          <textarea id="description" class="materialize-textarea"></textarea>
+                                          <label for="description">Description</label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row center-align">
+                                        <button class="btn modal-close teal">Add<i class="material-icons right modal-close">send</i></button>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col s12">
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6>Dummy title1</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nunc sagittis, rutrum metus in, tempus felis. Suspendisse mollis ac augue vel imperdiet.</p>
+                            </div>
+                            <div class="card-panel hoverable cards">
+                                <a href="#"><i class="material-icons teal-text right">create</i></a>
+                                <h6>Dummy title 2</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nunc sagittis, rutrum metus in, tempus felis. Suspendisse mollis ac augue vel imperdiet.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
 
                 <div id="account">
                     <h5 class="center-align">Account Info Here</h5>
