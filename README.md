@@ -4,27 +4,27 @@ To make a web app for Udacity Alumni interaction.
 
 # Workflow 
 
-There are two main section of the webApp.
+There are two main section of the WebApp.
  
-## Landing Page -- contains info that you can check without login
+## Landing Page -- Contains info that you can check without login
   
     Landing/Login page     
-    About section (Giving details about the webAPP Udabuddy, for reference see twitter about page)
-    Wall of fame (A page displaying works of our alumni or people at Udacity, Like Sebastian Thrun)
+    About section (Giving details about the WebAPP Udabuddy, for reference see twitter about page)
+    Wall of fame (A page displaying works of Alumni or people at Udacity, Like Sebastian Thrun)
     Blog Page (A blog page by Udabuddy users with posts about their amazing work in any field of technology)
     Forum Page (directly ask questions here rather enter udacity forums)
     Developers Page ( Comming soon)
 
-## Dashboard -- user dashboard accessible once you logged in; this is divided into four sections : FEED, NAV, DISCOVER, ANALYSE
+## Dashboard -- Accessible once you are logged in and is divided into four sections : FEED, NAV, DISCOVER, ANALYSE
  	 
     Feed    : Feed will have articles from users you like and popular in community.
     Nav     : This is the link to various pages outside and inside like showcase.
     Discover: This will give you suggestions about new user and like them to get feeds.
     Analyse : This provides statics about where you stand in the community and among your friends. 
 	  
-	    Inside the dashboard a section called 'Showcase' is provided to build your profile and showcase your projects.
-      This would be visible to other users.
-	    There would be a message and connect option under each profile.
+	  Inside the dashboard a section called 'Showcase' is provided to build users profile and showcase their projects.
+    This would be visible to other users.
+	  There would be a message and connect option under each profile.
 
 
 # How to contribute
@@ -74,7 +74,7 @@ You will need the following things properly installed on your computer.
 * Read [CONTRIBUTING.md](https://github.com/UdacityFrontEndScholarship/udabuddy/blob/master/CONTRIBUTING.md).
 * Before you start contributing, run the app on your local machine, get familiar with it and then check for bugs 
 or more features.
-* If you find any bug or want to add a new feature you have to open an new issue.
+* If you find any bug or want to add a new feature you have to open a new issue.
 * If you would like to work on an existing issue, drop in a comment on the issue.
 
 
