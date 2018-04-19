@@ -8,10 +8,7 @@ app.set('view engine', 'hbs');
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'media')));
-<<<<<<< HEAD
 
-=======
->>>>>>> d5847cf... dashboard updated with basic ui
 
 app.get('/',(req,res)=>{
     res.render('index');

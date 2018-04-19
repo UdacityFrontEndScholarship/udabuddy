@@ -21,22 +21,7 @@ var config = {
 
 
 
-<<<<<<< HEAD
-=======
-  // // Initialize Firebase
-  // var config = {
-  //   apiKey: "AIzaSyCsDJB4t23I_O0NGf9j49IBK86JdebzMlM",
-  //   authDomain: "udabuddy-c7ab1.firebaseapp.com",
-  //   databaseURL: "https://udabuddy-c7ab1.firebaseio.com",
-  //   projectId: "udabuddy-c7ab1",
-  //   storageBucket: "",
-  //   messagingSenderId: "750838584343"
-  // };
-  // firebase.initializeApp(config);
 
-
-
->>>>>>> d5847cf... dashboard updated with basic ui
 initApp = function() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
@@ -70,7 +55,6 @@ logOut.addEventListener('click', () => {
 });
 
 
-<<<<<<< HEAD
 var clk_resources = document.querySelector('#resources');
 clk_resources.addEventListener('click', function(){
   window.location.replace('/resources');
@@ -83,8 +67,6 @@ clk_profile.addEventListener('click', function(){
 
 
 
-=======
->>>>>>> d5847cf... dashboard updated with basic ui
 $(document).ready(function(){
   $(".dropdown-trigger").dropdown();
   $('.collapsible').collapsible();
