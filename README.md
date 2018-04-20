@@ -47,7 +47,7 @@ There are two main section of the WebApp.
 You will need the following things properly installed on your computer.
 
 * **[Git](https://git-scm.com/)**
-* **[Node.js](https://nodejs.org/)** *(node v9.2.1)* *(with NPM v5.5.1)*
+* **[Node.js](https://nodejs.org/)** *(node > v6.x.x)* *(with NPM v5.5.1)*
 * **[Bower](https://bower.io/)** - `npm install -g bower`
 
 
