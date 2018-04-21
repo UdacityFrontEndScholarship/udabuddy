@@ -24,6 +24,9 @@ app.get('/resources',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about');
 });
+app.get('*',(req,res)=>{
+    res.render('404');
+});
 app.listen(port,()=>{
     console.log('Listening on port 3000');
 });
