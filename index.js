@@ -21,6 +21,9 @@ app.get('/profile',(req,res)=>{
 app.get('/resources',(req,res)=>{
     res.render('resources');
 });
+app.get('/about',(req,res)=>{
+    res.render('about');
+});
 app.listen(port,()=>{
     console.log('Listening on port 3000');
 });
