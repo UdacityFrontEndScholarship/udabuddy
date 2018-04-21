@@ -45,6 +45,23 @@ main {
 	font-family: 'Varela Round', sans-serif;
 }
 
+/* Adding box and style to the sign in container */
+.sign-in-container{
+	    height: 400px;
+      width: 300px;
+      box-shadow: 5px 5px 0px 0px rgba(216,216,216,0.5);
+      border: 1px solid #d8d8d8;
+      padding: 15px 15px 15px 15px ;
+      margin:auto ;
+}
+
+/* Adding style to the heading of the sign in container */
+blockquote{
+	margin:20px 0;
+	border-left:6px solid  #64b5f6;
+	text-align:left;
+}
+
 /* ----- footer Section ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------- */
 #teamStyle {
