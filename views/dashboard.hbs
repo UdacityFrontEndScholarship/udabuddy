@@ -4,38 +4,214 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/dashboard.css">
-    <title>Index Page</title>
+
+  <title>Index Page</title>
 </head>
 <body>
-	 <nav>
-    <div class="nav-wrapper white">
-      <a href="#" class="brand-logo" style="color:black">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Something</a></li>
-        <li><a href="#">Something else</a></li>
-        <li><a href="#">Yet something!</a></li>
-      </ul>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col s5"></div>
-        <div class="col s2 center">
-          <h3 style="color:black">Welcome <span class="name"></span></h3>
-            <h4 style="color:black">logout</h4>
-              <a class="btn-floating btn-large waves-effect waves-light red" id="logOut"><i class="material-icons">loop</i></a>
-        
-        </div>
-        <div class="col s5"></div>
+
+
+	<ul id="dropdown1" class="dropdown-content">
+	  <li id='logOut'><a href="#!">Logout</a></li>
+	  <li class="divider"></li>
+		<li><a href="#!">Something</a></li>
+	  <li class="divider"></li>
+		<li><a href="#!">Something Else</a></li>
+	  <li class="divider"></li>
+	</ul>
+
+
+	 <div class="navbar-fixed">
+		 <nav>
+      <div class="nav-wrapper light-blue accent-3">
+        <a href="#" class="brand-logo">UdaBuddy</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          <li id='resources'><a href="#">Resources</a></li>
+          <li id='profile'><a href="#">Profile</a></li>
+  				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Settings<i class="material-icons right">arrow_drop_down</i></a></li>
+
+      
+
+        </ul>
       </div>
-    </div>
-    
-  </nav>
+  		</nav>
+	 </div>
+
+      <div class="row">
+
+				<div class="col s12 m3 l3 community">
+						<!-- left pane -->
+						<!-- community feed, recommended courses, post of the day -->
+
+						<div class="rc">
+							<p class="inner-head">Recommended Courses</p>
+							<ul>
+								<li><a style="color:white" href='#'>course name 1</a></li>
+								<li><a style="color:white" href='#'>course 2</a></li>
+								<li><a style="color:white" href='#'>name of 3rd course</a></li>
+							</ul>
+
+						</div>
+
+						<div class="pod">
+							<p class='inner-head'>Post of the Day</p>
+							<p>Heading about post</p>
+							<p>post description goes here</p>
+							<a style="color:white" href="#">link to post</a>
+
+						</div>
+
+						<div class="rc">
+							<p class="inner-head">Proposed Jobs</p>
+							<ul>
+								<li><a style="color:white" href='#'>course name 1</a></li>
+								<li><a style="color:white" href='#'>course 2</a></li>
+								<li><a style="color:white" href='#'>name of 3rd course</a></li>
+							</ul>
+
+						</div>
+
+
+						<div class="rc">
+							<p class="inner-head">Bookmarked</p>
+							<ul>
+								<li><a style="color:white" href='#'>course name 1</a></li>
+								<li><a style="color:white" href='#'>course 2</a></li>
+								<li><a style="color:white" href='#'>name of 3rd course</a></li>
+							</ul>
+
+						</div>
+
+				</div>
+
+
+
+				<div class="col s12 m9 l9 center">
+						<!-- middle pane -->
+						<!-- caraousel -->
+						<h5>Welcome</h5>
+						<h3 class='name'></h3>
+
+						<div class="row center">
+						 <div class="col s12">
+							 <div class="card blue-grey darken-1">
+								 <div class="card-content white-text">
+									 <span class="card-title">Your Activity</span>
+									 <div id='chart_div'>
+
+									 </div>
+
+								 </div>
+
+								 <!-- <div class="card-action">
+									 <a href="#">This is a link</a>
+									 <a href="#">This is a link</a>
+								 </div> -->
+							 </div>
+						 </div>
+						</div>
+
+
+						<ul class="collapsible">
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">done_all</i>Completed Courses</div>
+					      <div class="collapsible-body">
+									<span>
+
+
+											<div class="row center">
+
+													<div class="col s12 m6 l6">
+
+														<div class="row center">
+															<div class="col s12">
+																<div class="card">
+																	<div class="card-image">
+																		<img src="user_images/uda_ai.png">
+																		<span class="card-title black-text">Arificial Inteligence</span>
+																	</div>
+																	<div class="card-content">
+																		<p>Learn the essential foundations of AI: the programming tools (Python, NumPy, PyTorch), the math (linear algebra, vectors, matrices), and the key techniques of neural networks.</p>
+																	</div>
+																	<div class="card-action">
+																		<a href="#">Visit Course</a>
+																	</div>
+																</div>
+															</div>
+															</div>
+
+													</div>
+
+
+													<div class="col s12 m6 l6">
+
+														<div class="row center">
+															<div class="col s12">
+																<div class="card">
+																	<div class="card-image">
+																		<img src="user_images/uda_android.png">
+																		<span class="card-title black-text">Android</span>
+																	</div>
+																	<div class="card-content">
+																		<p>learn how to build a cloud-connected Android app, responsiveness, how to create amazing user experiences with rich media and publish it on Google Play</p>
+																	</div>
+																	<div class="card-action">
+																		<a href="#">Visit Course</a>
+																	</div>
+																</div>
+															</div>
+															</div>
+
+													</div>
+
+											</div>
+
+
+
+									</span>
+								</div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">description</i>Posts</div>
+					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">bookmark</i>Tutorials</div>
+					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+					    </li>
+							<li>
+					      <div class="collapsible-header"><i class="material-icons">slideshow</i>Projects</div>
+					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+					    </li>
+							<li>
+					      <div class="collapsible-header"><i class="material-icons">work</i>Jobs</div>
+					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+					    </li>
+					  </ul>
+
+
+
+				</div>
+
+
+
+      </div>
+
+
+
 </body>
 <script src="js/dashboard.js"></script>
 <script src="js/materialize.min.js"></script>
