@@ -1,0 +1,31 @@
+body {
+  height: 100vh !important;
+  background-color: black;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#particles-js {
+  height: 96vh !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#noBuddyText {
+  width: 600px;
+  color: white;
+  position: fixed;
+  top: 32%;
+  left: 27%;
+  font-size: 2.6em;
+  font-family: Jua;
+}
+
+@media screen and (max-width: 768px) {
+
+  #noBuddyText {
+		width: 90vw;
+    left: 5%;
+
+	}
+}

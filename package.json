@@ -1,5 +1,5 @@
 {
-  "name": "udabuddy-1",
+  "name": "udabuddy",
   "version": "1.0.0",
   "description": "To make a web app for Udacity Alumni interaction.",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/littlestar642/udabuddy-1.git"
   },
-  "author": "",
+  "author": "Pradeep Singh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/littlestar642/udabuddy-1/issues"
