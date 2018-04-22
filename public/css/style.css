@@ -53,11 +53,21 @@ main {
 #leftContainer {
 	flex: 70%;
 	color: #f9f9f9;
+	/*background: url("/media/udabuddy-img.png") no-repeat center;*/
     text-shadow: 1px 1px #999;
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 300;
+}
+.bg-image{
+    background: url("/media/udabuddy-img.png") no-repeat center;
+    filter: drop-shadow(-3px 1px 5px);
+    filter: opacity(30%);
+    background-size: 70%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 #leftContainer h4{
@@ -93,10 +103,13 @@ main {
 	font-family: 'Varela Round', sans-serif;
 }
 .miniContainerBanner{
-	background: url(/media/banner.jpg);
+	/*background: url(/media/banner.jpg);*/
+	/*background: url("/media/udabuddy-img.png") no-repeat center;*/
+	background-size: contain;
 	width: 100%;
 	margin: 0% 5%;
 	height: 20rem;
+    z-index: 99;
 }
 /* Adding box and style to the sign in container */
 
