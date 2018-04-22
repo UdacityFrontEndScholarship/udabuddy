@@ -9,7 +9,7 @@ body {
 main {
 	display: flex;
 	flex-wrap: wrap;
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 	background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
 }
 
@@ -22,16 +22,12 @@ main {
 	background: url("/media/udabuddy-img.png") no-repeat center;
 	background-size: contain;
 	color: #f9f9f9;
-    text-shadow: 1px 1px #999;
+	text-shadow: 1px 1px #999;
 }
 
 #leftContainer h4{
 	margin-top: 50px;
 	font-family: 'PT Sans', sans-serif;
-}
-
-#leftContainer h4{
-	font-family: 'Ubuntu', sans-serif;
 }
 
 #rightContainer {
