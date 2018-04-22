@@ -1,0 +1,160 @@
+body {
+	display: flex;
+  min-height: 100%;
+  flex-direction: column;
+
+}
+
+nav, header {
+  height: 50px !important;
+  line-height: 50px;
+}
+
+main {
+}
+
+#container1, #container2, #container3, #container4 {
+  min-height: 100vh;
+}
+
+.miniContainer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h5{
+	font-family: 'PT Sans', sans-serif;
+  font-size: 2.5em;
+}
+
+#container1 {
+  background-color: #e9e9e9;
+}
+
+.iconf {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+	height: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 2px;
+  border-radius: 50%;
+  opacity: 1;
+  border: 2px solid #000;
+  color: #000;
+  background-color: #29b6f6;
+}
+
+.iconf:hover{
+	text-decoration: none;
+	color: white;
+	transition-delay: 140ms;
+  	border: 2px solid #fff;
+}
+
+.iconf:link {
+	text-decoration: none;
+}
+
+.iconf:active{
+	text-decoration: none;
+}
+
+.iconf:visited{
+	text-decoration: none;
+}
+
+.fa-facebook:hover {
+  background-color: #3B5998;
+  color: white;
+}
+
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google-plus:hover {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin:hover {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram:hover {
+    background: -webkit-linear-gradient(#4c68d7,#8a3ab9,#fbad50); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(#4c68d7,#8a3ab9,#fbad50); /* Opera 11.1-12.0 */
+    background: -moz-linear-gradient(#4c68d7,#8a3ab9,#fbad50); /* Firefox 3.6-15 */
+    background: linear-gradient(#4c68d7,#8a3ab9,#fbad50); /* Standard syntax */
+
+	color: white;
+}
+
+.goTop {
+	width: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 85%;
+	left: 50%;
+	font-size: 21px;
+	background-color: #fff;
+	border:1px solid #000;
+	border-radius: 50%;
+	opacity: 0.8;
+	color:#fff;
+}
+.goTop:hover {
+	opacity: 1;
+	background-color: #ddd;
+}
+
+.fa-angle-double-up{
+	color: #fff;
+}
+
+.fa-angle-double-up:link, .fa-angle-double-up:visited {
+    text-decoration: none;
+    color: #fff;
+   	background-color: red;
+    border: 1px solid red;
+}
+
+.fa-angle-double-up:hover, .fa-angle-double-up:active {
+    text-decoration: none;
+}
+
+#container2 {
+  background-color: #e1e1e1;
+}
+
+#container3 {
+  background-color: #e9e9e9;
+}
+
+#container4 {
+  background-color: #e1e1e1;
+}
+
+/* ----- footer Section ----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------- */
+#teamStyle {
+	font-family: 'Gugi', cursive;
+}
+
+/* ----- Mobile Optimizations ---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+	#copyright {
+		margin-bottom: 20px;
+	}
+
+	.miniContainer {
+		width: 90% !important;
+	}
+}

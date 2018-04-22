@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Udacity Alumni network">
+      <meta name="robots" content="index, follow">
+
+      <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+      <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+
+      <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/about.css" media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+	<header>
+    <div class="navbar-fixed">
+      <nav class="light-blue lighten-1 navStyle" role="navigation">
+      			<div class="nav-wrapper container">
+      				<a id="logo-container" href="#" class="brand-logo"></a>
+      				<ul class="right hide-on-med-and-down">
+      				  <li>
+      					<a href="#">Blog</a>
+      				  </li>
+                <li>
+      					<a href="#">Wall of Fame</a>
+      				  </li>
+                <li>
+      					<a href="#">Showcase</a>
+      				  </li>
+      				</ul>
+      				<ul id="nav-mobile" class="sidenav">
+      				  <li>
+      					<a href="#">Blog</a>
+      				  </li>
+                <li>
+      					<a href="#">Wall of Fame</a>
+      				  </li>
+                <li>
+      					<a href="#">Showcase</a>
+      				  </li>
+      				</ul>
+      				<a href="#" data-target="nav-mobile" class="sidenav-trigger">
+      					<i class="material-icons">menu</i>
+      				</a>
+      			</div>
+      		</nav>
+        </div>
+
+	</header>
+
+	<main>
+		<div class="section valign-wrapper center" id="container1">
+      <div class="miniContainer">
+        <div class="row">
+  				<h5>
+            Our Mission is to give an oppurtunity to
+            each and every developer to grow along with
+            the industry experts.
+          </h5>
+			  </div>
+        <div class="row">
+          <a href="#" target="_blank" class="fa fa-facebook iconf"></a>
+  				<a href="#" target="_blank" class="fa fa-twitter iconf"></a>
+  				<a href="#" target="_blank"
+  				class="fa fa-google-plus iconf">
+  				</a>
+  				<a href="#" target="_blank" class="fa fa-linkedin iconf"></a>
+  				<a href="#" target="_blank" class="fa fa-instagram iconf"></a>
+        </div>
+        <div class="center goTop" title="Move to Top">
+		      <a onclick="scrollToTop(1000)">
+						<i class="fa fa-angle-double-down"></i>
+					</a>
+				</div>
+    </div>
+  </div>
+    <div class="section valign-wrapper center" id="container2">
+			<div class="row miniContainer">
+				<h5>
+          So we believe that everyone deserves to
+          have a network of experts to grow.
+        </h5>
+			</div>
+		</div>
+    <div class="section valign-wrapper center" id="container3">
+			<div class="row miniContainer">
+				<h5>
+          For a developer, the world would be a
+          better place when they can learn, share,
+          contribute and build community to grow.
+          So, UdaBuddy is here for that...
+        </h5>
+			</div>
+		</div>
+    <div class="section valign-wrapper center" id="container4">
+			<div class="row miniContainer">
+				<h5>Create, Share & Learn. Together !</h5>
+			</div>
+		</div>
+	</main>
+
+    <footer class="page-footer blue lighten-2 center">
+		<div class="container">
+			<div class="row">
+			    <div class="col m6 s12" id="copyright">
+					Created By
+					<a class="black-text text-lighten-3" id="teamStyle" href="#">
+						<b> UdaBuddy Team</b>
+					</a>
+				  <span id="copy"> &copy;2018</span>
+			    </div>
+				<div class="col m2 s12">
+					<a class="black-text text-lighten-3" href="#">
+						<b>About</b>
+					</a>
+				</div>
+				<div class="col m2 s12">
+					<a class="black-text text-lighten-3" href="#">
+						<b>Developers</b>
+					</a>
+				</div>
+				<div class="col m2 s12 ">
+					<a class="black-text text-lighten-3" href="#">
+						<b>Terms</b>
+					</a>
+				</div>
+			</div>
+		</div>
+    </footer>
+
+  <!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/indexPage.js"></script>
+  <script src="js/about.js"></script>
+
+</body>
+
+</html>
