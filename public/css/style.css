@@ -148,4 +148,29 @@ blockquote{
 	.miniContainer {
 		width: 90% !important;
 	}
+	nav .brand-logo {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	.miniContainer h5 {
+		font-size: 1.5rem;
+		line-height: 110%;
+		margin: 1.0933333333rem 0 .656rem 0;
+	}
 }
+@media screen and (max-width: 994px) {
+	nav .brand-logo {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	.miniContainer h5 {
+		font-size: 1.5rem;
+		line-height: 110%;
+		margin: 1.0933333333rem 0 .656rem 0;
+	}
+}
+
+
+
