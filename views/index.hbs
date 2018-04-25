@@ -22,16 +22,23 @@
 	<main>
 		<div class="section valign-wrapper center" id="leftContainer">
 		    <div class="bg-image"></div>
-            <nav id="indexHeader">
-                    <div class="nav-wrapper">
-                      <a href="#" class="brand-logo">UdaBuddy</a>
-                      <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="sass.html">About</a></li>
-                        <li><a href="badges.html">Developers</a></li>
-                        <li><a href="collapsible.html">Terms</a></li>
-                      </ul>
-                    </div>
-                  </nav>
+                  <nav id="indexHeader">
+                      <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo">UdaBuddy</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                          <li><a href="javascript:void(0)">About</a></li>
+                          <li><a href="javascript:void(0)">Developers</a></li>
+                          <li><a href="javascript:void(0)">Terms</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+
+                    <ul class="sidenav" id="mobile-demo">
+                      <li><a href="javascript:void(0)">About</a></li>
+                      <li><a href="javascript:void(0)">Developers</a></li>
+                      <li><a href="javascript:void(0)">Terms</a></li>
+                    </ul>
 			<div class="miniContainer miniContainerBanner">
 				<h4>A Platform for Udacity Students and Alumni</h4><br>
 				<h5>Create, Share & Learn Together !</h5>
@@ -41,7 +48,7 @@
                  </p>
 
 			</div>
-			<footer class="page-footer-index">
+			<footer class="page-footer-index hide-on-small-only show-on-medium-and-up">
             		<div class="container">
             			<div class="row">
             			    <div class="col m12 s12" id="copyright">
@@ -54,10 +61,19 @@
 		<div class="section valign-wrapper center" id="rightContainer">
 			<div class="row miniContainer">
 				<div id="rightText1">Sign in to your account</div><br><br>
-        <div class="sign-in-container">
-          <div id="firebaseui-auth-container"></div>
-        </div>
+                <div class="sign-in-container">
+                  <div id="firebaseui-auth-container"></div>
+                </div>
 			</div>
+			<footer class="page-footer-index show-on-small hide-on-med-and-up">
+                <div class="container">
+                    <div class="row">
+                        <div class="col m12 s12" id="copyright">
+                          <span id="copy"> &copy;2018 Udabuddy.</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 		</div>
 
 	</main>
