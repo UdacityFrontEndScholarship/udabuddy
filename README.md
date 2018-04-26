@@ -5,6 +5,7 @@ To make a web app for Udacity Alumni interaction.
 # Workflow  
 
 Please reference this picture to understand the flow of the app.
+![](http://res.cloudinary.com/dvxx5f4hr/image/upload/v1524759367/1-Home_dyuujq.png)
 
 These are the main sections of the WebApp.
  
