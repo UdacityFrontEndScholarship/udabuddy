@@ -2,30 +2,41 @@
 
 To make a web app for Udacity Alumni interaction. 
 
-# Workflow 
+# Workflow  
 
-There are two main section of the WebApp.
+Please reference this picture to understand the flow of the app.
+
+These are the main sections of the WebApp.
  
 ## Landing Page -- Contains info that you can check without login
   
-    Landing/Login page     
-    About section (Giving details about the WebAPP Udabuddy, for reference see twitter about page)
-    Wall of fame (A page displaying works of Alumni or people at Udacity, Like Sebastian Thrun)
-    Blog Page (A blog page by Udabuddy users with posts about their amazing work in any field of technology)
-    Forum Page (directly ask questions here rather enter udacity forums)
-    Developers Page ( Comming soon)
+    - Signup/Login Firebase Buttons    
+    - About Us     : Giving details about the WebAPP Udabuddy, for reference see twitter about page
+    - Wall of fame : A page displaying works of Alumni or people at Udacity, Like Sebastian Thrun(only a demo page here)
+    - Blog Page    : A blog page by Udabuddy users with posts about their amazing work in any field of technology(only a demo page here)
 
-## Dashboard -- Accessible once you are logged in and is divided into four sections : FEED, NAV, DISCOVER, ANALYSE
+    Please note that both the blog page and the wall of fame page here will have all there links redirected to the intermidiate signup/signin page.
+
+## Dashboard -- Accessible once you are logged in 
  	 
-    Feed    : Feed will have articles from users you like and popular in community.
-    Nav     : This is the link to various pages outside and inside like showcase.
-    Discover: This will give you suggestions about new user and like them to get feeds.
-    Analyse : This provides statics about where you stand in the community and among your friends. 
+    Job Feed  : Job feed will have posts related to job openings particular to your interests.
+    Menu items: This segment contains buttons that control the beahviour of how the dashboard is rendered.
+    Community updates: This will be a continuous feed that updates every time there is a post in the community activity.
+    Graphs    : This provides statics about where you stand in the community and among your friends. 
 	  
-	  Inside the dashboard a section called 'Showcase' is provided to build users profile and showcase their projects.
-    This would be visible to other users.
-	  There would be a message and connect option under each profile.
+	Dashobard contains links to all other pages of the app including the showcase,the wall of fame,the forum and the blog page.
 
+## Showcase- Show your projects and your blogs to the whole world,all at one place.
+
+## Forum- Talk to the community and see what is everyone upto.
+
+## Blog- Write out your creativity and let others also know what you learnt.
+
+## About Us- Know what is Udabuddy and how it can change your lives.
+
+## Wall of Fame- See people having amazing projects which are liked most by the community.
+
+## Weekly updates- A feed for the community events and updates and what all changes were brought about in the previous week.
 
 # How to contribute
 	These are designated people :-
@@ -38,9 +49,6 @@ There are two main section of the WebApp.
 	  These are responsible mods and co-mods whom you can contact directly, in case of any issue regarding a page.
     Your PR in any one of this page will be assesed by the responsibe mod and merged if it is worth it.
 	  
- 
-
-###### App to connect Udacity Alumni and present Scholars
 
 ## Prerequisites
 
