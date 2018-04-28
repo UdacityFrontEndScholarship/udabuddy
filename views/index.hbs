@@ -29,17 +29,23 @@
             <nav id="indexHeader">
                     <div class="nav-wrapper">
                       <a href="#" class="brand-logo">UdaBuddy</a>
+                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                       <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/blogDemo">Blog</a></li>
                         <li><a href="/wofDemo">Wall of Fame</a></li>
                       </ul>
                     </div>
-                  </nav>
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/blogDemo">Blog</a></li>
+              <li><a href="/wofDemo">Wall of Fame</a></li>
+            </ul>
 			<div class="miniContainer miniContainerBanner">
 				<h4>A Platform for Udacity Students and Alumni</h4><br>
 				<h5>Create, Share & Learn Together !</h5>
-				<p class="quote">
+				<p class="quote hide-on-small-only show-on-medium-and-up">
                    Coming together is a beginning; keeping together is progress; working together is Success. - Edward Everett Hale
 
                  </p>
@@ -62,19 +68,18 @@
                   <div id="firebaseui-auth-container"></div>
                 </div>
 			</div>
-			<footer class="page-footer-index show-on-small hide-on-med-and-up">
-                <div class="container">
-                    <div class="row">
-                        <div class="col m12 s12" id="copyright">
-                          <span id="copy"> &copy;2018 Udabuddy.</span>
-                        </div>
-                    </div>
-                </div>
-            </footer>
 		</div>
 
 	</main>
-
+  <footer class="page-footer white center-align black-text show-on-small hide-on-med-and-up">
+    <div class="container">
+        <div class="row">
+            <div class="col m12 s12" id="copyright">
+              <span id="copy"> &copy;2018 Udabuddy.</span>
+            </div>
+        </div>
+    </div>
+  </footer>
 
   <!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

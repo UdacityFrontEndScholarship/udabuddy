@@ -107,8 +107,8 @@ main {
 	/*background: url("/media/udabuddy-img.png") no-repeat center;*/
 	background-size: contain;
 	width: 100%;
-	margin: 0% 5%;
-	height: 20rem;
+	margin: 5% 5%;
+	height: 15rem;
     z-index: 99;
 }
 /* Adding box and style to the sign in container */
