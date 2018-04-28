@@ -49,6 +49,11 @@ These are the main sections of the WebApp.
 
 	  These are responsible mods and co-mods whom you can contact directly, in case of any issue regarding a page.
     Your PR in any one of this page will be assesed by the responsibe mod and merged if it is worth it.
+
+## Color Pallete
+	- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+	- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
+	- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0`
 	  
 
 ## Prerequisites
