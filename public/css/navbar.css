@@ -1,5 +1,5 @@
 body{
-  font-family: "Fira Sans", helvetica;
+  font-family: "Fira Sans", helvetica , sans-serif;
 }
 .logo-size{
   background: url("/media/logo.png") no-repeat center;
