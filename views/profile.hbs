@@ -13,16 +13,18 @@
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
     <link rel="stylesheet" href="css/profile.css">
 </head>
 
-<body class="light-blue lighten-5">
+<body class="white">
 
-    <header>
+    <!-- <header>
         <nav class="light-blue lighten-1 navStyle" role="navigation">
             <div class="nav-wrapper container">
                 <a id="logo-container" href="#" class="brand-logo">UdaBuddy</a>
@@ -41,9 +43,39 @@
                 </a>
             </div>
         </nav>
-    </header>
+    </header> -->
+    <header>
+  		<nav class="white">
+  			<nav class="white">
+  			<div class="nav-wrapper">
+  				<!-- <a id="logo-container" href="#" class="brand-logo black-text">UdaBuddy</a> -->
+  				<a id="logo-container" href="#!" class="brand-logo center logo-size">
+  						<!-- <img src="" alt=""> -->
+  				</a>
+  				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+  				<!-- <a href="#!" class="brand-logo center">Logo</a> -->
+  				<ul id="nav-mobile" class="left hide-on-med-and-down">
+  			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
+  			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
+  						</ul>
+  					 <ul id="nav-mobile" class="right hide-on-med-and-down">
+  								 <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
+  								 <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
+  								 <li><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
+  							</ul>
+  			</div>
 
-    <main class="grey lighten-5">
+  		</nav>
+  		<ul class="sidenav"  id="mobile-nav">
+  			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
+  			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
+  			        <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
+  			        <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
+  			        <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
+  			     </ul>
+  	</header>
+
+    <main class="white">
         <div class="profile">
             <h3 class="profile-heading center-align">PROFILE</h3>
 
@@ -194,7 +226,7 @@
                                           <input id="degree" type="text" class="validate">
                                           <label for="degree">Role</label>
                                         </div>
-                                        
+
                                         <div class="input-field col s12 m6 l6 xl6">
                                           <input id="from" type="date" class="validate">
                                           <label for="from">Start Date</label>
@@ -248,7 +280,7 @@
                                           <textarea id="description" class="materialize-textarea"></textarea>
                                           <label for="description">Description</label>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="row center-align">
                                         <button class="btn modal-close teal">Add<i class="material-icons right modal-close">send</i></button>
