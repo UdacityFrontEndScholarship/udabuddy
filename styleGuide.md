@@ -14,7 +14,7 @@
 ![](http://res.cloudinary.com/dvxx5f4hr/image/upload/v1524769761/fonts_xhf3bv.png)
 
 #### Link to [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
-### Please use this segement for the callback font
+### Please use this segement for the fallback font
 ```
 body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
