@@ -19,36 +19,58 @@
   <title>About Page</title>
 </head>
 
-<body>
-  <header>
-		<nav class="white">
-			<nav class="white">
-			<div class="nav-wrapper">
-				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-						</ul>
-					 <ul id="nav-mobile" class="right hide-on-med-and-down">
-								 <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-								 <li id="resources"><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-								 <li id="profile"><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
-							</ul>
-			</div>
-
-		</nav>
-		<ul class="sidenav"  id="mobile-nav">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-			     </ul>
-	</header>
-  <h1>This is the about page. Same for both signed in as well as anonymous user</h1>
+<body style="background: linear-gradient(145deg, #33b5e5 , #888ec9, #f49b89); height: 100%; width: 100%; ">
+    <div >
+    <nav style="background-color: transparent !important; box-shadow: none; border: none; padding: 1vw;">
+    <div class="nav-wrapper" style="">
+      <a href="#" class="brand-logo">Udabuddy</a>
+      <img src="" alt="">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Blog</a></li>
+        <li><a href="badges.html">Wall of Fame</a></li>
+        <li><a href="collapsible.html">About US</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div style="height: ; display: flex;"></div>
+  
+  <div class="col s12 m12 l12" style="height: 100vh; width: 100%; display: flex; position: relative; padding:; overflow: hidden;">
+  <div class="conatiner" style="margin: 12vh 4vw; padding: 5vh 3vw;">
+  <h3 style="    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    padding-top: 1.5rem;
+    color: white;
+    opacity: .6; margin: 0;">Udabuddy is</h3>
+  <h1 id="msg" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -.025rem;
+    padding-top: 1.5rem;
+    color: white; margin: 0;"></h1>
+    </div>
+      
+  </div>
+  <div style="height: ; display: flex;"></div>
+  
 </body>
 <script src="js/materialize.min.js"></script>
 <script src="js/about.js"></script>
+<script type="text/javascript">
+var showText = function (target, message, index, interval) {
+  if (index<message.length)
+  {
+    $(target).append(message.substring(index, index+3));
+    index+=3;
+    setTimeout(function(){
+    showText(target, message, index, interval); }, interval);
+    }
+    }
+    $(function () {
+      showText("#msg", "Where you meet, collaborate, and learn from awesome people at Udacity.", 0, 300);
+      });
+</script>
 </html>
