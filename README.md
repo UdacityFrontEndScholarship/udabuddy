@@ -55,8 +55,6 @@ These are the main sections of the WebApp.
 - ![#33b5e5](https://placehold.it/15/33b5e5/000000?text=+) `#33b5e5`
 - ![#06caba](https://placehold.it/15/06caba/000000?text=+) `#06caba`
 - ![#f49b89](https://placehold.it/15/f49b89/000000?text=+) `#f49b89`
-- ![#4caac3](https://placehold.it/15/4caac3/000000?text=+) `#4caac3`
-- ![#02ccba](https://placehold.it/15/02ccba/000000?text=+) `#02ccba`
 - ![#888ec9](https://placehold.it/15/888ec9/000000?text=+) `#888ec9`
 - ![#59a4c4](https://placehold.it/15/59a4c4/000000?text=+) `#59a4c4`
 
