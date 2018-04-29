@@ -1,3 +1,6 @@
+body{
+  font-family: "Fira Sans", helvetica, sans-serif;
+}
 ul li a:link{
 
 };
@@ -5,13 +8,13 @@ ul li a:link{
 
 }
 
-li a {
+/* li a {
   font-weight: 1000;
-}
+} */
 
 .brand-logo {
   margin-left: 5%;
-  font-family: 'Jua', sans-serif;
+  font-family: "Fira Sans", helvetica , sans-serif;
 }
 
 .name {

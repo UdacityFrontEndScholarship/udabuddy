@@ -1,4 +1,4 @@
-  // Initialize Firebase
+// this page contains js for signIn page
   var config = {
     apiKey: "AIzaSyC18bxhVaauMyqjk4fvZkiUZkCU5qB9mDc",
     authDomain: "udabuddy.firebaseapp.com",
@@ -42,8 +42,3 @@
   window.addEventListener('load', function() {
     initApp()
   });
-
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-

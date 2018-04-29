@@ -1,0 +1,21 @@
+body{
+  font-family: "Fira Sans", helvetica , sans-serif;
+}
+.logo-size{
+  background: url("/media/logo.png") no-repeat center;
+  background-size: 10%;
+  width: 60%;
+  height: 100%;
+}
+.profile-bg{
+  background-color: #0ee2ff;
+}
+
+/* edit this for navbar scroll */
+/* #navbar{
+  transition: top 0.3s;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  display:block;
+} */

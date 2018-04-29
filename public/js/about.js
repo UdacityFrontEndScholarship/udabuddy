@@ -1,3 +1,4 @@
+// This page contains js for about page
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyC18bxhVaauMyqjk4fvZkiUZkCU5qB9mDc",
@@ -8,28 +9,13 @@
     messagingSenderId: "460323300752"
   };
   firebase.initializeApp(config);
-  var uiConfig = {
-    signInSuccessUrl: '/dashboard',
-    signInOptions: [
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-      firebase.auth.GithubAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
-    ],
-    // Terms of service url.
-    tosUrl: '<your-tos-url>'
-  };
-
-  var ui = new firebaseui.auth.AuthUI(firebase.auth());
-  ui.start('#firebaseui-auth-container', uiConfig);
 
 
   initApp = function() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // User is signed in.
-        window.location.replace('/dashboard');
-        
+        // Please write your code inside here
       } else {
         // User is signed out.
         
@@ -42,8 +28,3 @@
   window.addEventListener('load', function() {
     initApp()
   });
-
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-

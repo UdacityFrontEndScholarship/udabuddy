@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
       <meta charset="UTF-8">
@@ -22,13 +21,18 @@
 	<main>
 		<div class="section valign-wrapper center" id="leftContainer">
 		    <div class="bg-image"></div>
+                    <ul class="sidenav" id="mobile-demo">
+                      <li><a href="javascript:void(0)">About</a></li>
+                      <li><a href="javascript:void(0)">Terms</a></li>
+                      <li><a href="javascript:void(0)">Developers</a></li>
+                    </ul>
             <nav id="indexHeader">
                     <div class="nav-wrapper">
                       <a href="#" class="brand-logo">UdaBuddy</a>
                       <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="sass.html">About</a></li>
-                        <li><a href="badges.html">Developers</a></li>
-                        <li><a href="collapsible.html">Terms</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/blogDemo">Blog</a></li>
+                        <li><a href="/wofDemo">Wall of Fame</a></li>
                       </ul>
                     </div>
                   </nav>
@@ -41,7 +45,7 @@
                  </p>
 
 			</div>
-			<footer class="page-footer-index">
+			<footer class="page-footer-index hide-on-small-only show-on-medium-and-up">
             		<div class="container">
             			<div class="row">
             			    <div class="col m12 s12" id="copyright">
@@ -54,10 +58,19 @@
 		<div class="section valign-wrapper center" id="rightContainer">
 			<div class="row miniContainer">
 				<div id="rightText1">Sign in to your account</div><br><br>
-        <div class="sign-in-container">
-          <div id="firebaseui-auth-container"></div>
-        </div>
+                <div class="sign-in-container">
+                  <div id="firebaseui-auth-container"></div>
+                </div>
 			</div>
+			<footer class="page-footer-index show-on-small hide-on-med-and-up">
+                <div class="container">
+                    <div class="row">
+                        <div class="col m12 s12" id="copyright">
+                          <span id="copy"> &copy;2018 Udabuddy.</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 		</div>
 
 	</main>
