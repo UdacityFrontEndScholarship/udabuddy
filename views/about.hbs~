@@ -58,7 +58,7 @@
     <div class="example-display" style="position:relative;height:600px;">
    
     <marquee direction="down"><h1>A scrolling text created with HTML Marquee element.</h1></marquee>
-    <marquee direction="down"><h1>No scrolling text created with HTML Marquee element.</h1></marquee>
+    <marquee direction="down"><h2>No scrolling text created with HTML Marquee element.</h2></marquee>
   </div>
   </div>
   
