@@ -59,4 +59,7 @@ $(document).ready(function() {
             slideNav.removeClass('scroll');
         }
     }
+
+    // Initialize plugin for sidenav-trigger
+    $('.sidenav').sidenav();
 })
