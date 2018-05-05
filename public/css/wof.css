@@ -1,0 +1,32 @@
+/* Wall of fame */
+.wof-img{
+
+	width: 20%;
+	height: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .btn{
+ 	margin-bottom: -17px;
+ }
+ .parallax img{
+ 	opacity: 1 !important;
+ }
+ .parallax-container {
+ 	position: relative;
+ 	opacity: 1 !important;
+ }
+ .text-block{
+ 	position: absolute;
+    right: 537px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+ }
+ .text-logo{
+ 	margin-top: 165px;
+ 	margin-left: 195px;
+ }
