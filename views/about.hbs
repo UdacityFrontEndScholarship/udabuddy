@@ -17,25 +17,73 @@
   <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
   <link rel="stylesheet" href="css/materialize.min.css">
   <title>About Page</title>
+  <style>
+  .container {
+  
+  margin: 0 auto;
+  
+  max-width: 1280px;
+  width: 83%;
+}
+@media only screen and (min-width: 601px)
+  .container {
+  	 
+    width: 85%;
+}
+@media only screen and (min-width: 993px)
+  .container {
+    width: 70%;
+    
+}
+.container2 {
+  
+  margin: 0 auto;
+  
+  max-width: 1280px;
+  width: 80%;
+}
+@media only screen and (min-width: 601px)
+  .container2 {
+  	 
+    width: 85%;
+}
+@media only screen and (min-width: 993px)
+  .container2 {
+    width: 70%;
+    
+}</style>
 </head>
 
 <body style="background: linear-gradient(145deg, #33b5e5 , #888ec9, #f49b89); height: 100%; width: 100%; ">
-    <div >
-    <nav style="background-color: transparent !important; box-shadow: none; border: none; padding: 1vw;">
-    <div class="nav-wrapper" style="">
-      <a href="#" class="brand-logo">Udabuddy</a>
-      <img src="" alt="">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Blog</a></li>
-        <li><a href="badges.html">Wall of Fame</a></li>
-        <li><a href="collapsible.html">About US</a></li>
+    
+    
+  <div class="navbar" style="margin-bottom: 5%; z-index: 1;">
+  
+  <nav style="background-color: transparent !important; box-shadow: none; border: none; padding: 1vw;">
+    <div class="nav-wrapper" >
+      <a href="#!" class="brand-logo">Udabuddy</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/blogDemo">Blog</a></li>
+        <li><a href="/wofDemo">Wall of Fame</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/">Udabuddy</a></li>
       </ul>
     </div>
   </nav>
-  <div style="height: ; display: flex;"></div>
+   <ul class="sidenav" id="mobile-demo">
+    <li><a href="/blogDemo">Blog</a></li>
+    <li><a href="/wofDemo">Wall of Fame</a></li>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/">Udabuddy</a></li>
+  </ul>
   
-  <div class="col s12 m12 l12" style="height: 100vh; width: 100%; display: flex; position: relative; padding:; overflow: hidden;">
-  <div class="conatiner" style="margin: 12vh 4vw; padding: 5vh 3vw;">
+  </div>
+  
+  <div class="intro_message">
+  
+  <div class="col s12 m12 l12" style="height: 90%; width: 100%; display: flex; position: realtive; padding:; overflow: hidden; margin-top: 2%;">
+  <div class="" style="margin: 12vh 4vw; padding: 5vh 3vw;">
   <h3 style="    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 700;
     font-size: 2rem;
@@ -43,7 +91,7 @@
     letter-spacing: 0;
     padding-top: 1.5rem;
     color: white;
-    opacity: .6; margin: 0;">Udabuddy is</h3>
+    opacity: .6; margin: 0; z-index: -1;">Udabuddy is</h3>
   <h1 id="msg" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 700;
     font-size: 4.5rem;
@@ -54,27 +102,141 @@
     </div>
       
   </div>
-  <div style="height: ; display: flex;">
-    <div class="example-display" style="position:relative;height:600px;">
-<h1>This section will have cutouts from dashboard, blog, graph to advertise our product</h1>
-<h1>With Udabuddy you</h1>
-<img src="" alt="blog around@blog">
-<img src="" alt="compete with friends@graphs">
-<img src="" alt="Chat to mentors@profile">
-<img src="" alt="discover awesome projects@walloffame">
-<ims src="" alt="build you idea">
+  </div>
+  <div class="row container" style="display:">
+  <h1 style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -.025rem;
+    padding-top: 1.5rem;
+    color: white; ">With Udabuddy you can</h1>
+  
+    <div class="example-display container2" style="">
+    
+<div class="col s12 l7 m7">
+<div class="card medium">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="media/build.jpg" alt="Build your idea">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Build with Dev community<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Build your idea<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
   </div>
   </div>
-  <div class="join">
-  </h1> what are you waiting for?</h1>
-  <h2> join Udabuddy</h2>
+  <div class="col s12 l5 m5">
+  <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="media/performance.jpg" alt="compete with friends">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Performance analysis<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Performance analysis<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+  </div>
+  <div class="col s12 l7 m7">
+  <div class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="media/blog.jpg" alt="blog around">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Informative Blogs<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+  </div>
+  <div class="col s12 l5 m5">
+  <div class="card medium">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="media/showcase.jpg" alt="Showcase">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Showcase<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Showcase<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+  </div>
+        
+  </div>
+  </div>
+  
+  <div class="join container">
+  <h1 style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    letter-spacing: -.025rem;
+    padding-top: 1.5rem;
+    color: white; margin-bottom: 0;"> what are you waiting for?</h1>
+  <h2 style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -.025rem;
+    padding-top: 1.5rem;
+    color: white; margin-top: 0;"> join Udabuddy.</h2>
+    <a style="background-color: #f49b89; border-radius: 60px; font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    letter-spacing: -.025rem;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    color: white; margin-bottom: 5%;" class="waves-effect waves-light btn-large" href="/">Discover Udabuddy</a>
   </div>
   
   
 </body>
+ <footer class="page-footer" style="background-color: #f49b89;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <a href="/"><h5 class="white-text" >This is Udabuddy</h5></a>
+                
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Discover More</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="/blogDemo">Blog</a></li>
+                  <li><a class="grey-text text-lighten-3" href="/wofDemo">Wall of Fame</a></li>
+                  <li><a class="grey-text text-lighten-3" href="/about">About Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="/">Join</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Udabuddy
+            <a class="grey-text text-lighten-4 right" href="#!">Fork</a>
+            </div>
+          </div>
+        </footer>
 <script src="js/materialize.min.js"></script>
 <script src="js/about.js"></script>
 <script type="text/javascript">
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  
 var showText = function (target, message, index, interval) {
   if (index<message.length)
   {
@@ -86,7 +248,7 @@ var showText = function (target, message, index, interval) {
     }
     $(function () {
       showText("#msg", "Where you meet, collaborate, and learn from awesome people at Udacity.", 0, 300);
-      });
+      });});
 </script>
 <script src="js/navfeature.js"></script>
 </html>
