@@ -1,0 +1,114 @@
+body{
+  background: linear-gradient(145deg, #33b5e5 , #888ec9, #f49b89);
+  height: 100%;
+  width: 100%;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 83%;
+}
+/* @media only screen and (min-width: 601px){
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px){
+  .container {
+    width: 70%;
+  }
+} */
+.container2 {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+/* @media only screen and (min-width: 601px){
+  .container2 {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px){
+  .container2 {
+    width: 70%;
+    }
+} */
+.navbar{
+  margin-bottom: 5%;
+  z-index: 1;
+}
+nav{
+  background-color: transparent !important;
+  box-shadow: none;
+  border: none;
+  padding: 1vw;
+}
+
+.intro_message{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2%;
+}
+
+h3{
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  padding-top: 1.5rem;
+  color: white;
+  opacity: .6;
+  margin: 0;
+  z-index: -1;
+}
+
+h1{
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  letter-spacing: -.025rem;
+  padding-top: 1.5rem;
+  color: white;
+}
+
+.btn-large{
+  background-color: #f49b89;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  letter-spacing: -.025rem;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.join h1{
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: -.025rem;
+  padding-top: 1.5rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.join h2{
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  letter-spacing: -.025rem;
+  padding-top: 1.5rem;
+  color: white;
+  margin-top: 0;
+}
