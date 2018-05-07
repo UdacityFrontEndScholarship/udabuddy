@@ -29,7 +29,9 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: none !important;
+  -webkit-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);
+-moz-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);
+box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82); !important;
 }
 
 .slide-nav {
