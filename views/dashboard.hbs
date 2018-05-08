@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -20,228 +19,471 @@
 </head>
 <body>
 
+<header>
+		<nav class="white">
+			<div class="nav-wrapper">
+				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
+				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
 
-	 <ul id="dropdown1" class="dropdown-content">
-	  <li id='logOut'><a href="#!">Logout</a></li>
-	  <li class="divider"></li>
-		<li><a href="#!">Something</a></li>
-	  <li class="divider"></li>
-		<li><a href="#!">Something Else</a></li>
-	  <li class="divider"></li>
-	</ul>
+				<ul id="nav-mobile" class="hide-on-med-and-down">
+			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
+			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
+			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
+			        <li class="right"><a href="#" id="logOut" class="black-text"><i class="small material-icons left">power_settings_new</i>Log Out</a></li>
+			        <li class="right"><a href="#" id="profile" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
+			        <li class="right"><a href="#" id="resources" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
+			     </ul>
+			</div>
 
-<!--
-	 <div class="navbar-fixed">
-		 <nav>
-      <div class="nav-wrapper light-blue accent-3">
-        <a href="#" class="brand-logo">UdaBuddy</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-          <li id='resources'><a href="#">Resources</a></li>
-          <li id='profile'><a href="#">Profile</a></li>
-  				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Settings<i class="material-icons right">arrow_drop_down</i></a></li>
-
-
-
-
-        </ul>
-      </div>
-  		</nav>
-	 </div>  -->
-
-	 <header>
- 		<nav class="white">
- 			<div class="nav-wrapper">
-
- 				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
- 				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-
- 				<ul id="nav-mobile" class="left hide-on-med-and-down">
- 			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
- 			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-						</ul>
- 					 <ul id="nav-mobile" class="right hide-on-med-and-down">
-
- 								 <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
- 								 <li id="resources"><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
- 								 <li id="profile"><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
-								 <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" class="black-text">Settings<i class="material-icons right">arrow_drop_down</i></a></li>
- 							</ul>
- 			</div>
-
- 		</nav>
+		</nav>
 		<ul class="sidenav"  id="mobile-nav">
-							<li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-							<li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-							<li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-							<li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-							<li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-					 </ul>
+			<li>
+				<ul class="collapsible black-text">
+					<li>
+						<div class="collapsible-header">Jobs</div>
+						<div class="collapsible-body  inner-collapse">
+							<ul class="collapsible">
+								<li>
+									<div class="collapsible-header">Job Stream</div>
+									<div class="collapsible-body">
+										<form class="nav-form">
+											<label>
+												<input type="checkbox" />
+										        <span>Data Analyst</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Web Developer</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Android Developer</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Company Type</div>
+									<div class="collapsible-body">
+										<form class="nav-form">
+											<label>
+												<input type="radio" name="com-type" />
+										        <span>Product Based</span>
+											</label><br>
+											<label>
+												<input type="radio" name="com-type"/>
+										        <span>Service Based</span>
+											</label><br>
+											<label>
+												<input type="radio" name="com-type"/>
+										        <span>All</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Location</div>
+									<div class="collapsible-body">
+										<form class="nav-form">
+											<label>
+												<input type="checkbox" />
+										        <span>Bangalore</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Chennai</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Delhi</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Package</div>
+									<div class="collapsible-body">
+										<form class="nav-form">
+											<label>
+												<input type="checkbox" />
+										        <span>Less than 5LPA</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>5LPA-10LPA</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Above 10LPA</span>
+											</label>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">Courses</div>
+						<div class="collapsible-body inner-collapse">
+							<ul class="collapsible">
+								<li>
+									<div class="collapsible-header">Course type</div>
+									<div class="collapsible-body">
+										<form class="nav-form">
+											<label>
+												<input type="checkbox" />
+										        <span>Nanodegree</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Free Course</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Skill Level</div>
+									<div class="collapsible-body">
+										<form class="nav-form">
+											<label>
+												<input type="checkbox" />
+										        <span>Beginner</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Intermediate</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Advanced</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Estimated Duration</div>
+									<div class="collapsible-body">
+										<form class="nav-form">
+											<label>
+												<input type="checkbox" />
+										        <span>&lt 1 month </span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>1-3 months</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>&gt 3 months</span>
+											</label>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
+			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
+			        <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
+			        <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
+			        <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
+			        <li><a href="#" class="black-text"><i class="small material-icons left">power_settings_new</i>Log Out</a></li>
+			     </ul>
 	</header>
-
-      <div class="row">
-
-				<div class="col s12 m3 l3 community">
-						<!-- left pane -->
-						<!-- community feed, recommended courses, post of the day -->
-
-						<div class="rc">
-							<p class="inner-head">Recommended Courses</p>
-							<ul>
-								<li><a style="color:white" href='#'>course name 1</a></li>
-								<li><a style="color:white" href='#'>course 2</a></li>
-								<li><a style="color:white" href='#'>name of 3rd course</a></li>
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col s12 l3 xl3">
+				<ul class="navigation collapsible hide-on-med-and-down white">
+					<li class="active">
+						<div class="collapsible-header">Jobs</div>
+						<div class="collapsible-body  inner-collapse">
+							<ul class="collapsible">
+								<li class="active">
+									<div class="collapsible-header">Job Stream</div>
+									<div class="collapsible-body">
+										<form>
+											<label>
+												<input type="checkbox" />
+										        <span>Data Analyst</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Web Developer</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Android Developer</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Company Type</div>
+									<div class="collapsible-body">
+										<form>
+											<label>
+												<input type="radio" name="com-type" />
+										        <span>Product Based</span>
+											</label><br>
+											<label>
+												<input type="radio" name="com-type"/>
+										        <span>Service Based</span>
+											</label><br>
+											<label>
+												<input type="radio" name="com-type"/>
+										        <span>All</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Location</div>
+									<div class="collapsible-body">
+										<form>
+											<label>
+												<input type="checkbox" />
+										        <span>Bangalore</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Chennai</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Delhi</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Package</div>
+									<div class="collapsible-body">
+										<form>
+											<label>
+												<input type="checkbox" />
+										        <span>Less than 5LPA</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>5LPA-10LPA</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Above 10LPA</span>
+											</label>
+										</form>
+									</div>
+								</li>
 							</ul>
-
 						</div>
-
-						<div class="pod">
-							<p class='inner-head'>Post of the Day</p>
-							<p>Heading about post</p>
-							<p>post description goes here</p>
-							<a style="color:white" href="#">link to post</a>
-
-						</div>
-
-						<div class="rc">
-							<p class="inner-head">Proposed Jobs</p>
-							<ul>
-								<li><a style="color:white" href='#'>course name 1</a></li>
-								<li><a style="color:white" href='#'>course 2</a></li>
-								<li><a style="color:white" href='#'>name of 3rd course</a></li>
+					</li>
+					<li>
+						<div class="collapsible-header">Courses</div>
+						<div class="collapsible-body inner-collapse">
+							<ul class="collapsible">
+								<li>
+									<div class="collapsible-header">Course type</div>
+									<div class="collapsible-body">
+										<form>
+											<label>
+												<input type="checkbox" />
+										        <span>Nanodegree</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Free Course</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Skill Level</div>
+									<div class="collapsible-body">
+										<form>
+											<label>
+												<input type="checkbox" />
+										        <span>Beginner</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Intermediate</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>Advanced</span>
+											</label>
+										</form>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header">Estimated Duration</div>
+									<div class="collapsible-body">
+										<form>
+											<label>
+												<input type="checkbox" />
+										        <span>&lt 1 month </span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>1-3 months</span>
+											</label><br>
+											<label>
+												<input type="checkbox" />
+										        <span>&gt 3 months</span>
+											</label>
+										</form>
+									</div>
+								</li>
 							</ul>
-
 						</div>
-
-
-						<div class="rc">
-							<p class="inner-head">Bookmarked</p>
-							<ul>
-								<li><a style="color:white" href='#'>course name 1</a></li>
-								<li><a style="color:white" href='#'>course 2</a></li>
-								<li><a style="color:white" href='#'>name of 3rd course</a></li>
-							</ul>
-
-						</div>
-
-				</div>
-
-
-
-				<div class="col s12 m9 l9 center">
-						<!-- middle pane -->
-						<!-- caraousel -->
-						<h5>Welcome</h5>
-						<h3 class='name'></h3>
-
-						<div class="row center">
-						 <div class="col s12">
-							 <div class="card blue-grey darken-1">
-								 <div class="card-content white-text">
-									 <span class="card-title">Your Activity</span>
-									 <div id='chart_div'>
-
-									 </div>
-
-								 </div>
-
-								 <!-- <div class="card-action">
-									 <a href="#">This is a link</a>
-									 <a href="#">This is a link</a>
-								 </div> -->
-							 </div>
-						 </div>
-						</div>
-
-
-						<ul class="collapsible">
-					    <li>
-					      <div class="collapsible-header"><i class="material-icons">done_all</i>Completed Courses</div>
-					      <div class="collapsible-body">
-									<span>
-
-
-											<div class="row center">
-
-													<div class="col s12 m6 l6">
-
-														<div class="row center">
-															<div class="col s12">
-																<div class="card">
-																	<div class="card-image">
-																		<img src="user_images/uda_ai.png">
-																		<span class="card-title black-text">Arificial Inteligence</span>
-																	</div>
-																	<div class="card-content">
-																		<p>Learn the essential foundations of AI: the programming tools (Python, NumPy, PyTorch), the math (linear algebra, vectors, matrices), and the key techniques of neural networks.</p>
-																	</div>
-																	<div class="card-action">
-																		<a href="#">Visit Course</a>
-																	</div>
-																</div>
-															</div>
-															</div>
-
-													</div>
-
-
-													<div class="col s12 m6 l6">
-
-														<div class="row center">
-															<div class="col s12">
-																<div class="card">
-																	<div class="card-image">
-																		<img src="user_images/uda_android.png">
-																		<span class="card-title black-text">Android</span>
-																	</div>
-																	<div class="card-content">
-																		<p>learn how to build a cloud-connected Android app, responsiveness, how to create amazing user experiences with rich media and publish it on Google Play</p>
-																	</div>
-																	<div class="card-action">
-																		<a href="#">Visit Course</a>
-																	</div>
-																</div>
-															</div>
-															</div>
-
-													</div>
-
-											</div>
-
-
-
-									</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col s12 m8 l6 xl6">
+				<div class="row">
+					<div class="col s12">
+						<div class="white card">
+						<h5 class="card-title welcome">Welcome <span class='name'></span></h5>
+						
+						<div>
+							<div class="card-title center-align">Your Activity</div>
+							<div class="card-content">
+								<div id='chart_div'>
+									
 								</div>
-					    </li>
-					    <li>
-					      <div class="collapsible-header"><i class="material-icons">description</i>Posts</div>
-					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-					    </li>
-					    <li>
-					      <div class="collapsible-header"><i class="material-icons">bookmark</i>Tutorials</div>
-					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
-					    </li>
-							<li>
-					      <div class="collapsible-header"><i class="material-icons">slideshow</i>Projects</div>
-					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-					    </li>
-							<li>
-					      <div class="collapsible-header"><i class="material-icons">work</i>Jobs</div>
-					      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-					    </li>
-					  </ul>
-
-
-
+							</div>
+						</div>
+						</div>
+					</div>
 				</div>
-
-
-
-      </div>
-
-
-
+				<div class="row">
+					<div class="col box s12 m6">
+						<div class="card white">
+							<div class="card-title center-align">Updates</div><hr>
+							<div class="row box">
+									<div class="col s3"><img class="circle responsive-img" alt="profile-pic" src="https://dummyimage.com/60x60/ababab/8184a8.jpg"></div>
+									<div class="col s9 update">
+										<i class="small material-icons right">thumb_up</i>
+										<h6 class="update-author">Author name</h6>
+										<p class="author-designation small-text grey-text">Designation</p>
+										<p class="small-text right grey-text likes">5 likes</p>
+										<p class="time small-text grey-text">20 hours ago</p>
+										<p class="description">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium nec nisl ac finibus. Curabitur varius nibh nulla, in blandit nulla iaculis at. Aliquam faucibus vestibulum mauris, vitae venenatis magna commodo ut. Aenean volutpat magna in ex auctor consectetur. Sed luctus arcu diam, vehicula feugiat diam placerat sit amet. Fusce tristique, tellus vitae dapibus volutpat, neque magna efficitur risus, pharetra iaculis sem ante eget nisi. Nam non fermentum neque, vel suscipit est.
+										</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="col box s12 m6">
+						<div class=" card white">
+							<div class="card-title center-align">Jobs</div><hr>
+							<div class="row box">
+								<div class="col s3"><img class="responsive-img" alt="company-logo" src="https://dummyimage.com/60x60/ababab/8184a8.jpg"></div>
+								<div class="col s9">
+									<h5 class="job-name">Company name</h5>
+									<p class="designation grey-text">web developer</p>
+									<p class="skills grey-text">Required skills</p>
+									<p class="location grey-text">Location</p>
+									<p class="description truncate">decription Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium nec nisl ac finibus.</p>
+								</div>
+							</div>
+							<div class="row box">
+								<div class="col s3"><img class="responsive-img" alt="company-logo" src="https://dummyimage.com/60x60/ababab/8184a8.jpg"></div>
+								<div class="col s9">
+									<h5 class="job-name">Company name</h5>
+									<p class="designation grey-text">web developer</p>
+									<p class="skills grey-text">Required skills</p>
+									<p class="location grey-text">Location</p>
+									<p class="description truncate">decription Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium nec nisl ac finibus.</p>
+								</div>
+							</div>
+							<div class="row box">
+								<div class="col s3"><img class="responsive-img" alt="company-logo" src="https://dummyimage.com/60x60/ababab/8184a8.jpg"></div>
+								<div class="col s9">
+									<h5 class="job-name">Company name</h5>
+									<p class="designation grey-text">web developer</p>
+									<p class="skills grey-text">Required skills</p>
+									<p class="location grey-text">Location</p>
+									<p class="description truncate">decription Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium nec nisl ac finibus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l3 xl3">
+				<div class="row">
+					<div class="col s12">
+						<div class="card white">
+							<div class="card-title center-align">Top Performers</div><hr>
+							<div class="card-content">
+								<div class="row">
+									<div class="col s2">
+										<img class="responsive-img circle center" alt="user-logo" src="https://dummyimage.com/60x60/ababab/8184a8.jpg">
+									</div>
+									<div class="col s10">
+										<p>John Doe</p>
+										<p class="grey-text small-text">Developer</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s2">
+										<img class="responsive-img circle" alt="user-logo" src="https://dummyimage.com/60x60/ababab/8184a8.jpg">
+									</div>
+									<div class="col s10">
+										<p>John Doe</p>
+										<p class="grey-text small-text">Student</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s2">
+										<img class="responsive-img circle" alt="user-logo" src="https://dummyimage.com/60x60/ababab/8184a8.jpg">
+									</div>
+									<div class="col s10">
+										<p>John Doe</p>
+										<p class="grey-text small-text">Manager</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col s12">
+						<div class="card white">
+							<div class="card-title center-align">Completed Courses</div><hr>
+							<div class="row">
+								<div class="col s12">
+									<div class="card box hoverable">
+										<span class="new badge right" data-badge-caption="">Intermediate</span>
+										<h5 class="course-name">Course name</h5>
+										<p class="course-detail">Short course detail<br>In collaboration with <span><strong>Google</strong></span></p>
+									</div>
+								</div>
+								<div class="col s12">
+									<div class="card box hoverable">
+										<span class="new badge right" data-badge-caption="">Beginner</span>
+										<h5 class="course-name">Course name</h5>
+										<p class="course-detail">Short course detail<br>In collaboration with <span><strong>Kaggle</strong></span></p>
+									</div>
+								</div>
+								<div class="col s12">
+									<div class="card box hoverable">
+										<span class="new badge right" data-badge-caption="">Advanced</span>
+										<h5 class="course-name">Course name</h5>
+										<p class="course-detail">Short course detail<br>In collaboration with <span><strong>Google</strong></span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/dashboard.js"></script>
 </body>
-<script src="js/materialize.min.js"></script>
-<script src="js/dashboard.js"></script>
 </html>

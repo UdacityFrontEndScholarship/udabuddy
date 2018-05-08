@@ -6,6 +6,7 @@ body{
   background-size: 10%;
   width: 60%;
   height: 100%;
+  z-index: -1;
 }
 .profile-bg{
   background-color: #0ee2ff;
@@ -30,6 +31,7 @@ nav {
   left: 0;
   right: 0;
   box-shadow: none !important;
+  z-index: 10;
 }
 
 .slide-nav {
