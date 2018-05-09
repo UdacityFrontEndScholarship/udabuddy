@@ -13,38 +13,256 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
+  <!-- <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/> -->
   <link rel="stylesheet" href="css/materialize.min.css">
+<!-- nnew links  -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <title>Blog Page</title>
 </head>
-<body>
-  <header>
-		<nav class="white">
-			<div class="nav-wrapper">
-				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-						</ul>
-					 <ul id="nav-mobile" class="right hide-on-med-and-down">
-								 <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-								 <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-								 <li><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
-							</ul>
-			</div>
 
-		</nav>
-		<ul class="sidenav"  id="mobile-nav">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-			     </ul>
-	</header>
-    <h1>This is the blog page for logged in user</h1>
+<body class="grey lighten-2">
+ <nav class="white">
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="small material-icons black-text">menu</i></a>
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">border_all</i></a>
+
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
+            <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
+          </ul>
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+               <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
+               <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
+               <li><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
+            </ul>
+
+
+
+
+      <ul class="side-nav grey darken-2" id="mobile-demo">
+        <li class="sidenav-header blue">
+          <div class="row">
+            <div class="col s4">
+                <img src="https://images.unsplash.com/photo-1476493279419-b785d41e38d8?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=84b5e98f8aa344f22d9a042596ce967b" alt="" class="responsive-img valign profile-image">
+            </div>
+            <div class="col s4">
+                <a class="btn-flat dropdown-button waves-effect waves-light white-text" href="#" data-activates="profile-dropdown">@js_love<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <ul id="profile-dropdown" class="dropdown-content">
+                    <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
+                    <li><a href="#"><i class="material-icons">settings</i>Setting</a></li>
+                    <li><a href="#"><i class="material-icons">exit_to_app</i>Logout</a></li>
+                </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="blue">
+          <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header white-text waves-effect waves-blue "><i class="material-icons white-text ">featured_play_list</i>My Blogs<i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
+                <div class="collapsible-body z-depth-3">
+                  <ul>
+                    <li><a class="waves-effect waves-blue" href="#">React apps:overview</a></li>
+                    <li><a class="waves-effect waves-blue" href="#">Angular 4</a></li>
+                    <li><a class="waves-effect waves-blue" href="#">front-end challenges</a></li>
+                    <li><a class="waves-effect waves-blue" href="#">My experience</a></li>
+                    <li><div class="divider"></div></li>
+                  </ul>
+                </div>
+              </li>
+          </ul>
+        </li>
+
+
+        <li class="white">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header waves-effect waves-blue"><i class="material-icons">folder_special</i>Likes <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">favorite</i>how to win...<span class="new badge right yellow grey lighten-1" data-badge-caption="past"></span></a></li>
+                  <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">favorite</i>The new ai_bot<span class="new badge right yellow darken-3"></span></a></li>
+                  <li><div class="divider"></div></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="white">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header waves-effect waves-blue"><i class="material-icons">folder_open</i>Mentions<i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">comment</i>@john doe</a></li>
+                  <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">comment</i>@shane peter</a></li>
+                  <li><div class="divider"></div></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">book</i>Write Blog</a></li>
+
+        <li class="white"><div class="divider"></div></li>
+        <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">crop_3_2</i>Read Recent<span class="new badge right yellow darken-3"></span></a></li>
+
+        <li class="sidenav-footer grey darken-2">
+
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <ul class="sidenav"  id="mobile-nav">
+            <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
+            <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
+            <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
+            <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
+            <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
+         </ul>
+
+  <div class="row">
+    <div class="col s12 m2">
+
+    </div>
+
+    <div class="col s12 m7 ">
+<!--       <div class="container">  -->
+
+     <h3>Recent</h3>
+    <div class="col s12 m12 ">
+
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1485617698980-9bdd50acca0a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=9c8eac19af585fdab019bc58fb3d12a2">
+
+        </div>
+         <div class="card-stacked">
+          <div class="card-content">
+            <span class="card-title">Full stack web development</span>
+            <p>A  of existence in this spot, which was created for the bliss of souls like mine.
+              </p>
+          </div>
+          <div class="card-action">
+              <a href="#"><i class="material-icons grey-text">open_in_new</i></a>
+
+                        <a href="#" class="right grey-text"><i class="material-icons grey-text">more_horiz</i></a>
+
+          <a href="#" class="right grey-text"><i class="material-icons ">share</i></a>
+           <a href="#" class="right grey-text"><i class="material-icons">comment</i>45</a>
+
+          <a href="#" class="right grey-text"><i class="material-icons">star</i>344</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col s12 ">
+
+     <div class="card horizontal">
+        <div class="card-image">
+          <img src="https://unsplash.it/400/300?image=503" >
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <span class="card-title">Dreams coming true</span>
+            <p> spring which I enjoy with my whole heart. I am alone, and feel the charm of existence
+              </p>
+          </div>
+          <div class="card-action">
+              <a href="#"><i class="material-icons grey-text">open_in_new</i></a>
+
+                        <a href="#" class="right grey-text"><i class="material-icons grey-text">more_horiz</i></a>
+
+          <a href="#" class="right grey-text"><i class="material-icons ">share</i></a>
+           <a href="#" class="right grey-text"><i class="material-icons">comment</i>45</a>
+
+          <a href="#" class="right grey-text"><i class="material-icons">star</i>344</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col s12 m12">
+
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1509231542929-840d38d1f798?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=d02075c916a204e73ee723efe8e8d241" class="fadedfx">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <span class="card-title">Learning Angular </span>
+            <p>A wonderful serenity has taken possession of my entire soul,
+              </p>
+          </div>
+          <div class="card-action">
+           <a href="#"><i class="material-icons grey-text">open_in_new</i></a>
+
+                        <a href="#" class="right grey-text"><i class="material-icons grey-text">more_horiz</i></a>
+
+          <a href="#" class="right grey-text"><i class="material-icons ">share</i></a>
+           <a href="#" class="right grey-text"><i class="material-icons">comment</i>45</a>
+
+          <a href="#" class="right grey-text"><i class="material-icons">star</i>344</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="col s12 m3">
+      <h3>Trending</h3>
+
+      <div class="col s12 m12">
+        <div class="card">
+          <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1510575043928-56392c94d6ad?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=7410856f33bdfd57fccde4854dde9af1">
+          <span class="card-title">Angular 5 </span>
+          </div>
+            <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+          <div class="card-action">
+          <a href="#">@littlestar</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col s12 m12">
+        <div class="card">
+          <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1517527808732-2f3aa7da3d75?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=a2288770b9029e75c644667eb69a1cf3">
+          <span class="card-title">Angular 5 </span>
+          </div>
+            <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+          <div class="card-action">
+          <a href="#">@js_love</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
 </body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="js/blog.js"></script>
 </html>
