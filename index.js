@@ -12,6 +12,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/',(req,res)=>{
     res.render('index');
 });
+app.get('/blogShow',(req,res)=>{
+    res.render('blogShow');
+});
 app.get('/dashboard',(req,res)=>{
     res.render('dashboard');
 });
