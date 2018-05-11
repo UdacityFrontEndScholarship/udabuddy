@@ -4,6 +4,9 @@ body{
   width: 100%;
 }
 
+nav{
+  box-shadow: none !important;
+}
 
 .container {
   margin: 0 auto;

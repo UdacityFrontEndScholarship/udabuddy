@@ -28,3 +28,12 @@
   window.addEventListener('load', function() {
     initApp()
   });
+
+  $(window).scroll(function(){
+    let scroll = $(window).scrollTop();
+    if(scroll<60){
+      $('nav').attr('style','background-color: transparent !important');
+    }else{
+      $('nav').attr('style','background-color: rgba(89, 164, 196, .8) !important');
+    }
+  });
