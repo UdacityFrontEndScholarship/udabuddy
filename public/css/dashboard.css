@@ -70,6 +70,22 @@ hr{
 .job-name{
   margin:0px 0px 3px 0px;
 }
+
+.card-title{
+  color: black;
+  padding: 0 !important;
+}
+
+/* Completed Courses section - To fix overflowing card title and content from Completed Courses card when it is active */
+.card,
+.card-title {
+  position: relative !important;
+}
+
+/* Removes unnecessary margin at the bottom of Completed Courses card when it is active */
+.row .collapsible .active .collapsible-body span .row {
+  margin-bottom: 0 !important;
+}
 /*.collapsible{
   margin: 5px 0px 0px 0px;
 }*/
