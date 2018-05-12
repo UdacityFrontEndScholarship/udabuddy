@@ -2,491 +2,385 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Wall Of Fame</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="/css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="/css/wall_style.css" rel="stylesheet">
-    <link href="/css/wall-style.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/materialize-social.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Wall of fame</title>
+  <style type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans);
+ 
 
+  .card-footer {
+  border-top: solid 1px #B6B6B6;
+  padding: 5px;
+}
+
+.card-footer ul {
+  padding: 0;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.card-footer ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+.card-footer ul li i {
+  font-size: 2em;
+  color: #3F51B5;
+}
+.container2 {
+  
+  margin: 0 auto;
+  
+  max-width: 1280px;
+  width: 80%;
+}
+@media only screen and (min-width: 601px)
+  .container2 {
+  	 
+    width: 85%;
+}
+@media only screen and (min-width: 993px)
+  .container2 {
+    width: 70%;
+    
+}
+.cardup { width:800px;}
+
+
+
+@media only screen
+and (max-width : 480px) {
+.cardup { width:100px;}
+}
+
+
+@media only screen
+and (max-width : 767px) {
+.cardup { width:400px;}
+}
+h1 {
+    position: relative;
+    #font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+h1:before, h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: white;
+}
+h1:before {
+    margin-left: -50%;
+    text-align: right;
+}
+  </style>
+  
 </head>
-
-<body>
-    <!-------navbar starting------>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <div class="container">
-
-            <!-- Brand -->
-            <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
-                <strong>UdaBuddy</strong>
-            </a>
-
-            <!-- Collapse -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-            <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <!-- Left -->
-                <ul class="navbar-nav mr-auto">
-
-
-                </ul>
-
-                <!-- Right -->
-                <ul class="navbar-nav nav-flex-icons">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">DashBoard</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Wall Of Fame
-              <span class="sr-only">(current)</span>
-            </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">Showcase</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">Forms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">Blog</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-    </nav>
-    <!-------ending of navbar-------------->
-
-    <!------------landing page----------------->
-    <div class="view" style="background-image: url(/media/structure-light-led-movement-158826.jpeg); background-repeat: no-repeat; background-size: cover;">
-
-        <!-- Mask & flexbox options-->
-        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                    <strong>Wall of Fame</strong>
-                </h1>
-
-                <p>
-                    <strong>A Page giving details about Good Work by our Alumni</strong>
-                </p>
-
-                <p class="mb-4 d-none d-md-block">
-                    <strong>Design your Website and submit to feature in "Wall Of Fame".</strong>
-                </p>
-
-                <a target="_blank" href="#jumphere" class="btn btn-outline-white btn-lg">Explore Now
-          
-        </a>
-            </div>
-            <!-- Content -->
-
-        </div>
-        <!-- Mask & flexbox options-->
-
+<body style="background: linear-gradient(145deg, #33b5e5 , #888ec9, #f49b89); height: 100%; width: 100%; ">
+  <div class="navbar" style="margin-bottom: 5%; z-index: 1;">
+  
+  <nav style="background-color: transparent !important; box-shadow: none; border: none; padding: 1vw;">
+    <div class="nav-wrapper" >
+      <a href="#!" class="brand-logo">Udabuddy</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/blogDemo">Blog</a></li>
+        <li><a href="/wofDemo">Wall of Fame</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/">Udabuddy</a></li>
+      </ul>
     </div>
-
-    <!-----------cards with 3------------>
-    <!--Grid row-->
-
-
-
-    <main class="mt-5 pt-5">
-        <div class="container">
-            <hr class="my-5">
-
-            <!--Section: Cards-->
-            <section class="text-center">
-
-                <!--Grid row-->
-                <div id="jumphere" class="row mb-4 wow fadeIn">
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/Namrata.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">Simple parallax scroll</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">Namrata</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/nikki158/full/mxxyWr" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card1github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/nikki158/full/mxxyWr"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/nikki158/full/mxxyWr"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-
-<div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/little%20star.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">Weather App</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">avinash</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/littlestar642/full/jzzzEP/" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card2github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/littlestar642/full/jzzzEP/"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/littlestar642/full/jzzzEP/"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-
-<div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/Ratnadeep%20Biswakarma.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">My First Calculator</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">Ratnadeep Biswakarma</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/Ratnadeep/full/zWazjw/" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card3github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/Ratnadeep/full/zWazjw/"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/Ratnadeep/full/zWazjw/"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-
-                   
-
-                </div>
-                <!--Grid row-->
-                <div class="row mb-4 wow fadeIn">
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/madhuri%20soni.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">Pomodoro clock</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">madhuri soni</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/madhurisoni12/full/pWoyXZ/" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card1github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/madhurisoni12/full/pWoyXZ/"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/madhurisoni12/full/pWoyXZ/"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-
-<div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/suguna.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">Multi Game</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">suguna</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/sugunav/full/vRzRZm" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card2github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/sugunav/full/vRzRZmhttps://codepen.io/sugunav/full/vRzRZm"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/sugunav/full/vRzRZm"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-
-<div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/manish.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">360</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">Manish</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/monty196/pen/PEzjgy" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card3github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/monty196/pen/PEzjgy"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/monty196/pen/PEzjgy"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-                </div>
-                <div class="row mb-4 wow fadeIn">
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/Prateek%20Tewari.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">tribute to abdul kalam</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">Prateek Tewari</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/Prateek-Tewari/full/YZQyMO" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card1github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/Prateek-Tewari/full/YZQyMO"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/Prateek-Tewari/full/YZQyMO"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-
-<div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/shruti.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">tribute to mother teresa</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">shruti</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/sshastri/full/ZxqbNE/" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card2github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/sshastri/full/ZxqbNE/"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/sshastri/full/ZxqbNE/"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-
-<div class="col-lg-4 col-md-12 mb-4">
-
-                        <!--Card-->
-                        <div class="card">
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="media/images/Hunny.png" class="img-fluid" alt="">
-                                <a href="https://mdbootstrap.com/web-push-start/" target="_blank">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-                                <!--Title-->
-                                <h5 class="card-title">Youtube lite</h5>
-                                <!--Text-->
-                                <p class="card-text"><strong>By
-                                    <a href="#">Hunny</a>
-                                    </strong></p>
-                                <a href="https://codepen.io/webster123/full/JvEXZe/" target="_blank" class="btn btn-primary btn-md">Explore Full Page
-                                    <i class="fa fa-play ml-2"></i>
-                                </a>
-                                <br>
-                                <br>
-                            <div style="font-size:2em; color:black">
-                                     <a href="card3github"><i class="fab fa-github"></i></a>
-                                    <a href="https://codepen.io/webster123/full/JvEXZe/"><i class="fab fa-codepen"></i></a>
-                                    <a href="https://codepen.io/webster123/full/JvEXZe/"><i class="fas fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Card-->
-                    </div>
-                </div>
-                
-
-
-                <!--Pagination-->
-                <nav class="d-flex justify-content-center wow fadeIn">
-                    <ul class="pagination pg-blue">
-
-                        <!--Arrow left-->
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-
-                        <li class="page-item active">
-                            <a class="page-link" href="#">1
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">5</a>
-                        </li>
-
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!--Pagination-->
-
-            </section>
-            <!--Section: Cards-->
-
+  </nav>
+   <ul class="sidenav" id="mobile-demo">
+    <li><a href="/blogDemo">Blog</a></li>
+    <li><a href="/wofDemo">Wall of Fame</a></li>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/">Udabuddy</a></li>
+  </ul>
+  
+  </div>
+  <div class="upper-sec container2" style="height: 80%;">
+  <h1 style="  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0;
+    color: white; margin-top: 10%; margin-bottom: 12%;">  Featured project!  </h1>
+    
+   <h4 style="  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    color: white;">Udabuddy</h4>
+  <div class="big_project  cardup " style="width: 100%; height: 80%;">
+  <div class="card-image">
+  <img class="materialboxed" width="100%" height="70%" src="media/udabuddy.jpg">
+  </div>
+  <div class="card-footer" style="background-color: #f49b89; height: 80%;">
+    <ul class="collection" style="height: 80%; margin: 0px; border: 0px;">
+      <li class="collection-item avatar"  style="float: left; background-color: #f49b89; height: 80%; "> <img src="media/build.png" alt="" class="circle"> <span class="title" 
+    style="  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: white;"> Team Udabuddy</span>
+      </li>
+    </ul>
+    <ul style="height: 80%;">
+      <a class="waves-effect waves-light btn-floating social google">
+      <i class="fa fa-google"></i> Sign in with Google</a> 
+      <a class="waves-effect waves-light btn-floating social github">
+      <i class="fa fa-github"></i> Sign in with github</a>           
+      <a class="waves-effect waves-light btn-floating social linkedin">
+      <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
+    </ul>
+   </div>
+  </div>
+  
+  </div>
+  <div class="lower-sec " style="height: 100%; background-color: ;">
+  <h1 
+  style=" font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0;
+    color: white;">Projects that stand out!</h1>
+  <div class="container2">
+  <div class="row">
+    <div class="col s12 m6 l4">
+      <div class="card" style="overflow: hidden;">
+        <div class="card-image">
+          <img class="activator materialboxed" src="media/about.jpg">
+         <span class="card-title" style="color: black;">About Page</span>
         </div>
-    </main>
+        <div class="card-footer" style="background-color: #f49b89; height: 80%;">
+          <ul class="collection" style="padding: 0px; height: 100%; margin: 0px; border: 0px;">
+          <li class="collection-item avatar"  style="float: left; background-color: #f49b89;"> <img src="media/rahul.jpg" alt="" class="circle"> <span class="title" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: white;"> Rahul Roy </span>
+          </li>
+          </ul>
+          <ul>
+          <a class="waves-effect waves-light btn-floating social google">
+          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <a class="waves-effect waves-light btn-floating social github">
+          <i class="fa fa-github"></i> Sign in with github</a>           
+          <a class="waves-effect waves-light btn-floating social linkedin">
+          <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
+          </ul>   
+        </div>
+      </div>
+    </div>
+      <div class="col s12 m6 l4">
+      <div class="card " style="overflow: hidden;">
+        <div class="card-image">
+          <img class="activator materialboxed" src="media/showcase1.jpg">
+          <span class="card-title" style="color: black;">Showcase</span>
+        </div>
+        <div class="card-footer" style="background-color: #f49b89; height: 80%;">
+          <ul class="collection" style="padding: 0px; height: 100%; margin: 0px; border: 0px;">
+          <li class="collection-item avatar"  style="float: left; background-color: #f49b89;"> <img src="media/rahul.jpg" alt="" class="circle"> <span class="title" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: white;">Rahul Roy</span>
+          </li>
+          </ul>
+          <ul>
+          <a class="waves-effect waves-light btn-floating social google">
+          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <a class="waves-effect waves-light btn-floating social github">
+          <i class="fa fa-github"></i> Sign in with github</a>           
+          <a class="waves-effect waves-light btn-floating social linkedin">
+          <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
+          </ul>   
+        </div>
+      </div>
+    </div>
+      <div class="col s12 m6 l4">
+      <div class="card " style="overflow: hidden;">
+        <div class="card-image">
+          <img class="activator materialboxed" src="media/blog1.jpg">
+          <span class="card-title" style="color: black;">Blog</span>
+        </div>
+        <div class="card-footer" style="background-color: #f49b89; height: 80%;">
+          <ul class="collection" style="padding: 0px; height: 100%; margin: 0px; border: 0px;">
+          <li class="collection-item avatar"  style="float: left; background-color: #f49b89;"> <img src="media/place.jpg" alt="" class="circle"> <span class="title" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: white;"> Avinash</span>
+          </li>
+          </ul>
+          <ul>
+          <a class="waves-effect waves-light btn-floating social google">
+          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <a class="waves-effect waves-light btn-floating social github">
+          <i class="fa fa-github"></i> Sign in with github</a>           
+          <a class="waves-effect waves-light btn-floating social linkedin">
+          <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
+          </ul>   
+        </div>
+      </div>
+    </div>
+      <div class="col s12 m6 l4">
+      <div class="card " style="overflow: hidden;">
+        <div class="card-image">
+          <img class="activator materialboxed" src="media/dashboard.jpg">
+          <span class="card-title" style="color: black;">Dashboard</span>
+        </div>
+        <div class="card-footer" style="background-color: #f49b89; height: 80%;">
+          <ul class="collection" style="padding: 0px; height: 100%; margin: 0px; border: 0px;">
+          <li class="collection-item avatar"  style="float: left; background-color: #f49b89;"> <img src="media/place.jpg" alt="" class="circle"> <span class="title" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: white;"> Avinash</span>
+          </li>
+          </ul>
+          <ul>
+          <a class="waves-effect waves-light btn-floating social google">
+          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <a class="waves-effect waves-light btn-floating social github">
+          <i class="fa fa-github"></i> Sign in with github</a>           
+          <a class="waves-effect waves-light btn-floating social linkedin">
+          <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
+          </ul>   
+        </div>
+      </div>
+    </div>
+      <div class="col s12 m6 l4">
+      <div class="card " style="overflow: hidden;">
+        <div class="card-image">
+          <img class="activator materialboxed" src="media/index.jpg">
+          <span class="card-title" style="color: black;">Index page</span>
+        </div>
+        <div class="card-footer" style="background-color: #f49b89; height: 80%;">
+          <ul class="collection" style="padding: 0px; height: 100%; margin: 0px; border: 0px;">
+          <li class="collection-item avatar"  style="float: left; background-color: #f49b89;"> <img src="media/place.jpg" alt="" class="circle"> <span class="title" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: white;"> Ps Rajuput</span>
+          </li>
+          </ul>
+          <ul>
+          <a class="waves-effect waves-light btn-floating social google">
+          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <a class="waves-effect waves-light btn-floating social github">
+          <i class="fa fa-github"></i> Sign in with github</a>           
+          <a class="waves-effect waves-light btn-floating social linkedin">
+          <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
+          </ul>   
+        </div>
+      </div>
+    </div>
+      <div class="col s12 m6 l4">
+      <div class="card " style="overflow: hidden;">
+        <div class="card-image">
+          <img class="activator materialboxed" src="media/forum1.jpg">
+          <span class="card-title" style="color: black;">Forum</span>
+        </div>
+        <div class="card-footer" style="background-color: #f49b89; height: 80%;">
+          <ul class="collection" style="padding: 0px; height: 100%; margin: 0px; border: 0px;">
+          <li class="collection-item avatar"  style="float: left; background-color: #f49b89;"> <img src="media/place.jpg" alt="" class="circle"> <span class="title" style="font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: white;"> Prateek</span>
+          </li>
+          </ul>
+          <ul>
+          <a class="waves-effect waves-light btn-floating social google">
+          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <a class="waves-effect waves-light btn-floating social github">
+          <i class="fa fa-github"></i> Sign in with github</a>           
+          <a class="waves-effect waves-light btn-floating social linkedin">
+          <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
+          </ul>   
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="/js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="/js/mdb.min.js"></script>
 </body>
+ <footer class="page-footer" style="background-color: #f49b89;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <a href="/"><h5 class="white-text" >This is Udabuddy</h5></a>
+                
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Discover More</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="/blogDemo">Blog</a></li>
+                  <li><a class="grey-text text-lighten-3" href="/wofDemo">Wall of Fame</a></li>
+                  <li><a class="grey-text text-lighten-3" href="/about">About Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="/">Join</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Udabuddy
+            <a class="grey-text text-lighten-4 right" href="#!">Fork</a>
+            </div>
+          </div>
+        </footer>
+<script src="js/materialize.min.js"></script>
+<script src="js/about.js"></script>
+<script type="text/javascript">
+  // Or with jQuery
+    
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, options);
+  });
 
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
+  });
+</script>
+<script src="js/navfeature.js"></script>
 </html>
