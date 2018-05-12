@@ -4,6 +4,9 @@ body{
   width: 100%;
 }
 
+nav{
+  box-shadow: none !important;
+}
 
 .container {
   margin: 0 auto;
@@ -35,16 +38,6 @@ body{
     width: 70%;
     }
 } */
-.navbar{
-  margin-bottom: 5%;
-  z-index: 1;
-}
-nav{
-  background-color: transparent !important;
-  box-shadow: none;
-  border: none;
-  padding: 1vw;
-}
 
 .intro_message{
   height: 90%;
