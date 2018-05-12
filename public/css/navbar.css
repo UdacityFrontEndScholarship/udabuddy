@@ -36,7 +36,6 @@ nav {
   background-color: transparent !important;
   border: none;
   padding: 0 1vw 0 1vw;
-  z-index: 99;
   -webkit-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);
   -moz-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);  
   box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82) !important;
