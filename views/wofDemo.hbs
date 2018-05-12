@@ -14,8 +14,18 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
+  <link type = "text/css" rel = "stylesheet" href = "css/wof.css" media="screen,projection"/>
   <link rel="stylesheet" href="css/materialize.min.css">
     <title>Wall of Fame</title>
+  <script>
+    $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+      $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  </script>
 </head>
 <body>
   <header>
@@ -47,9 +57,62 @@
               <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
            </ul>
   </header>
-    <h1>This page shows Wall of fame for anonymous user</h1>
+   <!--  <h1>This page shows Wall of fame for anonymous user</h1>
     <h2>Only one demo page will be shown here and all the links directed to signup/login</h2>
-    <button id="signIn">SignIn/SignUp</button>
+    <button id="signIn">SignIn/SignUp</button> -->
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCWktPJhK8dsoFX13g1hhSzoVzgwdsS0jAQCLPiJUGneuJPd8Q0w"></div>
+      <div class = "text-block">
+      <h2>Wall of fame</h2>
+      </div>
+      <div class = "text-logo">
+      <h4><p>Skills + Confidence = Action.   Action + Grit = Success</p></h4>
+      <p><h5 style="padding-left: 24px;">See how udacity graduates continue to make a mark in the world!</h5></p>
+      </div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <div class="carousel carousel-slider center">
+          <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">Next</a>
+          </div>
+        <div class="carousel-item red white-text" href="#one!">
+          <h2>Sebastian Thrun</h2>
+          <div class = "wof-img">
+          <img src = "https://cdn-images-1.medium.com/max/1600/1*rHGZuyl-2V4o57dL-Jub_A.png" class = "circle responsive-img">
+          </div>
+          <p class="white-text">Thrun led development of the robotic vehicle Stanley[6] which won the 2005 DARPA Grand Challenge, and which has since been placed on exhibit in the Smithsonian Institution's National Museum of American History. His team also developed a vehicle called Junior,which placed second at the DARPA Grand Challenge (2007). Thrun led the development of the Google self-driving car.</p>
+        </div>
+      <div class="carousel-item amber white-text" href="#two!">
+        <h2>Sebastian Thrun</h2>
+        <div class = "wof-img">
+        <img src = "https://cdn-images-1.medium.com/max/1600/1*rHGZuyl-2V4o57dL-Jub_A.png" class = "circle responsive-img">
+        </div>
+        <p class="white-text">Thrun led development of the robotic vehicle Stanley[6] which won the 2005 DARPA Grand Challenge, and which has since been placed on exhibit in the Smithsonian Institution's National Museum of American History. His team also developed a vehicle called Junior,which placed second at the DARPA Grand Challenge (2007). Thrun led the development of the Google self-driving car.</p>
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h2>Sebastian Thrun</h2>
+        <div class = "wof-img">
+        <img src = "https://cdn-images-1.medium.com/max/1600/1*rHGZuyl-2V4o57dL-Jub_A.png" class = "circle responsive-img">
+        </div>
+        <p class="white-text">Thrun led development of the robotic vehicle Stanley[6] which won the 2005 DARPA Grand Challenge, and which has since been placed on exhibit in the Smithsonian Institution's National Museum of American History. His team also developed a vehicle called Junior,which placed second at the DARPA Grand Challenge (2007). Thrun led the development of the Google self-driving car.</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!">
+        <h2>Sebastian Thrun</h2>
+        <div class = "wof-img">
+        <img src = "https://cdn-images-1.medium.com/max/1600/1*rHGZuyl-2V4o57dL-Jub_A.png" class = "circle responsive-img">
+        </div>
+        <p class="white-text">Thrun led development of the robotic vehicle Stanley[6] which won the 2005 DARPA Grand Challenge, and which has since been placed on exhibit in the Smithsonian Institution's National Museum of American History. His team also developed a vehicle called Junior,which placed second at the DARPA Grand Challenge (2007). Thrun led the development of the Google self-driving car.</p>
+      </div>
+  </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCWktPJhK8dsoFX13g1hhSzoVzgwdsS0jAQCLPiJUGneuJPd8Q0w"></div>
+    </div>
+        
+  </div>
 </body>
 <script src="js/materialize.min.js"></script>
 <script src="js/wofD.js"></script>
