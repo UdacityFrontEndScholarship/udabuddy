@@ -6,6 +6,7 @@ body{
   background-size: 10%;
   width: 60%;
   height: 100%;
+  z-index: -1;
 }
 .profile-bg{
   background-color: #0ee2ff;
