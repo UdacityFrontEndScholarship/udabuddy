@@ -24,14 +24,21 @@ header {
   padding: 3%;
 }
 
+.navbar{
+  margin-bottom: 5%;
+}
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  background-color: transparent !important;
+  border: none;
+  padding: 0 1vw 0 1vw;
   -webkit-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);
--moz-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);
-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82); !important;
+  -moz-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);  
+  box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82) !important;
 }
 
 .slide-nav {
