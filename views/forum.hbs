@@ -17,36 +17,345 @@
   <link rel="stylesheet" href="css/materialize.min.css">
     <title>Forum</title>
 </head>
+<!--Home Navbar-->
+<nav class="nav-extended cyan lighten-3 hoverable">
+  <div class="nav-wrapper">
+    <a href="./index2.html" class="brand-logo">
+      <i class="material-icons">home</i>Udabuddy</a>
+    <div class="nav-content">
+      <ul id="nav-mobile" class="tabs tabs-transparent hide-on-med-and-down">
+        <li class="tab right">
+          <a href="./index2.html" class="black-text active">Latest</a>
+        </li>
+        <li class="tab right">
+          <a href="badges.html" class="black-text">Unanswered</a>
+        </li>
+        <li class="tab right">
+          <a href="collapsible.html" class="black-text">Trending</a>
+        </li>
+        <li class="tab right">
+          <a href="collapsible.html" class="black-text">Popular</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <span class="nav-title"></span>
+      <a class="btn-floating btn-large halfway-fab waves-effect waves-light red lighten-2 pulse">
+        <i class="material-icons">add</i>
+      </a>
+    </div>
+</nav>
+
+
+<!--body-->
+
 <body>
-  <header>
-		<nav class="white">
-			<div class="nav-wrapper">
+  <div class="row">
+    <div class="col s12 m4 l4">
+      <!--Top Users Of The Week-->
+      <div class="row hide-on-small-only">
+        <div class="card grey lighten-4 hoverable">
+          <div class="card-content black-text">
+            <span class="card-title">
+              Top Users Of The Week
+            </span>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="chip">
+                <img src="./images/Avengers-Black-Widow-icon.png" alt="Contact Person "> Black-Widow
+              </div>
+              <i class="material-icons">stars</i>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="chip">
+                <img src="./images/Avengers-Captain-America-icon.png" alt="Contact Person"> Captain-America
+              </div>
+              <i class="material-icons">star_half</i>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="chip">
+                <img src="./images/Avengers-Hulk-icon.png" alt="Contact Person"> The-Hulk
+              </div>
+              <i class="material-icons">star_border</i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+      <!--Hot Questions-->
+      <div class="row">
+        <div class="card grey lighten-4 hoverable hide-on-small-only">
+          <div class="card-content black-text">
+            <span class="card-title">
+              Hot Questions
+            </span>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="col s2 m2 l2">
+                <span class="left-align">
+                  <i class="material-icons">whatshot</i>
+                </span>
+              </div>
+              <div class="col s10 m10 l10">
+                <span class="valign-wrapper truncate">Click to view the hottest questions about Avengers</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="col s2 m2 l2">
+                <span class="left-align">
+                  <i class="material-icons">whatshot</i>
+                </span>
+              </div>
+              <div class="col s10 m10 l10">
+                <span class="valign-wrapper truncate">Click to view the hottest questions about Avengers</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="col s2 m2 l2">
+                <span class="left-align">
+                  <i class="material-icons">whatshot</i>
+                </span>
+              </div>
+              <div class="col s10 m10 l10">
+                <span class="valign-wrapper truncate">Click to view the hottest questions about Avengers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--body background="./Doodle_3.JPG"-->
+    <!--Forum Posts Main Section-->
+    <div class="col s12 m8 l8">
+      <div class="row card hoverable grey lighten-4">
+        <div class="card-content">
+          <div class="col s2 m2 l1">
+            <span>
+              <img class="circle materialboxed pulse" src="./images/Avengers-Iron-Man-icon.png" height="90%" width="90%" alt="anyways">
+            </span>
+          </div>
+          <div class="col s7 m7 l8">
+            <div class="row ">
+              <span>Take Me Out from Thanos's Planet
 
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-						</ul>
-					 <ul id="nav-mobile" class="right hide-on-med-and-down">
-								 <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-								 <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-								 <li><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
-							</ul>
-			</div>
+              </span>
+            </div>
+            <div class="row">
+              <span>
+                <i class="material-icons">check_circle</i>
+                <span class="red-text">0 answers</span>
+                <i class="material-icons">arrow_upward</i>
+                <span class="green-text">0 Votes</span>
+                <i class="material-icons">visibility</i>
+                <span class="cyan-text">100 Alien views</span>
+              </span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span>
+                  <div class="chip">
+                    Help
+                  </div>
+                  <div class="chip">
+                    Stuck
+                  </div>
+                  <div class="chip">
+                    #ThanosIsBadass
+                  </div>
+                </span>
+              </div>
+              <div class="col">
+                <span class="right-align grey-text lighten-4">
+                  Asked 2 Hours Ago
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		</nav>
-		<ul class="sidenav"  id="mobile-nav">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-			     </ul>
-	</header>
-    <h1>This is the forum Page for logged in user only</h1>
+
+      <div class="row card hoverable grey lighten-4">
+        <div class="card-content">
+          <div class="col s2 m2 l1">
+            <span>
+              <img class="circle materialboxed pulse" src="./images/Avengers-Nick-Fury-icon.png" height="90%" width="90%" alt="anyways">
+            </span>
+          </div>
+          <div class="col s7 m7 l8">
+            <div class="row">
+              <span>Calling Captain Marvel
+
+              </span>
+            </div>
+            <div class="row">
+              <span>
+                <i class="material-icons">check_circle</i>
+                <span class="red-text">No answers</span>
+                <i class="material-icons">arrow_upward</i>
+                <span class="green-text">12 Votes</span>
+                <i class="material-icons">visibility</i>
+                <span class="cyan-text">50 Shield Views</span>
+              </span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span>
+                  <div class="chip">
+                    Help
+                  </div>
+                  <div class="chip">
+                    #SaveEarth
+                  </div>
+                  <div class="chip">
+                    #AvengeUs
+                  </div>
+                </span>
+              </div>
+              <div class="col">
+                <span class="right-align grey-text lighten-4">
+                  Asked 2 Hours Ago
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row card hoverable grey lighten-4">
+        <div class="card-content">
+          <div class="col s2 m2 l1">
+            <span>
+              <img class="circle materialboxed pulse" src="./images/Avengers-Loki-icon.png" height="90%" width="90%" alt="anyways">
+            </span>
+          </div>
+          <div class="col s7 m7 l8">
+            <div class="row">
+              <span>Loki Is Dead At Last
+
+              </span>
+            </div>
+            <div class="row">
+              <span>
+                <i class="material-icons">check_circle</i>
+                <span class="red-text">50 comments</span>
+                <i class="material-icons">arrow_upward</i>
+                <span class="green-text">1200 DownVotes</span>
+                <i class="material-icons">visibility</i>
+                <span class="cyan-text">10,000 views</span>
+              </span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span>
+                  <div class="chip">
+                    #AtPeace
+                  </div>
+                  <div class="chip">
+                    #KillThanos
+                  </div>
+                  <div class="chip">
+                    MissYouThor
+                  </div>
+                </span>
+              </div>
+              <div class="col">
+                <span class="right-align grey-text lighten-4">
+                  Asked 2 Hours Ago
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row card hoverable grey lighten-4">
+        <div class="card-content">
+          <div class="col s2 m2 l1">
+            <span>
+              <img class="circle materialboxed pulse" src="./images/Avengers-Nick-Fury-icon.png" height="90%" width="90%" alt="anyways">
+            </span>
+          </div>
+          <div class="col s7 m7 l8">
+            <div class="row">
+              <span>Calling Captain Marvel
+
+              </span>
+            </div>
+            <div class="row">
+              <span>
+                <i class="material-icons">check_circle</i>
+                <span class="red-text">No answers</span>
+                <i class="material-icons">arrow_upward</i>
+                <span class="green-text">12 Votes</span>
+                <i class="material-icons">visibility</i>
+                <span class="cyan-text">50 Shield Views</span>
+              </span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span>
+                  <div class="chip">
+                    Help
+                  </div>
+                  <div class="chip">
+                    #SaveEarth
+                  </div>
+                  <div class="chip">
+                    #AvengeUs
+                  </div>
+                </span>
+              </div>
+              <div class="col">
+                <span class="right-align grey-text lighten-4">
+                  Asked 2 Hours Ago
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Footer Starts Here-->
+  <footer class="page-footer blue lighten-2 center">
+    <div class="container">
+      <div class="row">
+        <div class="col m6 s12" id="copyright">
+          Created By
+          <a class="black-text text-lighten-3" id="teamStyle" href="#">
+            <b> UdaBuddy Team</b>
+          </a>
+          <span id="copy"> ©2018</span>
+        </div>
+        <div class="col m2 s12">
+          <a class="black-text text-lighten-3" href="#">
+            <b>About</b>
+          </a>
+        </div>
+        <div class="col m2 s12">
+          <a class="black-text text-lighten-3" href="#">
+            <b>Developers</b>
+          </a>
+        </div>
+        <div class="col m2 s12 ">
+          <a class="black-text text-lighten-3" href="#">
+            <b>Terms</b>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/forum.js"></script>
+
 </body>
-<script src="js/materialize.min.js"></script>
-<script src="js/forum.js"></script>
+
 </html>
