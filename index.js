@@ -4,6 +4,8 @@ const app = express();
 const path=require('path');
 const port=process.env.PORT||3000;
 
+hbs.registerPartials(__dirname+'/views/partials');
+
 app.set('view engine', 'hbs');
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(express.static(path.join(__dirname, 'public')));

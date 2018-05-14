@@ -20,22 +20,7 @@
 <body>
 
 <header>
-		<nav class="white">
-			<div class="nav-wrapper">
-				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-
-				<ul id="nav-mobile" class="hide-on-med-and-down">
-			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-			        <li class="right"><a href="#" id="logOut" class="black-text"><i class="small material-icons left">power_settings_new</i>Log Out</a></li>
-			        <li class="right"><a href="#" id="profile" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-			        <li class="right"><a href="#" id="resources" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-			     </ul>
-			</div>
-
-		</nav>
+		{{>navbar}}
 		<ul class="sidenav"  id="mobile-nav">
 			<li>
 				<ul class="collapsible black-text">
