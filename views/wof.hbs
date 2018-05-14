@@ -2,26 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css"
-  />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
-  <link rel="stylesheet" href="css/materialize.min.css">
+{{> starter}}
   <link rel="stylesheet" href="css/materialize-social.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Wall of fame</title>
   <style type="text/css">
   @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans);
- 
+
 
   .card-footer {
   border-top: solid 1px #B6B6B6;
@@ -46,21 +33,21 @@
   color: #3F51B5;
 }
 .container2 {
-  
+
   margin: 0 auto;
-  
+
   max-width: 1280px;
   width: 80%;
 }
 @media only screen and (min-width: 601px)
   .container2 {
-  	 
+
     width: 85%;
 }
 @media only screen and (min-width: 993px)
   .container2 {
     width: 70%;
-    
+
 }
 .cardup { width:800px;}
 
@@ -97,31 +84,15 @@ h1:before {
     text-align: right;
 }
   </style>
-  
+
 </head>
 <body style="background: linear-gradient(145deg, #33b5e5 , #888ec9, #f49b89); height: 100%; width: 100%; ">
-  <div class="navbar" style="margin-bottom: 5%; z-index: 1;">
-  
-  <nav style="background-color: transparent !important; box-shadow: none; border: none; padding: 1vw;">
-    <div class="nav-wrapper" >
-      <a href="#!" class="brand-logo">Udabuddy</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/blogDemo">Blog</a></li>
-        <li><a href="/wofDemo">Wall of Fame</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/">Udabuddy</a></li>
-      </ul>
-    </div>
-  </nav>
-   <ul class="sidenav" id="mobile-demo">
-    <li><a href="/blogDemo">Blog</a></li>
-    <li><a href="/wofDemo">Wall of Fame</a></li>
-    <li><a href="/about">About Us</a></li>
-    <li><a href="/">Udabuddy</a></li>
-  </ul>
-  
-  </div>
+
+<header>
+{{> navbar}}
+{{> navlinks}}
+
+</header>
   <div class="upper-sec container2" style="height: 80%;">
   <h1 style="  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -129,7 +100,7 @@ h1:before {
     line-height: 3.5rem;
     letter-spacing: 0;
     color: white; margin-top: 10%; margin-bottom: 12%;">  Featured project!  </h1>
-    
+
    <h4 style="  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 500;
     font-size: 2rem;
@@ -142,7 +113,7 @@ h1:before {
   </div>
   <div class="card-footer" style="background-color: #f49b89; height: 80%;">
     <ul class="collection" style="height: 80%; margin: 0px; border: 0px;">
-      <li class="collection-item avatar"  style="float: left; background-color: #f49b89; height: 80%; "> <img src="media/build.png" alt="" class="circle"> <span class="title" 
+      <li class="collection-item avatar"  style="float: left; background-color: #f49b89; height: 80%; "> <img src="media/build.png" alt="" class="circle"> <span class="title"
     style="  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 300;
     font-size: 2rem;
@@ -153,18 +124,18 @@ h1:before {
     </ul>
     <ul style="height: 80%;">
       <a class="waves-effect waves-light btn-floating social google">
-      <i class="fa fa-google"></i> Sign in with Google</a> 
+      <i class="fa fa-google"></i> Sign in with Google</a>
       <a class="waves-effect waves-light btn-floating social github">
-      <i class="fa fa-github"></i> Sign in with github</a>           
+      <i class="fa fa-github"></i> Sign in with github</a>
       <a class="waves-effect waves-light btn-floating social linkedin">
       <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
     </ul>
    </div>
   </div>
-  
+
   </div>
   <div class="lower-sec " style="height: 100%; background-color: ;">
-  <h1 
+  <h1
   style=" font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 700;
     font-size: 3rem;
@@ -191,12 +162,12 @@ h1:before {
           </ul>
           <ul>
           <a class="waves-effect waves-light btn-floating social google">
-          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <i class="fa fa-google"></i> Sign in with Google</a>
           <a class="waves-effect waves-light btn-floating social github">
-          <i class="fa fa-github"></i> Sign in with github</a>           
+          <i class="fa fa-github"></i> Sign in with github</a>
           <a class="waves-effect waves-light btn-floating social linkedin">
           <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
-          </ul>   
+          </ul>
         </div>
       </div>
     </div>
@@ -218,12 +189,12 @@ h1:before {
           </ul>
           <ul>
           <a class="waves-effect waves-light btn-floating social google">
-          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <i class="fa fa-google"></i> Sign in with Google</a>
           <a class="waves-effect waves-light btn-floating social github">
-          <i class="fa fa-github"></i> Sign in with github</a>           
+          <i class="fa fa-github"></i> Sign in with github</a>
           <a class="waves-effect waves-light btn-floating social linkedin">
           <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
-          </ul>   
+          </ul>
         </div>
       </div>
     </div>
@@ -245,12 +216,12 @@ h1:before {
           </ul>
           <ul>
           <a class="waves-effect waves-light btn-floating social google">
-          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <i class="fa fa-google"></i> Sign in with Google</a>
           <a class="waves-effect waves-light btn-floating social github">
-          <i class="fa fa-github"></i> Sign in with github</a>           
+          <i class="fa fa-github"></i> Sign in with github</a>
           <a class="waves-effect waves-light btn-floating social linkedin">
           <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
-          </ul>   
+          </ul>
         </div>
       </div>
     </div>
@@ -272,12 +243,12 @@ h1:before {
           </ul>
           <ul>
           <a class="waves-effect waves-light btn-floating social google">
-          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <i class="fa fa-google"></i> Sign in with Google</a>
           <a class="waves-effect waves-light btn-floating social github">
-          <i class="fa fa-github"></i> Sign in with github</a>           
+          <i class="fa fa-github"></i> Sign in with github</a>
           <a class="waves-effect waves-light btn-floating social linkedin">
           <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
-          </ul>   
+          </ul>
         </div>
       </div>
     </div>
@@ -299,12 +270,12 @@ h1:before {
           </ul>
           <ul>
           <a class="waves-effect waves-light btn-floating social google">
-          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <i class="fa fa-google"></i> Sign in with Google</a>
           <a class="waves-effect waves-light btn-floating social github">
-          <i class="fa fa-github"></i> Sign in with github</a>           
+          <i class="fa fa-github"></i> Sign in with github</a>
           <a class="waves-effect waves-light btn-floating social linkedin">
           <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
-          </ul>   
+          </ul>
         </div>
       </div>
     </div>
@@ -326,12 +297,12 @@ h1:before {
           </ul>
           <ul>
           <a class="waves-effect waves-light btn-floating social google">
-          <i class="fa fa-google"></i> Sign in with Google</a> 
+          <i class="fa fa-google"></i> Sign in with Google</a>
           <a class="waves-effect waves-light btn-floating social github">
-          <i class="fa fa-github"></i> Sign in with github</a>           
+          <i class="fa fa-github"></i> Sign in with github</a>
           <a class="waves-effect waves-light btn-floating social linkedin">
           <i class="fa fa-linkedin"></i> Sign in with linkedin</a>
-          </ul>   
+          </ul>
         </div>
       </div>
     </div>
@@ -345,7 +316,7 @@ h1:before {
             <div class="row">
               <div class="col l6 s12">
                 <a href="/"><h5 class="white-text" >This is Udabuddy</h5></a>
-                
+
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Discover More</h5>
@@ -369,7 +340,7 @@ h1:before {
 <script src="js/about.js"></script>
 <script type="text/javascript">
   // Or with jQuery
-    
+
      document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.materialboxed');
     var instances = M.Materialbox.init(elems, options);

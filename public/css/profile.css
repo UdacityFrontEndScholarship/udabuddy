@@ -1,5 +1,6 @@
 body{
   font-family: "Fira sans", helvetica , sans-serif;
+  background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
 }
 .profile {
   margin: 0 auto;
@@ -7,7 +8,7 @@ body{
 
 .profile-heading {
   font-size: 1.6rem;
-  margin-top: 35px;
+  /* margin-top: 35px; */
   color: white;
 }
 

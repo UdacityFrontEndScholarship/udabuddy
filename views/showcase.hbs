@@ -1,49 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css"
-  />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
-  <link rel="stylesheet" href="css/materialize.min.css">
+{{> starter}}
     <title>Showcase</title>
 </head>
 <body>
   <header>
-		<nav class="white">
-			<div class="nav-wrapper">
-				<!-- <a id="logo-container" href="#" class="brand-logo black-text">UdaBuddy</a> -->
-				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-						</ul>
-					 <ul id="nav-mobile" class="right hide-on-med-and-down">
-								 <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-								 <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-								 <li><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
-							</ul>
-			</div>
-
-		</nav>
-		<ul class="sidenav"  id="mobile-nav">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-			     </ul>
+		{{> navbar}}
+    {{> navlinks}}
 	</header>
     <h1>This is the showcase page for signed In User</h1>
 </body>
