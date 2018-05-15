@@ -2,32 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css"
-  />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-  <!-- <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/> -->
-  <link rel="stylesheet" href="css/materialize.min.css">
+{{> starter}}
   <link rel="stylesheet" href="css/blog.css">
 <!-- nnew links  -->
-
+<!--
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 
   <title>Blog Page</title>
 </head>
 
 <body class="grey lighten-2">
-  <nav class="white">
+  {{> navbar}}
+  {{> navlinks}}
+  <!-- <nav class="white">
     <div class="nav-wrapper">
       <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
         <i class="small material-icons black-text">menu</i>
@@ -195,38 +184,21 @@
       </ul>
 
     </div>
-  </nav>
-  <ul class="sidenav" id="mobile-nav">
-    <li>
-      <a href="#" class="black-text">
-        <i class="small material-icons left">dashboard</i>Dashboard</a>
-    </li>
-    <li>
-      <a href="#" class="black-text">
-        <i class="small material-icons left">library_books</i>NewsFeed</a>
-    </li>
-    <li>
-      <a href="#" class="black-text">
-        <i class="small material-icons left">people</i>Network</a>
-    </li>
-    <li>
-      <a href="#" class="black-text">
-        <i class="small material-icons left">forum</i>
-        <span> Resources</span>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="black-text">
-        <i class="small material-icons left">account_circle</i>Profile</a>
-    </li>
-  </ul>
+  </nav> -->
+
+
 
   <div class="row">
     <div class="col m2 s12">
       <a href="#modal1" class="btn-floating btn-large waves-effect waves-light red modal-trigger">
         <i class="material-icons">add</i>
       </a>
-      <h3>click to Add a new post</h3>
+      <h5>click to Add a new post</h5>
+      <!--
+
+edit this block to add the column
+
+    -->
       <div id="modal1" class="modal">
         <div class="modal-content">
           <h4>Enter your post here</h4>
@@ -248,7 +220,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <progress id="uploader" value="0" max="100">0%</progress>          
+          <progress id="uploader" value="0" max="100">0%</progress>
           <input type="file" id="fileBtn">
           <a class="modal-close waves-effect waves-green btn-flat" id="post">Post</a>
         </div>
