@@ -1,0 +1,18 @@
+#cmnt_btn{
+    position: relative;
+    top:-20px;
+ float: right;
+}
+#userImg{
+    height: 20px;
+    width: 20px;
+    display: inline;
+    border-radius: 50%;
+}
+#name{
+    margin:10px;
+}
+
+#subtitle{
+    vertical-align: baseline;
+}
