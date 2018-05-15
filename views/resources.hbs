@@ -22,31 +22,7 @@
 </head>
 <body>
 	<header>
-		<nav class="white" id="navbar">
-			<div class="nav-wrapper">
-
-				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-			        <li><a href="/dashboard" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-						</ul>
-					 <ul id="nav-mobile" class="right hide-on-med-and-down">
-								 <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-								 <li><a href="#" onclick="return false" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-								 <li><a href="/profile" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
-							</ul>
-			</div>
-
-		</nav>
-		<ul class="sidenav"  id="mobile-nav">
-			        <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-			        <li><a href="#" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-			     </ul>
+		{{>navbar}}
 	</header>
 	<main>
 		<div class="container">
