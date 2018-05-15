@@ -3,6 +3,9 @@
 <head>
 {{> starter}}
   <link type="text/css" rel="stylesheet" href="css/blogshow.css" media="screen,projection"/>
+  <link rel="stylesheet" href="css/materialize.min.css">
+<!-- nnew links  -->
+<link rel="stylesheet" href="css/blogShow.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -16,7 +19,8 @@
 
     <div class="container hoverable">
 
-  <h1 class="center-align">Dream BIG</h1>
+  <h1 class="center-align" id="title">Dream BIG</h1>
+  <h6 class="center-align subtitle"><span id="name"></span><img id="userImg" alt=""></h6> 
 
     <img class="responsive-img hoverable" src="https://images.unsplash.com/photo-1454937951501-e0d57de9ea4e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=5f6f55739b65664cc8604f50f3464de2" alt="" >
 
@@ -35,7 +39,7 @@
 </div>
   </div>
  <div class="card-panel">
-   <p class="flow-text">
+   <p class="flow-text" id="content">
 
    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est ipsam alias nesciunt aperiam illo harum fugiat enim error praesentium sint, animi explicabo corrupti, dolor quaerat dolores temporibus ad eveniet?
    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quae blanditiis, aliquid velit qui quasi ea laudantium rem doloribus iure deleniti sed possimus, aperiam veniam quo quidem perferendis voluptatem. Sit.
