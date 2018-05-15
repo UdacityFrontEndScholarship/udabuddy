@@ -15,6 +15,8 @@ initApp = function () {
     if (user) {
       // User is signed in.
       // Please write your code inside here
+      var elem = document.querySelector('.sidenav');
+      var instance = M.Sidenav.init(elem, {});
       var btn = document.querySelector('#signIn');
       btn.addEventListener('click', () => {
         window.location.replace('/signIn', '_self');

@@ -13,6 +13,8 @@ var config = {
   initApp = function() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
+        var elem = document.querySelector('.sidenav');
+        var instance = M.Sidenav.init(elem, {});
         // User is signed in.
         // Please write your code inside here
       } else {
