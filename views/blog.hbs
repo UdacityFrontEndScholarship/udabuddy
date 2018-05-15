@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css"
-  />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-  <!-- <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/> -->
-  <link rel="stylesheet" href="css/materialize.min.css">
+{{> starter}}
   <link rel="stylesheet" href="css/blog.css">
-<!-- nnew links  -->
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -26,23 +11,20 @@
 </head>
 
 <body class="grey lighten-2">
+
  <nav class="white">
     <div class="nav-wrapper">
       <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="small material-icons black-text">menu</i></a>
       <a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">border_all</i></a>
 
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-            <li><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-          </ul>
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
-               <li><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-               <li><a href="#" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-               <li><a href="#" class="black-text profile-bg"><i class="small material-icons left">account_circle</i>Profile</a></li>
-            </ul>
-
-
-
+      <ul id="nav-mobile" class="hide-on-med-and-down">
+            <li class="left"><a href="#" id="dashboard" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
+            <li class="left"><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
+            <li class="left"><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
+            <li class="right"><a href="#" id="logOut" class="black-text"><i class="small material-icons left">power_settings_new</i>Log Out</a></li>
+            <li class="right"><a href="#" id="profile" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
+            <li class="right"><a href="#" id="resources" class="black-text"><i class="small material-icons left">forum</i>Resources</a></li>
+         </ul>
 
       <ul class="side-nav grey darken-2" id="mobile-demo">
         <li class="sidenav-header blue">
@@ -148,7 +130,7 @@
           <label for="textarea1">Textarea</label>
         </div>
       </div>
-      
+
     </div>
     </div>
     <div class="modal-footer">

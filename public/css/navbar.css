@@ -2,8 +2,8 @@ body{
   font-family: "Fira Sans", helvetica , sans-serif;
 }
 .logo-size{
-  background: url("/media/logo.png") no-repeat center;
-  background-size: 10%;
+  background: url("/media/udabuddy-img2.png") no-repeat center;
+  background-size: 9%;
   width: 60%;
   height: 100%;
   z-index: -1;
@@ -23,11 +23,9 @@ body{
 
 header {
   padding: 3%;
+  margin-bottom: 3%;
 }
 
-.navbar{
-  margin-bottom: 5%;
-}
 
 nav {
   position: fixed;
@@ -36,10 +34,11 @@ nav {
   right: 0;
   background-color: transparent !important;
   border: none;
-  padding: 0 1vw 0 1vw;
+  padding: 0  0;
+  /* padding:5px 0; */
   z-index: 99;
   -webkit-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);
-  -moz-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);  
+  -moz-box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82);
   box-shadow: -5px 6px 58px -18px rgba(0,0,0,0.82) !important;
 }
 
@@ -55,8 +54,8 @@ nav {
   transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-.scroll {
+/* .scroll {
   top: 0;
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
+} */

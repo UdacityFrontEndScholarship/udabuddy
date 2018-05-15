@@ -21,7 +21,7 @@ initApp = function () {
       var title= document.querySelector('#title');
       var content=document.querySelector('#content');
       console.log(post_id);
-      var userId = firebase.auth().currentUser.uid;      
+      var userId = firebase.auth().currentUser.uid;
       show_id.innerHTML=`The post id is ${post_id}`;
       database.ref(userId +'/blog/'+post_id).on('value', (data) => {
         var store = data.val();
@@ -29,7 +29,7 @@ initApp = function () {
         name.innerHTML=`User name is ${store.name}`;
         title.innerHTML=`Title of the post is ${store.title}`;
         content.innerHTML=`description of the post is ${store.text}`;
-        
+
 
       });
     } else {
