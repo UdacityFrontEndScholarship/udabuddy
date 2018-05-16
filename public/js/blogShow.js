@@ -12,6 +12,8 @@ var database = firebase.database();
 initApp = function () {
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
+      var elem = document.querySelector('.sidenav');
+      var instance = M.Sidenav.init(elem, {});
       // User is signed in.
       // Please write your code inside here
       let params = (new URL(document.location)).searchParams;
@@ -19,9 +21,9 @@ initApp = function () {
       var name= document.querySelector('#name');
       var title= document.querySelector('#title');
       var content=document.querySelector('#content');
-      var userId = firebase.auth().currentUser.uid;   
+      var userId = firebase.auth().currentUser.uid;
       let uName = firebase.auth().currentUser.displayName;
-      let userImgUrl = firebase.auth().currentUser.photoURL;         
+      let userImgUrl = firebase.auth().currentUser.photoURL;
       let userImg= document.querySelector('#userImg');
       database.ref('blog/'+post_id).on('value', (data) => {
         var store = data.val();
@@ -46,7 +48,7 @@ initApp = function () {
           uName:uName,
           timeStamp:new Date().getTime()
         }
-        var post_ref = firebase.database().ref('blog/'+post_id+'/cmnt').push().set(cmnt);        
+        var post_ref = firebase.database().ref('blog/'+post_id+'/cmnt').push().set(cmnt);
       });
       var cmnt_list=document.querySelector('.cmnt_list');
       database.ref('blog/'+post_id+'/cmnt').orderByChild('timeStamp').on('value',(data)=>{

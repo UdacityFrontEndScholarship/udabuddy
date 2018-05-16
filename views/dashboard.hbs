@@ -1,41 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> -->
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="css/materialize.min.css">
+{{> starter}}
 	<link rel="stylesheet" href="css/dashboard.css">
-	<link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen,projection"/>
 
-  <title>Index Page</title>
+
+  <title>dashboard</title>
 </head>
 <body>
 
 <header>
-		<nav class="white">
-			<div class="nav-wrapper">
-				<a id="logo-container" href="#!" class="brand-logo center logo-size"></a>
-				<a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-
-				<ul id="nav-mobile" class="hide-on-med-and-down">
-			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">dashboard</i>Dashboard</a></li>
-			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">library_books</i>NewsFeed</a></li>
-			        <li class="left"><a href="#" class="black-text"><i class="small material-icons left">people</i>Network</a></li>
-			        <li class="right"><a href="#" id="logOut" class="black-text"><i class="small material-icons left">power_settings_new</i>Log Out</a></li>
-			        <li class="right"><a href="#" id="profile" class="black-text"><i class="small material-icons left">account_circle</i>Profile</a></li>
-			        <li class="right"><a href="#" id="resources" class="black-text"><i class="small material-icons left">forum</i><span> Resources</span></a></li>
-			     </ul>
-			</div>
-
-		</nav>
+		{{>navbar}}
+		{{> navlinks}}
 		<ul class="sidenav"  id="mobile-nav">
 			<li>
 				<ul class="collapsible black-text">
@@ -346,12 +322,12 @@
 					<div class="col s12">
 						<div class="white card">
 						<h5 class="card-title welcome">Welcome <span class='name'></span></h5>
-						
+
 						<div>
 							<div class="card-title center-align">Your Activity</div>
 							<div class="card-content">
 								<div id='chart_div'>
-									
+
 								</div>
 							</div>
 						</div>

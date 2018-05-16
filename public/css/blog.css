@@ -2,7 +2,7 @@ hr{
   margin: 20px auto;
 }
 
-.side-nav li>a {
+/* .side-nav li>a {
   padding: 0 16px;
 }
 
@@ -27,10 +27,11 @@ padding: 0;
     margin-bottom: 0;
 
   }
-}
+} */
 body {
    font-family: "Fira sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
    font-weight: 300 !important;
+   margin-top:100px;
 }
 hr{
   color: #0003;
