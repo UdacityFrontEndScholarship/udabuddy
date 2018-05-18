@@ -10,8 +10,14 @@
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link rel="stylesheet" href="css/materialize.min.css">
-      <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+
+
+<!--fontawesome cdn-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="style.css" media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,22 +25,23 @@
 
     <body>
 
-      <footer class="mainfooter">
-          <div class="container py-5">
-              <div class="row text-center">
-                  <div class="col-xs-6 col-sm-12 col-md col-lg">
+      <footer >
+<div class="container ">
+              <div class="row ">
+                  <div class="col l3 center-align">
                       <!--Column1-->
-                      <div class="footer-pad">
+                      <div class="footer-pad ">
                         <h5>UdaBuddy</h5>
                         <address>
-                              <ul class="list-unstyled">
+                              <ul class="list-unstyled ">
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="#">Contact Us</a></li>
                               </ul>
                         </address>
                       </div>
                     </div>
-                    <div class="col-xs-6 col-sm-12 col-md col-lg">
+
+                    <div class="col l3 center-align">
                       <!--Column1-->
                       <div class="footer-pad">
                         <h5>Quick Links</h5>
@@ -47,48 +54,70 @@
                         </address>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md col-lg">
+                    <div class="col l3 center-align">
                       <!--Column1-->
                       <div class="footer-pad">
                         <h5>Stay Connected</h5>
                         <ul class="list-unstyled">
                           <li>
-                            <a href="#"><i class="p-1 fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="p-1 fab fa-twitter"></i></a>
-                            <a href="#"><i class="p-1 fab fa-instagram"></i></a>
+                            <a href="#" class="p-1"><i class=" fab fa-facebook-f"></i></a>
+                            <a href="#" class="p-1"><i class=" fab fa-twitter"></i></a>
+                            <a href="#" class="p-1"><i class=" fab fa-instagram"></i></a>
                           </li>
                       </ul>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                    <div class="col l3 center-align ">
                       <!--Column1-->
                       <div class="footer-pad">
-                        <div class="footer-subscribe">
-                          <h5>YOU MAY NOT THINK YOU'RE AN ACTIVIST... BUT WE DO.</h5>
 
-                          <div class="email-btn-wrapper">
-                            <input type="email" class="footer-email" placeholder="Email ID"/>
-                            <button class="btn-join">JOIN</button><br /><br />
-                          <input type="checkbox" class="m-1"/><p class="d-inline p-1">Yes, I'd also like to hear about how I can help fight extreme poverty with the ONE campaign.</p>
-                          </div>
+                          <h5 >YOU MAY NOT THINK YOU'RE AN ACTIVIST... BUT WE DO.</h5>
 
-                        </div>
-                      </div>
-                    </div>
+                          <div class="row">
+                          <form class="col l12">
+                                <div class="row">
+                                  <div class="input-field col l9">
+           <textarea id="textarea1" class="materialize-textarea"></textarea>
+           <label for="textarea1">Email Id</label>
+         </div>
+         <div class="col l3 ">
+           <a class="waves-effect waves-light btn  grey darken-3 join-button">JOIN</a>
+         </div>
+                                </div>
+                              </div>
 
-              </div>
-          </div>
-          <div class="after-footer pr-5 pl-5 py-3 justify-content-sm-center text-right">
+
+                                <div class="row">
+                                  <div class="col l12 left-align">
+
+      <label>
+        <input type="checkbox" />
+        <span class="check-text-container"><p class="check-text">Yes, I'd also like to hear about how I can help fight extreme poverty with the ONE campaign.</p></span>
+      </label>
+
+  </div>
+</div>
+                              </form>
+                            </div></div>
+
+
+<div class="row">
+  <div class="col l12 right-align last-row">
             <a href="#" class="m-2">Privacy Policy</a>
             <a href="#" class="m-2">Terms of Service</a>
           </div>
+        </div>
+
         </footer>
 
-    <!--  Scripts-->
-	  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	  <script src="js/materialize.min.js"></script>
-	  <script src="js/indexPage.js"></script>
+
+
 
     </body>
+    <!--  Scripts-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
+    <script>$('#textarea1').val('New Text');
+  M.textareaAutoResize($('#textarea1'));</script>
   </html>

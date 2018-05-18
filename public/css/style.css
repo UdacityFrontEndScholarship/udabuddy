@@ -175,7 +175,6 @@ blockquote{
 /* ----- Footer (Contact Us) Section ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------- */
 
-/* Importing brand fonts Montserrat and Spectral */
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Spectral');
 
 footer {
@@ -186,9 +185,14 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-
+    display:block;
 }
-
+.m-2{
+  color:grey;
+}
+#textarea1{
+  color:white;
+}
 /* footer .container {
     padding-left: 10% !important;
     padding-right: 10% !important;
@@ -224,6 +228,20 @@ footer input::placeholder {
     color: #cccccc;
 }
 
+.join-button{
+  position: relative;
+  top:23px;
+
+  color: white;
+}
+.check-text{
+
+  font-size:0.7em;
+}
+.check-text-container{
+  position: relative;
+  padding-bottom: 10px;
+}
 footer h5 {
     font-size: 1em;
     font-weight: bold;
@@ -290,7 +308,9 @@ footer .after-footer a:hover {
 
     }
 }
-
+.p-1{
+  padding-left: 10px;
+}
 @media (max-width: 768px) {
     .after-footer {
         text-align: center !important;
