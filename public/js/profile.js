@@ -31,3 +31,7 @@ initApp = function () {
 window.addEventListener('load', function () {
   initApp()
 });
+
+$(function(){
+  $('.sidenav').sidenav();
+})
