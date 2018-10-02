@@ -109,4 +109,4 @@ or more features.
 - `index.js` - the entry point into the app.
 
 
-Note : These features are subject to change as per the requirements.
+Note : These features are subject to change as per the requirements and decision making power lies solely on the team.
